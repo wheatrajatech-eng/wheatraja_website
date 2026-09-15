@@ -1,0 +1,1 @@
+"""Wheat Raja FastAPI application."""

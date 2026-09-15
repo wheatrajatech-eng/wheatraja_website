@@ -1,0 +1,50 @@
+"""wallet subscriptions ecommerce completion
+
+Revision ID: 20260630_0002
+Revises: 20260629_0001
+Create Date: 2026-06-30
+"""
+
+from alembic import op
+import sqlalchemy as sa
+
+revision = "20260630_0002"
+down_revision = "20260629_0001"
+branch_labels = None
+depends_on = None
+
+
+def upgrade() -> None:
+    with op.batch_alter_table("orders") as batch:
+        batch.add_column(sa.Column("wallet_amount", sa.Numeric(10, 2), nullable=False, server_default="0"))
+        batch.add_column(sa.Column("payable_amount", sa.Numeric(10, 2), nullable=False, server_default="0"))
+    with op.batch_alter_table("wallet_transactions") as batch:
+        batch.add_column(sa.Column("amount", sa.Numeric(10, 2), nullable=False, server_default="0"))
+        batch.add_column(sa.Column("transaction_type", sa.String(60), nullable=False, server_default="credit"))
+    with op.batch_alter_table("subscriptions") as batch:
+        batch.add_column(sa.Column("quantity", sa.Integer(), nullable=False, server_default="1"))
+        batch.add_column(sa.Column("next_delivery_at", sa.DateTime(), nullable=True))
+        batch.add_column(sa.Column("wallet_auto_deduct", sa.Boolean(), nullable=False, server_default=sa.true()))
+        batch.add_column(sa.Column("status", sa.String(40), nullable=False, server_default="active"))
+    with op.batch_alter_table("blog_posts") as batch:
+        batch.add_column(sa.Column("category", sa.String(60), nullable=False, server_default="Blog"))
+        batch.add_column(sa.Column("read_time", sa.String(40), nullable=True))
+        batch.add_column(sa.Column("cover_image_url", sa.String(500), nullable=True))
+
+
+def downgrade() -> None:
+    with op.batch_alter_table("blog_posts") as batch:
+        batch.drop_column("cover_image_url")
+        batch.drop_column("read_time")
+        batch.drop_column("category")
+    with op.batch_alter_table("subscriptions") as batch:
+        batch.drop_column("status")
+        batch.drop_column("wallet_auto_deduct")
+        batch.drop_column("next_delivery_at")
+        batch.drop_column("quantity")
+    with op.batch_alter_table("wallet_transactions") as batch:
+        batch.drop_column("transaction_type")
+        batch.drop_column("amount")
+    with op.batch_alter_table("orders") as batch:
+        batch.drop_column("payable_amount")
+        batch.drop_column("wallet_amount")

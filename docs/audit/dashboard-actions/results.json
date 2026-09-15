@@ -1,0 +1,16 @@
+{
+  "passed": [
+    "Tracking: all six status highlights",
+    "Customer support ticket creation",
+    "Admin support resolution persisted",
+    "Review approval and confirmed deletion",
+    "Subscription quantity and pause persisted",
+    "Delivery slot creation persisted",
+    "Contact status persisted",
+    "Recovery follow-up persisted without sending messages",
+    "User creation with access confirmation persisted",
+    "Customer logout clears session and protects dashboard",
+    "Admin logout clears session and protects dashboard"
+  ],
+  "errors": []
+}

@@ -1,0 +1,5454 @@
+{
+  "desktop": [
+    {
+      "path": "/",
+      "finalUrl": "http://localhost:3000/",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Farm-to-chakki freshness, delivered like premium ecommerce.",
+      "h2s": [
+        "Choose by softness, nutrition, or premium taste.",
+        "From wheat field to fine grain atta.",
+        "Proof on every step. Not just promises.",
+        "Subscribe like a modern grocery app, receive like a local chakki.",
+        "Social proof that feels real, local and fresh.",
+        "Order atta that feels freshly made, not shelf-stored."
+      ],
+      "buttons": [
+        "Add 5 KG",
+        "Add 5 KG",
+        "Add 5 KG"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "Shop Fresh Atta",
+          "href": "/products"
+        },
+        {
+          "text": "See Process",
+          "href": "/about"
+        },
+        {
+          "text": "Wheat RajaMP Sharbati AttaFresh chakki attaMilled after order5 KG / 10",
+          "href": "/products/mp-sharbati-atta"
+        },
+        {
+          "text": "MP Sharbati Atta",
+          "href": "/products/mp-sharbati-atta"
+        },
+        {
+          "text": "Wheat RajaSuper Multigrain AttaFresh chakki attaMilled after order5 KG",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "Super Multigrain Atta",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "Wheat RajaSehori Sharbati AttaFresh chakki attaMilled after order5 KG ",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "Sehori Sharbati Atta",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "Start Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Shop Wheat Raja",
+          "href": "/products"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        }
+      ],
+      "inputs": [],
+      "suspicious": [],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog NOIDA FRESH CHAKKI ATTA Farm-to-chakki freshness, delivered like premium ecommerce. Selected wheat, stone-ground after your order, packed with batch proof and delivered across Noida. This is atta shopping rebuilt for modern Indian homes. Shop Fresh Atta See Process 4.9/5 Verified families 0-6 hr Pack window 20 km Free delivery 10% Subscribe save WHEAT RAJA MP Sharbati Atta Fresh chakki atta Milled after order 5 KG / 10 KG / Stone-ground / No preservatives DEAL OF THE DAY MP Sharbati 5 KG from ₹315 Free ",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [
+        {
+          "src": "https://assets.mixkit.co/videos/45379/45379-720.mp4",
+          "poster": "https://assets.mixkit.co/videos/45379/45379-thumb-720-4.jpg",
+          "readyState": 0,
+          "paused": true
+        },
+        {
+          "src": "https://assets.mixkit.co/videos/48769/48769-720.mp4",
+          "poster": "https://assets.mixkit.co/videos/48769/48769-thumb-720-3.jpg",
+          "readyState": 0,
+          "paused": true
+        },
+        {
+          "src": "https://assets.mixkit.co/videos/17730/17730-720.mp4",
+          "poster": "https://assets.mixkit.co/videos/17730/17730-thumb-720-0.jpg",
+          "readyState": 0,
+          "paused": true
+        }
+      ],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 3,
+      "linkCount": 30,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/products",
+      "finalUrl": "http://localhost:3000/products",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Choose Your Fresh Atta",
+      "h2s": [
+        "Wheat Raja vs packaged atta"
+      ],
+      "buttons": [
+        "Soft rotis",
+        "High fibre",
+        "Premium wheat",
+        "Monthly subscription",
+        "Add 5 KG",
+        "Add 5 KG",
+        "Add 5 KG"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "Wheat RajaMP Sharbati AttaFresh chakki attaMilled after order5 KG / 10",
+          "href": "/products/mp-sharbati-atta"
+        },
+        {
+          "text": "MP Sharbati Atta",
+          "href": "/products/mp-sharbati-atta"
+        },
+        {
+          "text": "Wheat RajaSuper Multigrain AttaFresh chakki attaMilled after order5 KG",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "Super Multigrain Atta",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "Wheat RajaSehori Sharbati AttaFresh chakki attaMilled after order5 KG ",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "Sehori Sharbati Atta",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        }
+      ],
+      "inputs": [],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog FRESHLY MILLED RANGE Choose Your Fresh Atta Premium wheat blends, milled only after your order is placed. Filter by softness, nutrition, or premium freshness. Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Soft rotis High fibre Premium wheat Monthly subscription WHEAT RAJA MP Sharbati Atta Fresh chakki atta Milled after order 5 KG / 10 KG / Stone-ground / No preservatives Freshly milled Stone-ground MP Sharbati Atta Freshly milled from premium MP wheat for soft, light, everyda",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 7,
+      "linkCount": 26,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/products/mp-sharbati-atta",
+      "finalUrl": "http://localhost:3000/products/mp-sharbati-atta",
+      "title": "MP Sharbati Atta | Wheat Raja",
+      "h1": "MP Sharbati Atta",
+      "h2s": [
+        "Ingredients & Nutrition",
+        "Trust Proof",
+        "Best For",
+        "Better than stored packaged atta",
+        "Storage Instructions",
+        "Customer Reviews",
+        "FAQs",
+        "Related fresh atta"
+      ],
+      "buttons": [
+        "5 KG₹315",
+        "10 KG₹599",
+        "-",
+        "+",
+        "Add to Cart",
+        "Subscribe ₹284",
+        "Add 5 KG",
+        "Add 5 KG",
+        "Add"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "Buy Now",
+          "href": "/checkout"
+        },
+        {
+          "text": "Check",
+          "href": "/delivery"
+        },
+        {
+          "text": "Wheat RajaSuper Multigrain AttaFresh chakki attaMilled after order5 KG",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "Super Multigrain Atta",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "Wheat RajaSehori Sharbati AttaFresh chakki attaMilled after order5 KG ",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "Sehori Sharbati Atta",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "Enter distance in KM",
+          "value": ""
+        }
+      ],
+      "suspicious": [],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog WHEAT RAJA MP Sharbati Atta Fresh chakki atta Milled after order 5 KG / 10 KG / Stone-ground / No preservatives Freshly milled Zero preservatives Stone-ground MP Sharbati Atta Naturally sweet, soft rotis from selected Madhya Pradesh wheat. Milling promise: this pack is milled after checkout and labelled with batch, milled date and packed date. 5 KG ₹315 10 KG ₹599 - 1 + Add to Cart Subscribe ₹284 Buy Now Check delivery Check Stone-ground after your order Ideal for soft daily rotis No maida, no preservat",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 3,
+      "forms": 0,
+      "buttonCount": 9,
+      "linkCount": 26,
+      "responseStatus": 200,
+      "errors": [
+        "warning: Image with src \"https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1200&q=85\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes",
+        "warning: Image with src \"https://images.unsplash.com/photo-1621955964441-c173e01c135b?auto=format&fit=crop&w=1200&q=85\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes",
+        "warning: Image with src \"https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=1200&q=85\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"
+      ]
+    },
+    {
+      "path": "/products/super-multigrain-atta",
+      "finalUrl": "http://localhost:3000/products/super-multigrain-atta",
+      "title": "Super Multigrain Atta | Wheat Raja",
+      "h1": "Super Multigrain Atta",
+      "h2s": [
+        "Ingredients & Nutrition",
+        "Trust Proof",
+        "Best For",
+        "Better than stored packaged atta",
+        "Storage Instructions",
+        "Customer Reviews",
+        "FAQs",
+        "Related fresh atta"
+      ],
+      "buttons": [
+        "5 KG₹390",
+        "10 KG₹749",
+        "-",
+        "+",
+        "Add to Cart",
+        "Subscribe ₹351",
+        "Add 5 KG",
+        "Add 5 KG",
+        "Add"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "Buy Now",
+          "href": "/checkout"
+        },
+        {
+          "text": "Check",
+          "href": "/delivery"
+        },
+        {
+          "text": "Wheat RajaMP Sharbati AttaFresh chakki attaMilled after order5 KG / 10",
+          "href": "/products/mp-sharbati-atta"
+        },
+        {
+          "text": "MP Sharbati Atta",
+          "href": "/products/mp-sharbati-atta"
+        },
+        {
+          "text": "Wheat RajaSehori Sharbati AttaFresh chakki attaMilled after order5 KG ",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "Sehori Sharbati Atta",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "Enter distance in KM",
+          "value": ""
+        }
+      ],
+      "suspicious": [],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog WHEAT RAJA Super Multigrain Atta Fresh chakki atta Milled after order 5 KG / 10 KG / Stone-ground / No preservatives Freshly milled Zero preservatives Stone-ground Super Multigrain Atta Wheat, millets and pulses blended for a fuller everyday atta. Milling promise: this pack is milled after checkout and labelled with batch, milled date and packed date. 5 KG ₹390 10 KG ₹749 - 1 + Add to Cart Subscribe ₹351 Buy Now Check delivery Check High-fiber family blend Free 1 KG on orders above Rs. 999 Balanced tast",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 3,
+      "forms": 0,
+      "buttonCount": 9,
+      "linkCount": 26,
+      "responseStatus": 200,
+      "errors": [
+        "warning: Image with src \"https://images.unsplash.com/photo-1606914501449-5a96b6ce24ca?auto=format&fit=crop&w=1200&q=85\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes",
+        "warning: Image with src \"https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes",
+        "warning: Image with src \"https://images.unsplash.com/photo-1568254183919-78a4f43a2877?auto=format&fit=crop&w=1200&q=85\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"
+      ]
+    },
+    {
+      "path": "/products/sehori-sharbati-atta",
+      "finalUrl": "http://localhost:3000/products/sehori-sharbati-atta",
+      "title": "Sehori Sharbati Atta | Wheat Raja",
+      "h1": "Sehori Sharbati Atta",
+      "h2s": [
+        "Ingredients & Nutrition",
+        "Trust Proof",
+        "Best For",
+        "Better than stored packaged atta",
+        "Storage Instructions",
+        "Customer Reviews",
+        "FAQs",
+        "Related fresh atta"
+      ],
+      "buttons": [
+        "5 KG₹345",
+        "10 KG₹649",
+        "-",
+        "+",
+        "Add to Cart",
+        "Subscribe ₹311",
+        "Add 5 KG",
+        "Add 5 KG",
+        "Add"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "Buy Now",
+          "href": "/checkout"
+        },
+        {
+          "text": "Check",
+          "href": "/delivery"
+        },
+        {
+          "text": "Wheat RajaMP Sharbati AttaFresh chakki attaMilled after order5 KG / 10",
+          "href": "/products/mp-sharbati-atta"
+        },
+        {
+          "text": "MP Sharbati Atta",
+          "href": "/products/mp-sharbati-atta"
+        },
+        {
+          "text": "Wheat RajaSuper Multigrain AttaFresh chakki attaMilled after order5 KG",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "Super Multigrain Atta",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "Enter distance in KM",
+          "value": ""
+        }
+      ],
+      "suspicious": [],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog WHEAT RAJA Sehori Sharbati Atta Fresh chakki atta Milled after order 5 KG / 10 KG / Stone-ground / No preservatives Freshly milled Zero preservatives Stone-ground Sehori Sharbati Atta Premium Sehori wheat with a soft bite and gentle aroma. Milling promise: this pack is milled after checkout and labelled with batch, milled date and packed date. 5 KG ₹345 10 KG ₹649 - 1 + Add to Cart Subscribe ₹311 Buy Now Check delivery Check Premium Sehori grain Fresh chakki texture Naturally aromatic Ingredients & Nutr",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 3,
+      "forms": 0,
+      "buttonCount": 9,
+      "linkCount": 26,
+      "responseStatus": 200,
+      "errors": [
+        "warning: Image with src \"https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=85\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes",
+        "warning: Image with src \"https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1200&q=85\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"
+      ]
+    },
+    {
+      "path": "/cart",
+      "finalUrl": "http://localhost:3000/cart",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Your fresh atta basket",
+      "h2s": [],
+      "buttons": [
+        "Add items to checkout"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "Shop Products",
+          "href": "/products"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "SAVE05",
+          "value": "SAVE05"
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog CART Your fresh atta basket Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. FRESH BASKET Your cart is empty Start with one fresh-milled atta pack. Every order is batch-labelled with milled date and packed date. Shop Products Order Summary FSSAI proof and batch label ready before dispatch. Free delivery within core Noida sectors. Free 1 KG Multigrain above Rs. 999. Coupon Subtotal ₹0 Coupon -₹0 WR Wallet earned 0 pts Free gift Above Rs. 999 Total ₹0 Add items to checkout WhatsAp",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 21,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/checkout",
+      "finalUrl": "http://localhost:3000/checkout",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Fresh delivery details",
+      "h2s": [
+        "Phone OTP",
+        "Delivery Address",
+        "Payment"
+      ],
+      "buttons": [
+        "Send OTP",
+        "Place Order"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": null,
+          "placeholder": "House, society, sector, city, pincode",
+          "value": ""
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "value": "Sector 78 / 76 / 77"
+        },
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "Coupon code",
+          "value": "SAVE05"
+        }
+      ],
+      "suspicious": [
+        "placeholder",
+        "production gate"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog CHECKOUT Fresh delivery details OTP-secured checkout with saved addresses, coupon, wallet points and Razorpay payment handoff. Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. 01 Phone OTP Send OTP Production gate: OTP will be verified server-side before payment capture. 02 Delivery Address Sector 78 / 76 / 77 Sector 137 / 142 Noida Extension Indirapuram Outside 60 KM Free delivery Same-day fresh delivery 03 Payment Secure payment handoff with COD/UPI-ready messaging. Backend la",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 2,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/blog",
+      "finalUrl": "http://localhost:3000/blog",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Stories from the chakki",
+      "h2s": [
+        "Fresh Milled Atta vs Stored Atta",
+        "A Simple Guide to Stone-Ground Wheat",
+        "How to Keep Rotis Soft"
+      ],
+      "buttons": [],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "2026-06-01Fresh Milled Atta vs Stored AttaWhy milling after order chan",
+          "href": "/blog/fresh-milled-atta-vs-stored-atta"
+        },
+        {
+          "text": "2026-06-12A Simple Guide to Stone-Ground WheatThe old chakki method, r",
+          "href": "/blog/stone-ground-wheat-guide"
+        },
+        {
+          "text": "2026-06-18How to Keep Rotis SoftSmall kitchen habits and better flour ",
+          "href": "/blog/how-to-keep-rotis-soft"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog FRESHNESS JOURNAL Stories from the chakki Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. 2026-06-01 Fresh Milled Atta vs Stored Atta Why milling after order changes aroma, softness and trust. 2026-06-12 A Simple Guide to Stone-Ground Wheat The old chakki method, redesigned for modern homes. 2026-06-18 How to Keep Rotis Soft Small kitchen habits and better flour make a visible difference. WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 0,
+      "linkCount": 23,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/blog/fresh-milled-atta-vs-stored-atta",
+      "finalUrl": "http://localhost:3000/blog/fresh-milled-atta-vs-stored-atta",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Fresh Milled Atta vs Stored Atta",
+      "h2s": [],
+      "buttons": [],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog 2026-06-01 Fresh Milled Atta vs Stored Atta Why milling after order changes aroma, softness and trust. Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Fresh atta is simple: mill closer to mealtime, keep the grain honest, and avoid long warehouse storage. Wheat Raja is built around that promise for modern Noida homes. Stone grinding keeps a familiar chakki texture while careful packing preserves aroma. The result is atta that feels premium without losing the emotion of a family ",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 0,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/about",
+      "finalUrl": "http://localhost:3000/about",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Why choose fresh-milled Wheat Raja atta?",
+      "h2s": [
+        "Packaged atta optimizes for shelf life. Wheat Raja optimizes for the day you coo",
+        "Each step is designed to answer one buyer question: why should I trust this atta",
+        "What changes when atta is milled after order?"
+      ],
+      "buttons": [],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog DETAILED STUDY Why choose fresh-milled Wheat Raja atta? A premium food brand cannot survive on pretty UI alone. This page explains the real process, quality logic and freshness advantage behind every pack. Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. FRESHNESS THESIS Packaged atta optimizes for shelf life. Wheat Raja optimizes for the day you cook. Mass atta brands are built for scale, warehousing and long shelf presence. Wheat Raja is built around a local fresh-milling loop",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 1,
+      "forms": 0,
+      "buttonCount": 0,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/contact",
+      "finalUrl": "http://localhost:3000/contact",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Talk to Wheat Raja",
+      "h2s": [],
+      "buttons": [
+        "Send Message"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "Chat on WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "Name",
+          "value": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "Phone",
+          "value": ""
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": null,
+          "placeholder": "Message",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog CONTACT Talk to Wheat Raja For orders, subscriptions, delivery checks or bulk requirements. Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Sector 78, Noida WhatsApp: +91 98765 43210 hello@wheatraja.com Chat on WhatsApp Send Message WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms No",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 1,
+      "buttonCount": 1,
+      "linkCount": 21,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/delivery",
+      "finalUrl": "http://localhost:3000/delivery",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Fresh atta delivery from Sector 78, Noida.",
+      "h2s": [
+        "Delivery areas",
+        "Delivery timeline",
+        "No hidden surprises"
+      ],
+      "buttons": [],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "Distance from Sector 78 in KM",
+          "value": "18"
+        }
+      ],
+      "suspicious": [
+        "placeholder",
+        "should replace"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog DELIVERY CHECKER Fresh atta delivery from Sector 78, Noida. Free within 20 KM. Clear charges after that. Delivery availability is based on distance and operational feasibility. Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Deliverable: free delivery Full map/pincode geocoding should replace manual distance entry in production. This module already matches the admin-editable slab logic. 0-20 KM Free 20-30 KM Rs. 40 30-40 KM Rs. 70 40-60 KM Rs. 100 60 KM+ Not deliverable unless ",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 0,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/subscription",
+      "finalUrl": "http://localhost:3000/subscription",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Fresh atta every month, without remembering to reorder.",
+      "h2s": [],
+      "buttons": [
+        "Subscribe",
+        "Subscribe",
+        "Subscribe"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SUBSCRIBE & SAVE 10% Fresh atta every month, without remembering to reorder. Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. WHEAT RAJA MP Sharbati Atta Fresh chakki atta Milled after order 5 KG / 10 KG / Stone-ground / No preservatives MP Sharbati Atta Monthly 10 KG plan from ₹539 Milled fresh for every cycle Pause or edit before next delivery Earn WR Wallet points on every order Subscribe WHEAT RAJA Super Multigrain Atta Fresh chakki atta Milled after order 5 KG / 10 KG / Sto",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 3,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/reviews",
+      "finalUrl": "http://localhost:3000/reviews",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Loved by families who care about freshness.",
+      "h2s": [],
+      "buttons": [],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog CUSTOMER LOVE Loved by families who care about freshness. Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. \"The rotis stayed soft till dinner. It actually smells freshly milled.\" Ritika, Sector 78 Verified \"Clean packaging, quick delivery and a very premium feel.\" Amit, Indirapuram Verified \"Subscription is convenient. The Sharbati atta has become our regular.\" Neha, Noida Extension Verified \"The rotis stayed soft till dinner. It actually smells freshly milled.\" Ritika, Sector 7",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 0,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/login",
+      "finalUrl": "http://localhost:3000/login",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/account",
+      "finalUrl": "http://localhost:3000/login?next=%2Faccount",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/account/orders",
+      "finalUrl": "http://localhost:3000/login?next=%2Faccount%2Forders",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/account/tracking",
+      "finalUrl": "http://localhost:3000/login?next=%2Faccount%2Ftracking",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/account/addresses",
+      "finalUrl": "http://localhost:3000/login?next=%2Faccount%2Faddresses",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/account/wallet",
+      "finalUrl": "http://localhost:3000/login?next=%2Faccount%2Fwallet",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/account/refer",
+      "finalUrl": "http://localhost:3000/login?next=%2Faccount%2Frefer",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/account/profile",
+      "finalUrl": "http://localhost:3000/login?next=%2Faccount%2Fprofile",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/account/subscriptions",
+      "finalUrl": "http://localhost:3000/login?next=%2Faccount%2Fsubscriptions",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/orders",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Forders",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/products",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Fproducts",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/customers",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Fcustomers",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/coupons",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Fcoupons",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/offers",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Foffers",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/delivery",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Fdelivery",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/subscriptions",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Fsubscriptions",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/wallet",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Fwallet",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/referrals",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Freferrals",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/reviews",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Freviews",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/blog",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Fblog",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/notifications",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Fnotifications",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/analytics",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Fanalytics",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin/settings",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin%2Fsettings",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [
+        "placeholder"
+      ],
+      "textSample": "Wheat Raja Search Sharbati, Multigrain, 10 KG plans... Shop Subscription Reviews About Blog SECURE LOGIN Login with phone OTP Fresh-milled standard Proof-led UI. Real commerce. No placeholder launch. Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 1440,
+      "clientWidth": 1440,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    }
+  ],
+  "mobile": [
+    {
+      "path": "/",
+      "finalUrl": "http://localhost:3000/",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Farm-to-chakki freshness, delivered like premium ecommerce.",
+      "h2s": [
+        "Choose by softness, nutrition, or premium taste.",
+        "From wheat field to fine grain atta.",
+        "Proof on every step. Not just promises.",
+        "Subscribe like a modern grocery app, receive like a local chakki.",
+        "Social proof that feels real, local and fresh.",
+        "Order atta that feels freshly made, not shelf-stored."
+      ],
+      "buttons": [
+        "Add 5 KG",
+        "Add 5 KG",
+        "Add 5 KG"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "Shop Fresh Atta",
+          "href": "/products"
+        },
+        {
+          "text": "See Process",
+          "href": "/about"
+        },
+        {
+          "text": "Wheat RajaMP Sharbati AttaFresh chakki attaMilled after order5 KG / 10",
+          "href": "/products/mp-sharbati-atta"
+        },
+        {
+          "text": "MP Sharbati Atta",
+          "href": "/products/mp-sharbati-atta"
+        },
+        {
+          "text": "Wheat RajaSuper Multigrain AttaFresh chakki attaMilled after order5 KG",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "Super Multigrain Atta",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "Wheat RajaSehori Sharbati AttaFresh chakki attaMilled after order5 KG ",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "Sehori Sharbati Atta",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "Start Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Shop Wheat Raja",
+          "href": "/products"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        }
+      ],
+      "inputs": [],
+      "suspicious": [],
+      "textSample": "Wheat Raja NOIDA FRESH CHAKKI ATTA Farm-to-chakki freshness, delivered like premium ecommerce. Selected wheat, stone-ground after your order, packed with batch proof and delivered across Noida. This is atta shopping rebuilt for modern Indian homes. Shop Fresh Atta See Process 4.9/5 Verified families 0-6 hr Pack window 20 km Free delivery 10% Subscribe save WHEAT RAJA MP Sharbati Atta Fresh chakki atta Milled after order 5 KG / 10 KG / Stone-ground / No preservatives DEAL OF THE DAY MP Sharbati 5 KG from ₹315 Free 1 KG Multigrain On orders above Rs. 999 Batch proof: milled date, packed date, se",
+      "overflowX": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "videos": [
+        {
+          "src": "https://assets.mixkit.co/videos/45379/45379-720.mp4",
+          "poster": "https://assets.mixkit.co/videos/45379/45379-thumb-720-4.jpg",
+          "readyState": 0,
+          "paused": true
+        },
+        {
+          "src": "https://assets.mixkit.co/videos/48769/48769-720.mp4",
+          "poster": "https://assets.mixkit.co/videos/48769/48769-thumb-720-3.jpg",
+          "readyState": 0,
+          "paused": true
+        },
+        {
+          "src": "https://assets.mixkit.co/videos/17730/17730-720.mp4",
+          "poster": "https://assets.mixkit.co/videos/17730/17730-thumb-720-0.jpg",
+          "readyState": 0,
+          "paused": true
+        }
+      ],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 3,
+      "linkCount": 30,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/products",
+      "finalUrl": "http://localhost:3000/products",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Choose Your Fresh Atta",
+      "h2s": [
+        "Wheat Raja vs packaged atta"
+      ],
+      "buttons": [
+        "Soft rotis",
+        "High fibre",
+        "Premium wheat",
+        "Monthly subscription",
+        "Add 5 KG",
+        "Add 5 KG",
+        "Add 5 KG"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "Wheat RajaMP Sharbati AttaFresh chakki attaMilled after order5 KG / 10",
+          "href": "/products/mp-sharbati-atta"
+        },
+        {
+          "text": "MP Sharbati Atta",
+          "href": "/products/mp-sharbati-atta"
+        },
+        {
+          "text": "Wheat RajaSuper Multigrain AttaFresh chakki attaMilled after order5 KG",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "Super Multigrain Atta",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "Wheat RajaSehori Sharbati AttaFresh chakki attaMilled after order5 KG ",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "Sehori Sharbati Atta",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        }
+      ],
+      "inputs": [],
+      "suspicious": [],
+      "textSample": "Wheat Raja FRESHLY MILLED RANGE Choose Your Fresh Atta Premium wheat blends, milled only after your order is placed. Filter by softness, nutrition, or premium freshness. Soft rotis High fibre Premium wheat Monthly subscription WHEAT RAJA MP Sharbati Atta Fresh chakki atta Milled after order 5 KG / 10 KG / Stone-ground / No preservatives Freshly milled Stone-ground MP Sharbati Atta Freshly milled from premium MP wheat for soft, light, everyday rotis. From ₹315 Add 5 KG WHEAT RAJA Super Multigrain Atta Fresh chakki atta Milled after order 5 KG / 10 KG / Stone-ground / No preservatives Freshly mi",
+      "overflowX": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 7,
+      "linkCount": 26,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/products/mp-sharbati-atta",
+      "finalUrl": "http://localhost:3000/products/mp-sharbati-atta",
+      "title": "MP Sharbati Atta | Wheat Raja",
+      "h1": "MP Sharbati Atta",
+      "h2s": [
+        "Ingredients & Nutrition",
+        "Trust Proof",
+        "Best For",
+        "Better than stored packaged atta",
+        "Storage Instructions",
+        "Customer Reviews",
+        "FAQs",
+        "Related fresh atta"
+      ],
+      "buttons": [
+        "5 KG₹315",
+        "10 KG₹599",
+        "-",
+        "+",
+        "Add to Cart",
+        "Subscribe ₹284",
+        "Add 5 KG",
+        "Add 5 KG",
+        "Add"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "Buy Now",
+          "href": "/checkout"
+        },
+        {
+          "text": "Check",
+          "href": "/delivery"
+        },
+        {
+          "text": "Wheat RajaSuper Multigrain AttaFresh chakki attaMilled after order5 KG",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "Super Multigrain Atta",
+          "href": "/products/super-multigrain-atta"
+        },
+        {
+          "text": "Wheat RajaSehori Sharbati AttaFresh chakki attaMilled after order5 KG ",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "Sehori Sharbati Atta",
+          "href": "/products/sehori-sharbati-atta"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "Enter distance in KM",
+          "value": ""
+        }
+      ],
+      "suspicious": [],
+      "textSample": "Wheat Raja WHEAT RAJA MP Sharbati Atta Fresh chakki atta Milled after order 5 KG / 10 KG / Stone-ground / No preservatives Freshly milled Zero preservatives Stone-ground MP Sharbati Atta Naturally sweet, soft rotis from selected Madhya Pradesh wheat. Milling promise: this pack is milled after checkout and labelled with batch, milled date and packed date. 5 KG ₹315 10 KG ₹599 - 1 + Add to Cart Subscribe ₹284 Buy Now Check delivery Check Stone-ground after your order Ideal for soft daily rotis No maida, no preservatives Ingredients & Nutrition 100% selected MP Sharbati wheat, stone-ground after ",
+      "overflowX": true,
+      "scrollWidth": 430,
+      "clientWidth": 390,
+      "videos": [],
+      "imageCount": 3,
+      "forms": 0,
+      "buttonCount": 9,
+      "linkCount": 26,
+      "responseStatus": 200,
+      "errors": [
+        "warning: Image with src \"https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?auto=format&fit=crop&w=1200&q=85\" has \"fill\" but is missing \"sizes\" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes"
+      ]
+    },
+    {
+      "path": "/cart",
+      "finalUrl": "http://localhost:3000/cart",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Your fresh atta basket",
+      "h2s": [],
+      "buttons": [
+        "Add items to checkout"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "Shop Products",
+          "href": "/products"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "SAVE05",
+          "value": "SAVE05"
+        }
+      ],
+      "suspicious": [],
+      "textSample": "Wheat Raja CART Your fresh atta basket FRESH BASKET Your cart is empty Start with one fresh-milled atta pack. Every order is batch-labelled with milled date and packed date. Shop Products Order Summary FSSAI proof and batch label ready before dispatch. Free delivery within core Noida sectors. Free 1 KG Multigrain above Rs. 999. Coupon Subtotal ₹0 Coupon -₹0 WR Wallet earned 0 pts Free gift Above Rs. 999 Total ₹0 Add items to checkout WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Co",
+      "overflowX": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 21,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/checkout",
+      "finalUrl": "http://localhost:3000/checkout",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Fresh delivery details",
+      "h2s": [
+        "Phone OTP",
+        "Delivery Address",
+        "Payment"
+      ],
+      "buttons": [
+        "Send OTP",
+        "Place Order"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        },
+        {
+          "tag": "TEXTAREA",
+          "type": null,
+          "placeholder": "House, society, sector, city, pincode",
+          "value": ""
+        },
+        {
+          "tag": "SELECT",
+          "type": null,
+          "placeholder": null,
+          "value": "Sector 78 / 76 / 77"
+        },
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "Coupon code",
+          "value": "SAVE05"
+        }
+      ],
+      "suspicious": [
+        "production gate"
+      ],
+      "textSample": "Wheat Raja CHECKOUT Fresh delivery details OTP-secured checkout with saved addresses, coupon, wallet points and Razorpay payment handoff. 01 Phone OTP Send OTP Production gate: OTP will be verified server-side before payment capture. 02 Delivery Address Sector 78 / 76 / 77 Sector 137 / 142 Noida Extension Indirapuram Outside 60 KM Free delivery Same-day fresh delivery 03 Payment Secure payment handoff with COD/UPI-ready messaging. Backend launch gate: create provider order server-side and verify webhook before marking paid. Place Order Fresh order summary Your basket is empty. Add fresh atta b",
+      "overflowX": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 2,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/account",
+      "finalUrl": "http://localhost:3000/login?next=%2Faccount",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [],
+      "textSample": "Wheat Raja SECURE LOGIN Login with phone OTP Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    },
+    {
+      "path": "/admin",
+      "finalUrl": "http://localhost:3000/login?next=%2Fadmin",
+      "title": "Wheat Raja | Fresh Atta Milled After Your Order",
+      "h1": "Login with phone OTP",
+      "h2s": [],
+      "buttons": [
+        "Send OTP"
+      ],
+      "links": [
+        {
+          "text": "Wheat Raja",
+          "href": "/"
+        },
+        {
+          "text": "Shop",
+          "href": "/products"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Blog",
+          "href": "/blog"
+        },
+        {
+          "text": "Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Account",
+          "href": "/login"
+        },
+        {
+          "text": "Cart",
+          "href": "/cart"
+        },
+        {
+          "text": "WhatsApp",
+          "href": "https://wa.me/919876543210"
+        },
+        {
+          "text": "Products",
+          "href": "/products"
+        },
+        {
+          "text": "Check Delivery",
+          "href": "/delivery"
+        },
+        {
+          "text": "Subscription",
+          "href": "/subscription"
+        },
+        {
+          "text": "About",
+          "href": "/about"
+        },
+        {
+          "text": "Reviews",
+          "href": "/reviews"
+        },
+        {
+          "text": "Contact",
+          "href": "/contact"
+        },
+        {
+          "text": "Shipping Policy",
+          "href": "/shipping-policy"
+        },
+        {
+          "text": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "text": "Privacy Policy",
+          "href": "/privacy-policy"
+        },
+        {
+          "text": "Terms",
+          "href": "/terms"
+        }
+      ],
+      "inputs": [
+        {
+          "tag": "INPUT",
+          "type": null,
+          "placeholder": "+91 mobile number",
+          "value": ""
+        }
+      ],
+      "suspicious": [],
+      "textSample": "Wheat Raja SECURE LOGIN Login with phone OTP Send OTP WhatsApp Wheat Raja Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis. Shop Products Check Delivery Subscription Company About Reviews Contact Trust Shipping Policy Refund Policy Privacy Policy Terms Noida Kitchen Sector 78, Noida WhatsApp: +91 98765 43210",
+      "overflowX": false,
+      "scrollWidth": 390,
+      "clientWidth": 390,
+      "videos": [],
+      "imageCount": 0,
+      "forms": 0,
+      "buttonCount": 1,
+      "linkCount": 20,
+      "responseStatus": 200,
+      "errors": []
+    }
+  ]
+}

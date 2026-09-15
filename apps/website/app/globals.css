@@ -1,0 +1,239 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff8ea;
+  color: #16130f;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.account-shell {
+  background:
+    radial-gradient(circle at 8% 0%, rgba(184, 120, 12, .11), transparent 30%),
+    linear-gradient(180deg, #faf7ef 0%, #f4ecdd 100%);
+}
+
+.account-card {
+  border: 1px solid rgba(74, 47, 24, .10);
+  background: rgba(255, 255, 255, .84);
+  box-shadow: 0 24px 70px rgba(70, 45, 20, .10);
+  backdrop-filter: blur(18px);
+}
+
+.account-input {
+  border: 1px solid rgba(74, 47, 24, .12);
+  background: rgba(255, 255, 255, .88);
+  color: #1a120a;
+  outline: none;
+}
+
+.account-input:focus {
+  border-color: rgba(184, 120, 12, .55);
+  box-shadow: 0 0 0 4px rgba(184, 120, 12, .12);
+}
+
+::selection {
+  background: #d9a441;
+  color: #183f2f;
+}
+
+.grain {
+  background-image:
+    radial-gradient(circle at 20% 20%, rgba(217, 164, 65, .16), transparent 24%),
+    radial-gradient(circle at 80% 0%, rgba(77, 122, 57, .12), transparent 30%),
+    linear-gradient(135deg, rgba(255, 248, 234, .95), rgba(255, 255, 255, .86));
+}
+
+.glass {
+  background: rgba(255, 248, 234, .78);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(75, 47, 31, .12);
+}
+
+.glass-dark {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, .14), rgba(255, 255, 255, .045)),
+    radial-gradient(circle at 20% 0%, rgba(217, 164, 65, .16), transparent 36%);
+  backdrop-filter: blur(24px);
+}
+
+.focus-ring {
+  @apply focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-wheat;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatSoft {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes adminRise {
+  from {
+    opacity: 0;
+    transform: translateY(18px) scale(.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes adminGlow {
+  0%, 100% {
+    box-shadow: 0 24px 90px rgba(0, 0, 0, .22), inset 0 1px 0 rgba(255, 255, 255, .05);
+  }
+  50% {
+    box-shadow: 0 28px 100px rgba(241, 135, 0, .13), inset 0 1px 0 rgba(255, 255, 255, .08);
+  }
+}
+
+@keyframes drawLine {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes barGrow {
+  from {
+    transform: scaleY(.08);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes premiumShine {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+
+@keyframes wheatFloat {
+  0%, 100% {
+    opacity: .22;
+    transform: translate3d(0, 0, 0) rotate(var(--wr-rotate, 0deg));
+  }
+  50% {
+    opacity: .78;
+    transform: translate3d(18px, -26px, 0) rotate(calc(var(--wr-rotate, 0deg) + 8deg));
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp .8s ease both;
+}
+
+.animate-delay-1 {
+  animation-delay: .12s;
+}
+
+.animate-delay-2 {
+  animation-delay: .24s;
+}
+
+.animate-float-soft {
+  animation: floatSoft 5s ease-in-out infinite;
+}
+
+.reveal-up {
+  animation: fadeUp .7s ease both;
+}
+
+.admin-surface {
+  color-scheme: dark;
+}
+
+.admin-card {
+  position: relative;
+  overflow: hidden;
+  animation: adminGlow 6s ease-in-out infinite;
+}
+
+.admin-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(120deg, transparent, rgba(255, 255, 255, .055), transparent),
+    radial-gradient(circle at 20% 0%, rgba(255, 189, 16, .08), transparent 34%);
+  opacity: .8;
+}
+
+.animate-admin-rise {
+  animation: adminRise .6s ease both, adminGlow 6s ease-in-out infinite;
+}
+
+.admin-draw {
+  stroke-dasharray: 900;
+  stroke-dashoffset: 900;
+  animation: drawLine 1.3s ease forwards;
+}
+
+.admin-bar {
+  transform-origin: bottom;
+  animation: barGrow .8s cubic-bezier(.2, .8, .2, 1) both;
+}
+
+.premium-sheen {
+  position: relative;
+  overflow: hidden;
+}
+
+.premium-sheen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 45%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, .22), transparent);
+  animation: premiumShine 4.8s ease-in-out infinite;
+}
+
+.wheat-float {
+  font-size: clamp(18px, 2vw, 34px);
+  animation: wheatFloat 7s ease-in-out infinite;
+  filter: drop-shadow(0 10px 18px rgba(0, 0, 0, .22));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.account-shell :where(section, aside, article, div, nav, label) { min-width: 0; }
+.account-shell :where(input, select, textarea, img) { max-width: 100%; min-width: 0; }
+.account-shell :where(h1, h2, h3, p) { overflow-wrap: anywhere; }
+.account-shell :where(button, select, input) { min-height: 44px; }
+@media (max-width: 639px) {
+  .account-shell input, .account-shell select, .account-shell textarea { font-size: 16px; }
+}

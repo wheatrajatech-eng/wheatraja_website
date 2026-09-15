@@ -1,0 +1,63 @@
+services:
+  mysql:
+    image: mysql:8.4
+    environment:
+      MYSQL_DATABASE: whateraja
+      MYSQL_USER: wheatraja_user
+      MYSQL_PASSWORD: replace-with-local-password
+      MYSQL_ROOT_PASSWORD: replace-with-root-password
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  api:
+    build:
+      context: ./apps/api
+    environment:
+      DATABASE_URL: mysql+pymysql://wheatraja_user:replace-with-url-encoded-password@mysql:3306/whateraja
+      JWT_SECRET: replace-with-a-long-random-secret-at-least-32-characters
+      ALLOWED_ORIGINS: http://localhost:3000,http://localhost:3001
+      ADMIN_PHONE_NUMBERS: replace-with-admin-phone
+      ALLOW_DEV_OTP: "false"
+      CSRF_PROTECTION_ENABLED: "true"
+      ENFORCE_RBAC_PERMISSIONS: "true"
+      EMAIL_PROVIDER: ses
+      SMS_PROVIDER: msg91
+      WHATSAPP_PROVIDER: disabled
+      STORAGE_PROVIDER: s3
+    ports:
+      - "8001:8000"
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+  website:
+    build:
+      context: .
+      dockerfile: apps/website/Dockerfile
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: http://localhost:8001/api/v1
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+
+  admin:
+    build:
+      context: .
+      dockerfile: apps/admin/Dockerfile
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: http://localhost:8001/api/v1
+    ports:
+      - "3001:3001"
+    depends_on:
+      - api
+
+volumes:
+  mysql-data:

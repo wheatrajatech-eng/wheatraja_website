@@ -1,0 +1,2838 @@
+[
+  {
+    "role": "customer",
+    "route": "/account",
+    "status": 200,
+    "finalPath": "/account",
+    "headings": [
+      "Good morning, Audit Customer",
+      "Active Order: placed",
+      "Recent Orders"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/me",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/orders",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/wallet",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/subscriptions",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/reminders",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "customer",
+    "route": "/account/addresses",
+    "status": 200,
+    "finalPath": "/account/addresses",
+    "headings": [
+      "Saved addresses",
+      "Delivery addresses"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/users/addresses",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "customer",
+    "route": "/account/notifications",
+    "status": 200,
+    "finalPath": "/account/notifications",
+    "headings": [
+      "Notifications",
+      "Audit reminder"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/notifications",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "customer",
+    "route": "/account/orders",
+    "status": 200,
+    "finalPath": "/account/orders",
+    "headings": [
+      "My orders",
+      "MP Sharbati Atta 1 KG x 1"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/orders",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "customer",
+    "route": "/account/profile",
+    "status": 200,
+    "finalPath": "/account/profile",
+    "headings": [
+      "Profile",
+      "Profile settings"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/me",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "customer",
+    "route": "/account/refer",
+    "status": 200,
+    "finalPath": "/account/refer",
+    "headings": [
+      "Refer & Earn"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/referrals",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "customer",
+    "route": "/account/reminders",
+    "status": 200,
+    "finalPath": "/account/reminders",
+    "headings": [
+      "Reminders",
+      "Order refill and subscription reminders"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/reminders",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "customer",
+    "route": "/account/subscriptions",
+    "status": 200,
+    "finalPath": "/account/subscriptions",
+    "headings": [
+      "My subscriptions"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/subscriptions",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "customer",
+    "route": "/account/support",
+    "status": 200,
+    "finalPath": "/account/support",
+    "headings": [
+      "Raise an issue",
+      "Your tickets"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/growth/support/tickets",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "customer",
+    "route": "/account/tracking",
+    "status": 200,
+    "finalPath": "/account/tracking",
+    "headings": [
+      "Order tracking",
+      "MP Sharbati Atta 1 KG x 1"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/orders",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "customer",
+    "route": "/account/wallet",
+    "status": 200,
+    "finalPath": "/account/wallet",
+    "headings": [
+      "WR Wallet",
+      "Wallet ledger"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/wallet",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/orders",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "customer",
+    "route": "/account/wishlist",
+    "status": 200,
+    "finalPath": "/account/wishlist",
+    "headings": [
+      "Wishlist",
+      "Your wishlist is empty"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/wishlist",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "customer",
+    "route": "/account/orders/WRAUDIT1",
+    "status": 200,
+    "finalPath": "/account/orders/WRAUDIT1",
+    "headings": [
+      "Order detail",
+      "WRAUDIT1",
+      "Shipment",
+      "Timeline"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/orders/WRAUDIT1",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/shipments/my/WRAUDIT1",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/dashboard",
+    "status": 200,
+    "finalPath": "/dashboard",
+    "headings": [
+      "Operations overview",
+      "Recent orders",
+      "Product mix"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/summary",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/products",
+    "status": 200,
+    "finalPath": "/products",
+    "headings": [
+      "Product operations",
+      "Create / initiate"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/products",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/categories",
+    "status": 200,
+    "finalPath": "/categories",
+    "headings": [
+      "Categories",
+      "Quick action",
+      "Categories records"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/categories",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/orders",
+    "status": 200,
+    "finalPath": "/orders",
+    "headings": [
+      "Order operations",
+      "Create / initiate"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/orders",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/customers",
+    "status": 200,
+    "finalPath": "/customers",
+    "headings": [
+      "Customer operations",
+      "Create / initiate"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/customers",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/payments",
+    "status": 200,
+    "finalPath": "/payments",
+    "headings": [
+      "Payment operations",
+      "Create / initiate"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/payments",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/refunds",
+    "status": 200,
+    "finalPath": "/refunds",
+    "headings": [
+      "Refund operations",
+      "Create / initiate"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/refunds",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/returns",
+    "status": 200,
+    "finalPath": "/returns",
+    "headings": [
+      "Return operations",
+      "Create / initiate"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/returns",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/inventory",
+    "status": 200,
+    "finalPath": "/inventory",
+    "headings": [
+      "Inventory operations",
+      "Create / initiate"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/inventory",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/shipments",
+    "status": 200,
+    "finalPath": "/shipments",
+    "headings": [
+      "Shipment operations",
+      "Create / initiate"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/shipments",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/coupons",
+    "status": 200,
+    "finalPath": "/coupons",
+    "headings": [
+      "Coupons",
+      "Quick action",
+      "Coupons records"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/coupons",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/subscriptions",
+    "status": 200,
+    "finalPath": "/subscriptions",
+    "headings": [
+      "Subscriptions"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/subscriptions/admin/upcoming",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/wallet",
+    "status": 200,
+    "finalPath": "/wallet",
+    "headings": [
+      "Wallet",
+      "Quick action",
+      "Wallet records"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/wallet",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/banners",
+    "status": 200,
+    "finalPath": "/banners",
+    "headings": [
+      "Banner operations",
+      "Create / initiate"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/banners",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/blogs",
+    "status": 200,
+    "finalPath": "/blogs",
+    "headings": [
+      "Daily blog publishing"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/blogs/admin/list",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/reviews",
+    "status": 200,
+    "finalPath": "/reviews",
+    "headings": [
+      "Reviews"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/reviews",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/contact",
+    "status": 200,
+    "finalPath": "/contact",
+    "headings": [
+      "Contact"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/contact",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/reports",
+    "status": 200,
+    "finalPath": "/reports",
+    "headings": [
+      "Reports",
+      "Reports records"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/analytics",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/settings",
+    "status": 200,
+    "finalPath": "/settings",
+    "headings": [
+      "Operational settings",
+      "Customer reminder channels",
+      "Quick action",
+      "Settings registry"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/settings",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/settings",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/users",
+    "status": 200,
+    "finalPath": "/users",
+    "headings": [
+      "Users"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/users/admin/accounts",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/roles",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/roles",
+    "status": 200,
+    "finalPath": "/roles",
+    "headings": [
+      "Roles",
+      "Quick action",
+      "Roles records"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/roles",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/notifications",
+    "status": 200,
+    "finalPath": "/notifications",
+    "headings": [
+      "Notifications",
+      "Quick action",
+      "Notifications records"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/notification-events",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/reminder-outbox",
+    "status": 200,
+    "finalPath": "/reminder-outbox",
+    "headings": [
+      "Reminder outbox",
+      "Live queue"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/reminders/admin/outbox",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/reminder-outbox/failed",
+    "status": 200,
+    "finalPath": "/reminder-outbox/failed",
+    "headings": [
+      "Reminder outbox",
+      "Live queue"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/reminders/admin/outbox",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/audit",
+    "status": 200,
+    "finalPath": "/audit",
+    "headings": [
+      "Audit",
+      "Audit records"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/audit",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/referrals",
+    "status": 200,
+    "finalPath": "/referrals",
+    "headings": [
+      "Referrals",
+      "Quick action",
+      "Referrals records"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/referrals",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/support",
+    "status": 200,
+    "finalPath": "/support",
+    "headings": [
+      "Support"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/growth/admin/support",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/recoveries",
+    "status": 200,
+    "finalPath": "/recoveries",
+    "headings": [
+      "Cart recoveries"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/growth/admin/recoveries",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/loyalty",
+    "status": 200,
+    "finalPath": "/loyalty",
+    "headings": [
+      "Loyalty",
+      "Loyalty records"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/loyalty",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/delivery-slots",
+    "status": 200,
+    "finalPath": "/delivery-slots",
+    "headings": [
+      "Delivery slots"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/delivery-slots",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/tasks",
+    "status": 200,
+    "finalPath": "/tasks",
+    "headings": [
+      "Task Center",
+      "Task Center records"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/growth/admin/tasks",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/readiness",
+    "status": 200,
+    "finalPath": "/readiness",
+    "headings": [
+      "Readiness",
+      "Readiness records"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/admin/readiness",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  },
+  {
+    "role": "admin",
+    "route": "/customers/9000000002",
+    "status": 200,
+    "finalPath": "/customers/9000000002",
+    "headings": [
+      "Audit Customer",
+      "Profile details",
+      "Primary address",
+      "All addresses"
+    ],
+    "errors": [],
+    "apiFailures": [],
+    "calls": [
+      {
+        "path": "/api/v1/users/admin/customers/9000000002",
+        "status": 200
+      },
+      {
+        "path": "/api/v1/auth/session",
+        "status": 200
+      }
+    ],
+    "notices": [],
+    "failure": null,
+    "widths": [
+      {
+        "width": 320,
+        "actual": 320,
+        "viewport": 320,
+        "overflow": false
+      },
+      {
+        "width": 390,
+        "actual": 390,
+        "viewport": 390,
+        "overflow": false
+      },
+      {
+        "width": 768,
+        "actual": 768,
+        "viewport": 768,
+        "overflow": false
+      },
+      {
+        "width": 1024,
+        "actual": 1024,
+        "viewport": 1024,
+        "overflow": false
+      },
+      {
+        "width": 1440,
+        "actual": 1440,
+        "viewport": 1440,
+        "overflow": false
+      },
+      {
+        "width": 1920,
+        "actual": 1920,
+        "viewport": 1920,
+        "overflow": false
+      }
+    ]
+  }
+]

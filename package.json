@@ -1,0 +1,33 @@
+{
+  "name": "wheat-raja-commerce",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "npm --prefix apps/website run dev",
+    "dev:website": "npm --prefix apps/website run dev",
+    "dev:admin": "npm --prefix apps/admin run dev",
+    "build": "npm --prefix apps/website run build && npm --prefix apps/admin run build",
+    "build:website": "npm --prefix apps/website run build",
+    "build:admin": "npm --prefix apps/admin run build",
+    "start": "npm --prefix apps/website run start",
+    "api": "uvicorn app.main:app --app-dir apps/api --reload --port 8000",
+    "lint": "npm --prefix apps/website run lint",
+    "test:api": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/test-api.ps1",
+    "test:dashboards": "node scripts/dashboard-smoke.cjs",
+    "test:providers": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"$env:PYTHONPATH='apps/api'; python apps/api/scripts/provider_smoke.py\"",
+    "test:providers:live": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"$env:PYTHONPATH='apps/api'; python apps/api/scripts/provider_smoke.py --send-email --upload-image --json-out docs/audit/provider-smoke-latest.json\"",
+    "test:razorpay": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"$env:PYTHONPATH='apps/api'; python apps/api/scripts/razorpay_sandbox_smoke.py --json-out docs/audit/razorpay-smoke-latest.json\"",
+    "preflight:launch": "powershell -NoProfile -ExecutionPolicy Bypass -Command \"$env:PYTHONPATH='apps/api'; python apps/api/scripts/launch_preflight.py --json-out docs/audit/launch-preflight-latest.json\"",
+    "drill:backup": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/mysql-backup-drill.ps1",
+    "test:smoke": "node scripts/smoke-test.cjs",
+    "test:launch": "npm run test:api && npm run build && npm run test:smoke"
+  },
+  "workspaces": [
+    "apps/website",
+    "apps/admin",
+    "apps/shared"
+  ],
+  "devDependencies": {
+    "playwright": "^1.61.1"
+  }
+}
