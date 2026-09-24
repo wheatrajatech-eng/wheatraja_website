@@ -21,6 +21,8 @@ def upgrade() -> None:
     # not have received the reminder table yet. Create it here when needed;
     # inspect first so fresh databases remain safe to upgrade as well.
     bind = op.get_bind()
+    if inspect(bind).has_table("reminder_delivery_outbox"):
+        return
     if not inspect(bind).has_table("reminder_schedules"):
         op.create_table(
             "reminder_schedules",

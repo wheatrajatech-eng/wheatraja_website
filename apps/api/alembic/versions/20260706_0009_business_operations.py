@@ -7,6 +7,7 @@ Create Date: 2026-07-06
 
 from alembic import op
 import sqlalchemy as sa
+from sqlalchemy import inspect
 
 
 revision = "20260706_0009"
@@ -16,6 +17,20 @@ depends_on = None
 
 
 def upgrade() -> None:
+    inspector = inspect(op.get_bind())
+    expected = {
+        "users": {"blocked", "admin_notes"},
+        "addresses": {"is_default"},
+        "products": {"category_id", "featured", "seo_title", "seo_description"},
+        "product_variants": {"sku", "mrp", "discount_percent", "low_stock_threshold"},
+        "banners": {"subtitle", "cta_text", "display_order", "starts_at", "ends_at"},
+        "blog_posts": {"seo_title", "seo_description"},
+        "orders": {"billing_address_text", "source_channel", "source_detail", "campaign_name", "utm_source", "utm_medium", "utm_campaign", "created_by", "admin_owner_id", "admin_notes", "customer_notes", "expected_delivery_at", "payment_method"},
+        "payments": {"method", "transaction_reference", "note", "proof_url", "received_at"},
+    }
+    if all(fields.issubset({column["name"] for column in inspector.get_columns(table)}) for table, fields in expected.items()):
+        return
+
     op.add_column("users", sa.Column("blocked", sa.Boolean(), nullable=False, server_default=sa.false()))
     op.add_column("users", sa.Column("admin_notes", sa.Text(), nullable=True))
     op.add_column("addresses", sa.Column("is_default", sa.Boolean(), nullable=False, server_default=sa.false()))

@@ -7,6 +7,7 @@ Create Date: 2026-07-06
 
 from alembic import op
 import sqlalchemy as sa
+from sqlalchemy import inspect
 
 
 revision = "20260706_0006"
@@ -16,6 +17,19 @@ depends_on = None
 
 
 def upgrade() -> None:
+    bind = op.get_bind()
+    existing_tables = set(inspect(bind).get_table_names())
+    lifecycle_tables = {
+        "inventory_reservations",
+        "shipment_events",
+        "returns",
+        "return_items",
+        "notification_events",
+    }
+    # The initial metadata bootstrap may already have created these tables.
+    # In that case this revision has no remaining schema work to perform.
+    if lifecycle_tables.issubset(existing_tables):
+        return
     if op.get_bind().dialect.name == "mysql":
         op.alter_column(
             "orders",

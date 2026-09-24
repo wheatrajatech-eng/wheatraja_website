@@ -7,6 +7,7 @@ Create Date: 2026-07-06
 
 from alembic import op
 import sqlalchemy as sa
+from sqlalchemy import inspect
 
 
 revision = "20260706_0004"
@@ -16,17 +17,24 @@ depends_on = None
 
 
 def upgrade() -> None:
-    op.add_column("products", sa.Column("headline", sa.String(length=220), nullable=True))
-    op.add_column("products", sa.Column("benefit", sa.Text(), nullable=True))
-    op.add_column("products", sa.Column("ingredients", sa.Text(), nullable=True))
-    op.add_column("products", sa.Column("accent", sa.String(length=20), nullable=True))
-    op.add_column("products", sa.Column("nutrition_json", sa.Text(), nullable=True))
-    op.add_column("products", sa.Column("proof_json", sa.Text(), nullable=True))
-    op.add_column("products", sa.Column("best_for_json", sa.Text(), nullable=True))
-    op.add_column("products", sa.Column("comparison_json", sa.Text(), nullable=True))
-    op.add_column("products", sa.Column("storage_json", sa.Text(), nullable=True))
-    op.add_column("products", sa.Column("notes_json", sa.Text(), nullable=True))
-    op.add_column("products", sa.Column("faqs_json", sa.Text(), nullable=True))
+    bind = op.get_bind()
+    existing = {column["name"] for column in inspect(bind).get_columns("products")}
+    columns = [
+        sa.Column("headline", sa.String(length=220), nullable=True),
+        sa.Column("benefit", sa.Text(), nullable=True),
+        sa.Column("ingredients", sa.Text(), nullable=True),
+        sa.Column("accent", sa.String(length=20), nullable=True),
+        sa.Column("nutrition_json", sa.Text(), nullable=True),
+        sa.Column("proof_json", sa.Text(), nullable=True),
+        sa.Column("best_for_json", sa.Text(), nullable=True),
+        sa.Column("comparison_json", sa.Text(), nullable=True),
+        sa.Column("storage_json", sa.Text(), nullable=True),
+        sa.Column("notes_json", sa.Text(), nullable=True),
+        sa.Column("faqs_json", sa.Text(), nullable=True),
+    ]
+    for column in columns:
+        if column.name not in existing:
+            op.add_column("products", column)
 
 
 def downgrade() -> None:

@@ -7,6 +7,7 @@ Create Date: 2026-07-06
 
 from alembic import op
 import sqlalchemy as sa
+from sqlalchemy import inspect
 
 
 revision = "20260706_0007"
@@ -16,6 +17,8 @@ depends_on = None
 
 
 def upgrade() -> None:
+    bind = op.get_bind()
+    existing_columns = {column["name"] for column in inspect(bind).get_columns("refunds")}
     if op.get_bind().dialect.name == "mysql":
         op.alter_column(
             "orders",
@@ -24,9 +27,13 @@ def upgrade() -> None:
             type_=sa.Enum("pending_payment", "placed", "milling", "packed", "shipped", "out_for_delivery", "delivered", "cancelled", "return_requested", "returned"),
             existing_nullable=False,
         )
-    op.add_column("refunds", sa.Column("provider_refund_id", sa.String(length=160), nullable=True))
-    op.add_column("refunds", sa.Column("payload_json", sa.Text(), nullable=True))
-    op.create_index(op.f("ix_refunds_provider_refund_id"), "refunds", ["provider_refund_id"])
+    if "provider_refund_id" not in existing_columns:
+        op.add_column("refunds", sa.Column("provider_refund_id", sa.String(length=160), nullable=True))
+    if "payload_json" not in existing_columns:
+        op.add_column("refunds", sa.Column("payload_json", sa.Text(), nullable=True))
+    existing_indexes = {index["name"] for index in inspect(bind).get_indexes("refunds")}
+    if "ix_refunds_provider_refund_id" not in existing_indexes:
+        op.create_index(op.f("ix_refunds_provider_refund_id"), "refunds", ["provider_refund_id"])
 
 
 def downgrade() -> None:
