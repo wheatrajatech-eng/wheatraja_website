@@ -37,6 +37,8 @@ class Settings(BaseSettings):
     jwt_algorithm: str = "HS256"
     access_token_minutes: int = 30
     refresh_token_days: int = 30
+    cookie_samesite: str = "lax"
+    cookie_secure: bool = False
     allowed_origins: str = "http://localhost:3000,http://localhost:3001,http://127.0.0.1:3000,http://127.0.0.1:3001"
     razorpay_key: str = ""
     razorpay_key_id: str = ""

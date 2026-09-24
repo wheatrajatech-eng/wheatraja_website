@@ -144,8 +144,9 @@ def verify_otp(request: Request, payload: OTPVerify, response: Response, db: Ses
 
     token = create_token(subject=phone, role=role)
     csrf_token = secrets.token_urlsafe(32)
-    response.set_cookie("wr_access", token, httponly=True, secure=settings.environment == "production", samesite="lax", max_age=1800)
-    response.set_cookie("wr_csrf", csrf_token, httponly=False, secure=settings.environment == "production", samesite="lax", max_age=1800)
+    secure_cookie = settings.cookie_secure or settings.environment == "production"
+    response.set_cookie("wr_access", token, httponly=True, secure=secure_cookie, samesite=settings.cookie_samesite, max_age=1800)
+    response.set_cookie("wr_csrf", csrf_token, httponly=False, secure=secure_cookie, samesite=settings.cookie_samesite, max_age=1800)
     return {
         "authenticated": True,
         "role": role,
@@ -170,7 +171,8 @@ def forgot_password(request: Request, payload: ForgotPasswordIn, db: Session = D
 @router.get("/csrf")
 def csrf(response: Response):
     token = secrets.token_urlsafe(32)
-    response.set_cookie("wr_csrf", token, httponly=False, secure=settings.environment == "production", samesite="lax", max_age=1800)
+    secure_cookie = settings.cookie_secure or settings.environment == "production"
+    response.set_cookie("wr_csrf", token, httponly=False, secure=secure_cookie, samesite=settings.cookie_samesite, max_age=1800)
     return {"csrf_token": token}
 
 
