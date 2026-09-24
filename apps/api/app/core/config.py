@@ -14,10 +14,10 @@ API_ENV_FILE = API_ROOT / ".env"
 def load_api_env() -> None:
     values = dotenv_values(API_ENV_FILE)
     for key, value in values.items():
-        if value is not None:
+        # Deployment environments (Render, Docker, etc.) must override local
+        # .env defaults. Only fill values that are not already exported.
+        if value is not None and key not in os.environ:
             os.environ[key] = value
-    if not values.get("DATABASE_URL"):
-        os.environ.pop("DATABASE_URL", None)
 
 
 load_api_env()
