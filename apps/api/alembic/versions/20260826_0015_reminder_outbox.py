@@ -7,6 +7,7 @@ Create Date: 2026-08-26
 
 from alembic import op
 import sqlalchemy as sa
+from sqlalchemy import inspect
 
 
 revision = "20260826_0015"
@@ -16,6 +17,42 @@ depends_on = None
 
 
 def upgrade() -> None:
+    # The initial migration uses SQLAlchemy metadata and older databases may
+    # not have received the reminder table yet. Create it here when needed;
+    # inspect first so fresh databases remain safe to upgrade as well.
+    bind = op.get_bind()
+    if not inspect(bind).has_table("reminder_schedules"):
+        op.create_table(
+            "reminder_schedules",
+            sa.Column("id", sa.Integer(), nullable=False),
+            sa.Column("schedule_key", sa.String(length=120), nullable=False),
+            sa.Column("user_id", sa.Integer(), nullable=False),
+            sa.Column("order_id", sa.Integer(), nullable=True),
+            sa.Column("subscription_id", sa.Integer(), nullable=True),
+            sa.Column("kind", sa.String(length=40), nullable=False, server_default="reorder"),
+            sa.Column("channel", sa.String(length=40), nullable=False, server_default="in_app"),
+            sa.Column("status", sa.String(length=40), nullable=False, server_default="queued"),
+            sa.Column("reminder_at", sa.DateTime(), nullable=False),
+            sa.Column("sent_at", sa.DateTime(), nullable=True),
+            sa.Column("last_sent_at", sa.DateTime(), nullable=True),
+            sa.Column("payload_json", sa.Text(), nullable=True),
+            sa.Column("created_at", sa.DateTime(), nullable=False),
+            sa.Column("updated_at", sa.DateTime(), nullable=False),
+            sa.Column("deleted_at", sa.DateTime(), nullable=True),
+            sa.ForeignKeyConstraint(["user_id"], ["users.id"]),
+            sa.ForeignKeyConstraint(["order_id"], ["orders.id"]),
+            sa.ForeignKeyConstraint(["subscription_id"], ["subscriptions.id"]),
+            sa.PrimaryKeyConstraint("id"),
+            sa.UniqueConstraint("schedule_key"),
+        )
+        op.create_index("ix_reminder_schedules_schedule_key", "reminder_schedules", ["schedule_key"])
+        op.create_index("ix_reminder_schedules_user_id", "reminder_schedules", ["user_id"])
+        op.create_index("ix_reminder_schedules_order_id", "reminder_schedules", ["order_id"])
+        op.create_index("ix_reminder_schedules_subscription_id", "reminder_schedules", ["subscription_id"])
+        op.create_index("ix_reminder_schedules_kind", "reminder_schedules", ["kind"])
+        op.create_index("ix_reminder_schedules_status", "reminder_schedules", ["status"])
+        op.create_index("ix_reminder_schedules_reminder_at", "reminder_schedules", ["reminder_at"])
+
     op.create_table(
         "reminder_delivery_outbox",
         sa.Column("id", sa.Integer(), nullable=False),

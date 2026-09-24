@@ -2,6 +2,7 @@ import logging
 import subprocess
 from pathlib import Path
 from sqlalchemy import create_engine, text
+from sqlalchemy.exc import SQLAlchemyError
 from app.core.config import settings
 from app.core.database import Base, SessionLocal, engine
 from app.services.store import ensure_seed_data
@@ -15,13 +16,25 @@ def create_mysql_database_if_missing() -> None:
         return
     logger.info("Preparing MySQL database config=%s", settings.sanitized_db_config)
     server_engine = create_engine(settings.mysql_server_url, pool_pre_ping=True)
-    with server_engine.connect() as connection:
-        connection.execute(text(
-            f"CREATE DATABASE IF NOT EXISTS `{settings.effective_db_name}` "
-            "CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
-        ))
-        connection.commit()
-    logger.info("Database `%s` is ready.", settings.effective_db_name)
+    try:
+        with server_engine.connect() as connection:
+            connection.execute(text(
+                f"CREATE DATABASE IF NOT EXISTS `{settings.effective_db_name}` "
+                "CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci"
+            ))
+            connection.commit()
+        logger.info("Database `%s` is ready.", settings.effective_db_name)
+    except SQLAlchemyError as exc:
+        # Managed demo hosts often provide an already-created database but deny
+        # CREATE DATABASE. Migrations below still validate the configured DB.
+        logger.warning(
+            "Could not create database `%s`; continuing with the configured "
+            "database. The DB user may not have CREATE DATABASE permission: %s",
+            settings.effective_db_name,
+            exc,
+        )
+    finally:
+        server_engine.dispose()
 
 
 def run_alembic_migrations() -> None:
