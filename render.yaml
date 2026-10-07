@@ -34,3 +34,5 @@ services:
         sync: false
       - key: TWILIO_VERIFY_SERVICE_SID
         sync: false
+      - key: ADMIN_PHONE_NUMBERS
+        sync: false
