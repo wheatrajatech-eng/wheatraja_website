@@ -48,11 +48,17 @@ def queue_otp(phone: str, purpose: str, db: Session | None = None, extra: dict |
     if settings.environment == "production" and settings.allow_dev_otp:
         raise HTTPException(status_code=500, detail="Static development OTP is disabled in production")
     expires = datetime.now(timezone.utc) + timedelta(minutes=5)
-    otp = generate_otp()
-    try:
-        send_otp(phone, otp)
-    except RuntimeError as exc:
-        raise HTTPException(status_code=502, detail=str(exc)) from exc
+    admin_dummy = (
+        purpose == "login"
+        and settings.admin_dummy_login_enabled
+        and phone in admin_phones()
+    )
+    otp = settings.admin_dummy_otp if admin_dummy else generate_otp()
+    if not admin_dummy:
+        try:
+            send_otp(phone, otp)
+        except RuntimeError as exc:
+            raise HTTPException(status_code=502, detail=str(exc)) from exc
     email = (extra or {}).get("email")
     if not email and db is not None:
         existing = db.query(User).filter_by(phone=phone).first()
@@ -61,7 +67,9 @@ def queue_otp(phone: str, purpose: str, db: Session | None = None, extra: dict |
         EmailService(db).send_otp_email(email, otp)
     OTP_STORE[phone] = {"otp": otp, "expires": expires, "attempts": 0, "purpose": purpose, **(extra or {})}
     response = {"message": "OTP queued", "phone": phone, "ttl_seconds": 300}
-    if settings.environment != "production" and settings.allow_dev_otp:
+    if admin_dummy:
+        response["demo_otp"] = settings.admin_dummy_otp
+    elif settings.environment != "production" and settings.allow_dev_otp:
         response["dev_otp"] = settings.otp_dev_code
     return response
 
@@ -107,8 +115,17 @@ def verify_otp(request: Request, payload: OTPVerify, response: Response, db: Ses
         db.add(LoginHistory(phone=phone, ip_address=get_remote_address(request), user_agent=request.headers.get("user-agent"), success=False))
         db.commit()
         raise HTTPException(status_code=429, detail="Too many OTP attempts")
+    admin_dummy = (
+        settings.admin_dummy_login_enabled
+        and phone in admin_phones()
+        and record.get("purpose") == "login"
+    )
     try:
-        valid = verify_remote_otp(phone, payload.otp) if settings.otp_provider == "twilio" else payload.otp == record["otp"]
+        valid = (
+            payload.otp == settings.admin_dummy_otp
+            if admin_dummy
+            else verify_remote_otp(phone, payload.otp) if settings.otp_provider == "twilio" else payload.otp == record["otp"]
+        )
     except RuntimeError as exc:
         raise HTTPException(status_code=502, detail=str(exc)) from exc
     if not valid:

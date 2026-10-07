@@ -36,3 +36,7 @@ services:
         sync: false
       - key: ADMIN_PHONE_NUMBERS
         sync: false
+      - key: ADMIN_DUMMY_LOGIN_ENABLED
+        sync: false
+      - key: ADMIN_DUMMY_OTP
+        sync: false

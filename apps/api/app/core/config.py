@@ -50,6 +50,8 @@ class Settings(BaseSettings):
     msg91_otp_url: str = "https://control.msg91.com/api/v5/otp"
     otp_provider: str = "msg91"
     admin_phone_numbers: str = "9999999999"
+    admin_dummy_login_enabled: bool = False
+    admin_dummy_otp: str = "246810"
     otp_dev_code: str = "246810"
     allow_dev_otp: bool = True
     csrf_protection_enabled: bool = False
@@ -178,6 +180,8 @@ class Settings(BaseSettings):
                 raise ValueError("Production requires ADMIN_PHONE_NUMBERS.")
             if self.sms_provider == "console":
                 raise ValueError("Production requires a real SMS provider.")
+            if self.admin_dummy_login_enabled:
+                raise ValueError("Production must not enable the admin dummy login.")
             if self.otp_dev_code == "246810":
                 raise ValueError("Production must not use the development OTP code.")
             if not self.csrf_protection_enabled:

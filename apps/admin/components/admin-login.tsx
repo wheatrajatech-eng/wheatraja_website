@@ -49,9 +49,9 @@ export function AdminLogin() {
     setMessage("");
     setDevOtp("");
     try {
-      const response = await api.post<{ message: string; dev_otp?: string }>("/auth/otp/request", { phone });
-      setDevOtp(response.dev_otp ?? "");
-      setMessage(response.dev_otp ? `Development OTP: ${response.dev_otp}` : response.message);
+      const response = await api.post<{ message: string; dev_otp?: string; demo_otp?: string }>("/auth/otp/request", { phone });
+      setDevOtp(response.demo_otp ?? response.dev_otp ?? "");
+      setMessage(response.demo_otp ? `Demo OTP: ${response.demo_otp}` : response.dev_otp ? `Development OTP: ${response.dev_otp}` : response.message);
       setStage("otp");
     } catch {
       setMessage("Could not request OTP. Check that the API is running.");
