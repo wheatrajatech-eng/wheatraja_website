@@ -1,7 +1,8 @@
 "use client";
 
-import { CheckCircle2, Loader2, ShieldCheck } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Loader2, ShieldCheck } from "lucide-react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 import { CartItem, clearCart, readCart, summarizeCart } from "@/lib/cart";
 import { csrfHeaders } from "@/lib/csrf";
@@ -30,6 +31,7 @@ declare global {
 }
 
 export function CheckoutClient() {
+  const router = useRouter();
   const [items, setItems] = useState<CartItem[]>([]);
   const [phone, setPhone] = useState("");
   const [otp, setOtp] = useState("");
@@ -42,6 +44,8 @@ export function CheckoutClient() {
   const [orderId, setOrderId] = useState("");
   const [loading, setLoading] = useState(false);
   const [delivery, setDelivery] = useState<DeliveryQuote | null>(null);
+  const [deliveryLoading, setDeliveryLoading] = useState(true);
+  const [deliveryError, setDeliveryError] = useState("");
   const [wallet, setWallet] = useState<WalletQuote | null>(null);
   const [walletAmount, setWalletAmount] = useState(0);
   const [quote, setQuote] = useState<OrderQuote | null>(null);
@@ -76,15 +80,26 @@ export function CheckoutClient() {
 
   useEffect(() => {
     let active = true;
+    const controller = new AbortController();
+    const timeout = window.setTimeout(() => controller.abort(), 8000);
+    setDeliveryLoading(true);
+    setDeliveryError("");
+    setDelivery(null);
     fetch(`${apiBase}/delivery/check`, {
       method: "POST",
       headers: { "Content-Type": "application/json", ...csrfHeaders() },
-      body: JSON.stringify({ pincode: selectedArea.pincode, distance_km: selectedArea.distance })
+      body: JSON.stringify({ pincode: selectedArea.pincode, distance_km: selectedArea.distance }),
+      signal: controller.signal
     })
-      .then((response) => response.json())
+      .then((response) => response.ok ? response.json() : Promise.reject(new Error("Delivery check failed")))
       .then((data) => { if (active) setDelivery(data); })
-      .catch(() => { if (active) setDelivery(null); });
-    return () => { active = false; };
+      .catch(() => { if (active) setDeliveryError("Unable to check delivery right now."); })
+      .finally(() => { if (active) setDeliveryLoading(false); });
+    return () => {
+      active = false;
+      controller.abort();
+      window.clearTimeout(timeout);
+    };
   }, [selectedArea.distance, selectedArea.pincode]);
 
   useEffect(() => {
@@ -283,6 +298,9 @@ export function CheckoutClient() {
   return (
     <section className="mx-auto grid max-w-7xl gap-6 px-6 pb-20 lg:grid-cols-[1.1fr_.9fr]">
       <div className="grid gap-5">
+        <button type="button" onClick={() => window.history.length > 1 ? router.back() : router.push("/cart")} className="inline-flex w-fit items-center gap-2 rounded-full border border-mitti/15 bg-white/85 px-4 py-2.5 text-sm font-bold text-mitti transition hover:border-forest hover:text-forest">
+          <ArrowLeft size={16} /> Go Back
+        </button>
         <div className="rounded-[18px] border border-white/70 bg-white/85 p-6 shadow-card backdrop-blur">
           <p className="text-sm font-bold text-wheat">01</p>
           <h2 className="mt-3 font-serif text-3xl text-forest">Phone OTP</h2>
@@ -300,11 +318,11 @@ export function CheckoutClient() {
             <select value={deliveryArea} onChange={(e) => setDeliveryArea(e.target.value)} className="rounded-full border border-mitti/15 bg-white px-4 py-3">
               {serviceAreas.map((area) => <option key={area.label}>{area.label}</option>)}
             </select>
-            <p className={`rounded-full px-5 py-3 text-sm font-bold ${delivery?.deliverable ? "bg-leaf/10 text-leaf" : "bg-red-50 text-red-700"}`}>
-              {!delivery ? "Checking..." : delivery.charge === null ? "Not deliverable" : delivery.charge === 0 ? "Free delivery" : `${formatPrice(delivery.charge)} delivery`}
+            <p className={`rounded-full px-5 py-3 text-sm font-bold ${delivery?.deliverable ? "bg-leaf/10 text-leaf" : deliveryLoading ? "bg-amber-50 text-amber-700" : "bg-red-50 text-red-700"}`}>
+              {deliveryLoading ? "Checking..." : deliveryError ? "Check unavailable" : delivery?.charge === null ? "Not deliverable" : delivery?.charge === 0 ? "Free delivery" : delivery ? `${formatPrice(delivery.charge)} delivery` : "Check unavailable"}
             </p>
           </div>
-          <p className="mt-3 text-sm font-semibold text-mitti/70">{delivery?.eta ?? "Checking ETA"}</p>
+          <p className="mt-3 text-sm font-semibold text-mitti/70">{deliveryLoading ? "Checking ETA" : deliveryError ? deliveryError : delivery?.eta ?? "ETA unavailable"}</p>
         </div>
         <div className="rounded-[18px] border border-white/70 bg-white/85 p-6 shadow-card backdrop-blur">
           <p className="text-sm font-bold text-wheat">03</p>

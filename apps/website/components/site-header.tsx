@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ArrowRight, Heart, Menu, User, X } from "lucide-react";
+import { ArrowRight, Heart, Menu, User, WalletCards, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { CartLink } from "@/components/cart-link";
 
@@ -70,6 +70,9 @@ export function SiteHeader() {
           <CartLink transparent={transparent} />
           <Link href="/account" aria-label="Account" className={`rounded-full p-2 transition hover:bg-stone-100 ${transparent ? "hover:bg-white/15" : ""}`}>
             <User className={`h-5 w-5 ${iconTone}`} />
+          </Link>
+          <Link href="/account/wallet" aria-label="WR Wallet" className={`rounded-full p-2 transition hover:bg-stone-100 ${transparent ? "hover:bg-white/15" : ""}`}>
+            <WalletCards className={`h-5 w-5 ${iconTone}`} />
           </Link>
           <Link href="/products" className="ml-1 hidden items-center gap-1.5 rounded-full bg-amber-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-amber-700 md:inline-flex">
             Shop Now <ArrowRight className="h-3.5 w-3.5" />
