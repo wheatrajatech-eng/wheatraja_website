@@ -36,6 +36,7 @@ export function CheckoutClient() {
   const [phone, setPhone] = useState("");
   const [otp, setOtp] = useState("");
   const [otpSent, setOtpSent] = useState(false);
+  const [otpVerified, setOtpVerified] = useState(false);
   const [address, setAddress] = useState("");
   const [deliveryArea, setDeliveryArea] = useState(serviceAreas[0].label);
   const [coupon, setCoupon] = useState("SAVE05");
@@ -128,33 +129,56 @@ export function CheckoutClient() {
   async function requestOtp() {
     setLoading(true);
     setStatus("");
+    setOtpSent(false);
+    setOtpVerified(false);
+    setOtp("");
     try {
+      const controller = new AbortController();
+      const timeout = window.setTimeout(() => controller.abort(), 12000);
       const response = await fetch(`${apiBase}/auth/otp/request`, {
         method: "POST",
         headers: { "Content-Type": "application/json", ...csrfHeaders() },
-        body: JSON.stringify({ phone })
+        body: JSON.stringify({ phone: phone.trim() }),
+        signal: controller.signal
       });
-      const data = await response.json();
+      window.clearTimeout(timeout);
+      const data = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(data.detail || "Could not send OTP");
       setOtpSent(true);
-      setStatus(data.dev_otp ? `Development OTP: ${data.dev_otp}` : "OTP sent");
+      setStatus(data.demo_otp || data.dev_otp ? `OTP sent. Demo OTP: ${data.demo_otp || data.dev_otp}` : "OTP sent to your phone");
     } catch (error) {
-      setStatus(error instanceof Error ? error.message : "Could not send OTP");
+      setStatus(error instanceof DOMException && error.name === "AbortError" ? "OTP request timed out. Please try again." : error instanceof Error ? error.message : "Could not send OTP");
     } finally {
       setLoading(false);
     }
   }
 
   async function verifyOtp() {
-    const response = await fetch(`${apiBase}/auth/otp/verify`, {
+    if (!otpSent) {
+      setStatus("Request an OTP first.");
+      return false;
+    }
+    setLoading(true);
+    setStatus("");
+    try {
+      const response = await fetch(`${apiBase}/auth/otp/verify`, {
       method: "POST",
       credentials: "include",
       headers: { "Content-Type": "application/json", ...csrfHeaders() },
-      body: JSON.stringify({ phone, otp })
-    });
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.detail || "Invalid OTP");
-    return data;
+        body: JSON.stringify({ phone: phone.trim(), otp: otp.trim() })
+      });
+      const data = await response.json().catch(() => ({}));
+      if (!response.ok) throw new Error(data.detail || "Invalid OTP");
+      setOtpVerified(true);
+      setStatus("OTP verified. You can place the order now.");
+      return true;
+    } catch (error) {
+      setOtpVerified(false);
+      setStatus(error instanceof Error ? error.message : "Could not verify OTP");
+      return false;
+    } finally {
+      setLoading(false);
+    }
   }
 
   async function syncGuestCartToBackend() {
@@ -233,7 +257,7 @@ export function CheckoutClient() {
     setLoading(true);
     setStatus("");
     try {
-      await verifyOtp();
+      if (!otpVerified && !(await verifyOtp())) return;
       await syncGuestCartToBackend();
       const orderResponse = await fetch(`${apiBase}/orders`, {
         method: "POST",
@@ -308,7 +332,10 @@ export function CheckoutClient() {
             <input value={phone} onChange={(e) => setPhone(e.target.value)} className="rounded-full border border-mitti/15 px-4 py-3" placeholder="+91 mobile number" />
             <button onClick={requestOtp} disabled={loading || phone.length < 10} className="rounded-full bg-forest px-5 py-3 font-bold text-cream disabled:opacity-50">{loading ? "Sending..." : "Send OTP"}</button>
           </div>
-          {otpSent ? <input value={otp} onChange={(e) => setOtp(e.target.value)} className="mt-3 w-full rounded-full border border-mitti/15 px-4 py-3" placeholder="Enter OTP" /> : null}
+          <div className="mt-3 grid gap-3 md:grid-cols-[1fr_auto]">
+            <input value={otp} onChange={(e) => { setOtp(e.target.value.replace(/\D/g, "").slice(0, 6)); setOtpVerified(false); }} inputMode="numeric" autoComplete="one-time-code" maxLength={6} className="rounded-full border border-mitti/15 px-4 py-3" placeholder="Enter 6-digit OTP" />
+            <button type="button" onClick={verifyOtp} disabled={!otpSent || loading || otp.length < 4 || otpVerified} className="rounded-full border border-forest px-5 py-3 font-bold text-forest disabled:opacity-50">{otpVerified ? "OTP Verified" : loading ? "Verifying..." : "Verify OTP"}</button>
+          </div>
         </div>
         <div className="rounded-[18px] border border-white/70 bg-white/85 p-6 shadow-card backdrop-blur">
           <p className="text-sm font-bold text-wheat">02</p>
