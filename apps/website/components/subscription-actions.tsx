@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { addToCart } from "@/lib/cart";
 import { Weight } from "@/lib/cart";
+import { csrfHeaders } from "@/lib/csrf";
 
 const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8001/api/v1";
 
@@ -19,16 +20,17 @@ export function SubscriptionAction({ slug }: { slug: string }) {
     setLoading(true);
     setStatus("");
     try {
+      const startDate = nextDeliveryAt ? `${nextDeliveryAt}T00:00:00Z` : null;
       const response = await fetch(`${apiBase}/subscriptions`, {
         method: "POST",
         credentials: "include",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", ...csrfHeaders() },
         body: JSON.stringify({
           slug,
           weight_kg: weight,
           quantity,
           cadence,
-          next_delivery_at: nextDeliveryAt || null,
+          next_delivery_at: startDate,
           wallet_auto_deduct: billingMode === "wallet"
         })
       });
@@ -37,11 +39,12 @@ export function SubscriptionAction({ slug }: { slug: string }) {
         setStatus("Added subscription pack to cart. Login at checkout to activate.");
         return;
       }
-      const data = await response.json();
+      const data = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(data.detail || "Could not create subscription");
       setStatus("Subscription created. Manage it from your account.");
-    } catch (error) {
-      setStatus(error instanceof Error ? error.message : "Could not create subscription");
+    } catch {
+      addToCart({ slug, weight, quantity, subscription: true });
+      setStatus("Subscription service is unavailable, so the subscription pack was added to your cart. Login at checkout to activate.");
     } finally {
       setLoading(false);
     }
