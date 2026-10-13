@@ -352,7 +352,7 @@ export function CheckoutClient() {
           <p className="flex justify-between"><span>Delivery</span><span>{delivery?.charge === null ? "Blocked" : formatPrice(quote?.delivery_charge ?? delivery?.charge ?? 0)}</span></p>
           <p className="flex justify-between text-leaf"><span>Wallet used</span><span>-{formatPrice(quote?.wallet_applied ?? 0)}</span></p>
           <p className="flex justify-between"><span>Wallet earned</span><span>{formatPrice(quote?.wallet_earned ?? summary.walletEarned)}</span></p>
-          <p className="flex justify-between"><span>Free gift</span><span>{quote?.free_gift ?? summary.freeGift ? "Included" : "Rs. 999+"}</span></p>
+          <p className="flex justify-between"><span>Gift eligibility</span><span>{(quote?.free_gift ?? summary.freeGift) ? "Included: 1 KG Multigrain" : "Available above Rs. 999"}</span></p>
           <p className="flex justify-between border-t border-mitti/10 pt-4 text-lg font-bold"><span>Payable</span><span>{payable === null ? "-" : formatPrice(payable ?? 0)}</span></p>
         </div>
         {orderId ? <p className="mt-5 flex items-center gap-2 rounded-[14px] bg-leaf/10 p-4 text-sm font-semibold text-leaf"><CheckCircle2 size={18} /> Backend order: {orderId}</p> : null}

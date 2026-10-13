@@ -126,7 +126,7 @@ export function CartPageClient() {
           <p className="flex justify-between"><span>Subtotal</span><span>{formatPrice(summary.subtotal)}</span></p>
           <p className="flex justify-between text-leaf"><span>Coupon</span><span>-{formatPrice(summary.couponDiscount)}</span></p>
           <p className="flex justify-between"><span>WR Wallet earned</span><span>{summary.walletEarned} pts</span></p>
-          <p className="flex justify-between"><span>Free gift</span><span>{summary.freeGift ? "1 KG Multigrain" : "Above Rs. 999"}</span></p>
+          <p className="flex justify-between"><span>Gift eligibility</span><span>{summary.freeGift ? "Included: 1 KG Multigrain" : "Available above Rs. 999"}</span></p>
           <p className="flex justify-between border-t border-mitti/10 pt-4 text-lg font-bold"><span>Total</span><span>{formatPrice(summary.total)}</span></p>
         </div>
         <div className="mt-6">
