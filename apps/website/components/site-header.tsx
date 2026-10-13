@@ -44,8 +44,8 @@ export function SiteHeader() {
   if (pathname.startsWith("/admin")) return null;
 
   const transparent = pathname === "/" && !scrolled && !menuOpen;
-  const linkTone = transparent ? "text-white/85" : "text-stone-600";
-  const iconTone = transparent ? "text-white" : "text-stone-700";
+  const linkTone = transparent ? "text-white drop-shadow-[0_2px_5px_rgba(0,0,0,0.8)]" : "text-stone-600";
+  const iconTone = transparent ? "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" : "text-stone-700";
 
   return (
     <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${transparent ? "bg-transparent" : "border-b border-stone-100 bg-white/96 shadow-sm backdrop-blur-md"}`}>
@@ -57,7 +57,7 @@ export function SiteHeader() {
 
         <nav className={`hidden items-center gap-6 text-sm font-medium md:flex ${linkTone}`}>
           {desktopLinks.map(([label, href]) => (
-            <Link key={href} href={href} className={`transition hover:opacity-100 ${pathname === href ? "font-semibold opacity-100" : "opacity-75"}`}>
+            <Link key={href} href={href} className={`transition hover:opacity-100 ${pathname === href ? "font-semibold opacity-100" : transparent ? "opacity-95" : "opacity-75"}`}>
               {label}
             </Link>
           ))}
