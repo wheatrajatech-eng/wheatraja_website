@@ -104,7 +104,24 @@ export function CartPageClient() {
           <input value={couponInput} onChange={(event) => setCouponInput(event.target.value)} className="min-w-0 flex-1 rounded-full border border-mitti/15 px-4 py-3" placeholder="SAVE05" aria-label="Coupon code" />
           <button type="submit" className="shrink-0 rounded-full bg-forest px-4 py-3 text-sm font-bold text-cream transition hover:bg-leaf">Apply</button>
         </form>
-        {couponMessage ? <p aria-live="polite" className={`mt-2 text-xs font-semibold ${coupon ? "text-leaf" : "text-red-600"}`}>{couponMessage}</p> : null}
+        {couponMessage ? (
+          <p aria-live="polite" className={`mt-2 flex items-center justify-between gap-3 text-xs font-semibold ${coupon ? "text-leaf" : "text-red-600"}`}>
+            <span>{couponMessage}</span>
+            {coupon ? (
+              <button
+                type="button"
+                onClick={() => {
+                  setCoupon("");
+                  setCouponInput("");
+                  setCouponMessage("");
+                }}
+                className="shrink-0 font-bold text-stone-600 underline underline-offset-2 hover:text-stone-900"
+              >
+                Remove Coupon
+              </button>
+            ) : null}
+          </p>
+        ) : null}
         <div className="mt-5 space-y-3 text-sm">
           <p className="flex justify-between"><span>Subtotal</span><span>{formatPrice(summary.subtotal)}</span></p>
           <p className="flex justify-between text-leaf"><span>Coupon</span><span>-{formatPrice(summary.couponDiscount)}</span></p>
