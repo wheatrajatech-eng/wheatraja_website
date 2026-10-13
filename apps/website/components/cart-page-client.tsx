@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Gift, ShieldCheck, Truck } from "lucide-react";
 import { useEffect, useState } from "react";
+import type { FormEvent } from "react";
 import { ButtonLink } from "@/components/ui";
 import { CartItem, readCart, summarizeCart, updateCartItem } from "@/lib/cart";
 import { products } from "@/lib/data";
@@ -14,7 +15,9 @@ const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8001/a
 
 export function CartPageClient() {
   const [items, setItems] = useState<CartItem[]>([]);
-  const [coupon, setCoupon] = useState("SAVE05");
+  const [couponInput, setCouponInput] = useState("");
+  const [coupon, setCoupon] = useState("");
+  const [couponMessage, setCouponMessage] = useState("");
 
   useEffect(() => {
     const refresh = () => setItems(readCart());
@@ -24,6 +27,18 @@ export function CartPageClient() {
   }, []);
 
   const summary = summarizeCart(items, coupon);
+
+  function applyCoupon(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    const code = couponInput.trim().toUpperCase();
+    if (code === "SAVE05") {
+      setCoupon(code);
+      setCouponMessage("Coupon applied: 5% off");
+      return;
+    }
+    setCoupon("");
+    setCouponMessage(code ? "Invalid coupon code." : "Enter a coupon code first.");
+  }
 
   useEffect(() => {
     const sessionId = window.localStorage.getItem("wr_session_id") || crypto.randomUUID();
@@ -85,7 +100,11 @@ export function CartPageClient() {
           <p className="flex items-center gap-2"><Gift size={16} className="text-leaf" /> Free 1 KG Multigrain above Rs. 999.</p>
         </div>
         <label className="mt-5 block text-sm font-semibold text-mitti">Coupon</label>
-        <input value={coupon} onChange={(event) => setCoupon(event.target.value)} className="mt-2 w-full rounded-full border border-mitti/15 px-4 py-3" placeholder="SAVE05" />
+        <form onSubmit={applyCoupon} className="mt-2 flex gap-2">
+          <input value={couponInput} onChange={(event) => setCouponInput(event.target.value)} className="min-w-0 flex-1 rounded-full border border-mitti/15 px-4 py-3" placeholder="SAVE05" aria-label="Coupon code" />
+          <button type="submit" className="shrink-0 rounded-full bg-forest px-4 py-3 text-sm font-bold text-cream transition hover:bg-leaf">Apply</button>
+        </form>
+        {couponMessage ? <p aria-live="polite" className={`mt-2 text-xs font-semibold ${coupon ? "text-leaf" : "text-red-600"}`}>{couponMessage}</p> : null}
         <div className="mt-5 space-y-3 text-sm">
           <p className="flex justify-between"><span>Subtotal</span><span>{formatPrice(summary.subtotal)}</span></p>
           <p className="flex justify-between text-leaf"><span>Coupon</span><span>-{formatPrice(summary.couponDiscount)}</span></p>
