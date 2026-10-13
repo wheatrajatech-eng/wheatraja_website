@@ -23,8 +23,8 @@ export function CartLink({ transparent = false }: { transparent?: boolean }) {
     <Link href="/cart" aria-label={`Cart${count ? ` with ${count} items` : ""}`} className={`relative rounded-full p-2 transition ${transparent ? "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] hover:bg-white/15" : "text-stone-700 hover:bg-stone-100"}`}>
       <ShoppingBag size={20} />
       {count ? (
-        <span className="absolute -right-1 -top-1 grid h-5 min-w-5 place-items-center rounded-full bg-amber-600 px-1 text-[11px] font-bold text-white">
-          {count}
+        <span aria-live="polite" className="absolute -right-2 -top-1 grid h-5 min-w-6 place-items-center rounded-full bg-amber-600 px-1 text-[11px] font-bold text-white shadow-sm">
+          +{count}
         </span>
       ) : null}
     </Link>
