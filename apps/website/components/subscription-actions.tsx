@@ -20,6 +20,11 @@ export function SubscriptionAction({ slug }: { slug: string }) {
     setLoading(true);
     setStatus("");
     try {
+      if (typeof document !== "undefined" && !document.cookie.includes("wr_access=")) {
+        addToCart({ slug, weight, quantity, subscription: true });
+        setStatus("Added subscription pack to cart. Login at checkout to activate.");
+        return;
+      }
       const startDate = nextDeliveryAt ? `${nextDeliveryAt}T00:00:00Z` : null;
       const response = await fetch(`${apiBase}/subscriptions`, {
         method: "POST",
