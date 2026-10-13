@@ -64,7 +64,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-1.5">
-          <Link href="/reviews" aria-label="Reviews" className={`rounded-full p-2 transition hover:bg-stone-100 ${transparent ? "hover:bg-white/15" : ""}`}>
+          <Link href="/reviews" aria-label="Reviews" className={`rounded-full p-2 transition hover:bg-stone-100 ${transparent ? "text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)] hover:bg-white/15" : ""}`}>
             <Heart className={`h-5 w-5 ${iconTone}`} />
           </Link>
           <CartLink transparent={transparent} />
