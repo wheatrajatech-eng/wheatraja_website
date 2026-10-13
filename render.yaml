@@ -27,7 +27,7 @@ services:
       - key: JWT_SECRET
         generateValue: true
       - key: ALLOWED_ORIGINS
-        value: http://localhost:3000,http://localhost:3001
+        value: https://wheatraja-admin.vercel.app,https://wheatraja-website-website-self.vercel.app
       - key: TWILIO_ACCOUNT_SID
         sync: false
       - key: TWILIO_AUTH_TOKEN
