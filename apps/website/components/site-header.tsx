@@ -52,7 +52,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 md:px-10">
         <Link href="/" className="flex shrink-0 items-center gap-2.5">
           <Image src="/assets/logo/WheatRajaLogo.png" alt="Wheat Raja" width={112} height={46} className="h-10 w-auto object-contain" priority />
-          <span className={`hidden font-serif text-xl font-bold tracking-tight sm:inline ${transparent ? "text-white" : "text-stone-900"}`}>Wheat Raja</span>
+          <span className={`hidden font-serif text-xl font-bold tracking-tight sm:inline ${transparent ? "text-white drop-shadow-[0_2px_5px_rgba(0,0,0,0.8)]" : "text-stone-900"}`}>Wheat Raja</span>
         </Link>
 
         <nav className={`hidden items-center gap-6 text-sm font-medium md:flex ${linkTone}`}>
