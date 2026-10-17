@@ -100,12 +100,12 @@ export function CartPageClient() {
           <p className="flex items-center gap-2"><Gift size={16} className="text-leaf" /> Free 1 KG Multigrain above Rs. 999.</p>
         </div>
         <label className="mt-5 block text-sm font-semibold text-mitti">Coupon</label>
-        <form onSubmit={applyCoupon} className="mt-2 flex gap-2">
-          <input value={couponInput} onChange={(event) => setCouponInput(event.target.value)} className="min-w-0 flex-1 rounded-full border border-mitti/15 px-4 py-3" placeholder="SAVE05" aria-label="Coupon code" />
-          <button type="submit" className="shrink-0 rounded-full bg-forest px-4 py-3 text-sm font-bold text-cream transition hover:bg-leaf">Apply</button>
+        <form onSubmit={applyCoupon} className="mt-2 grid gap-2">
+          <input value={couponInput} onChange={(event) => setCouponInput(event.target.value)} className="w-full rounded-full border border-mitti/15 px-4 py-3" placeholder="SAVE05" aria-label="Coupon code" />
+          <button type="submit" className="w-full rounded-full bg-forest px-4 py-3 text-sm font-bold text-cream transition hover:bg-leaf">Apply Coupon</button>
         </form>
         {couponMessage ? (
-          <p aria-live="polite" className={`mt-2 flex items-center justify-between gap-3 text-xs font-semibold ${coupon ? "text-leaf" : "text-red-600"}`}>
+          <p aria-live="polite" className={`mt-3 flex flex-wrap items-center justify-between gap-3 rounded-[10px] px-3 py-2 text-xs font-semibold ${coupon ? "bg-leaf/10 text-leaf" : "bg-red-50 text-red-600"}`}>
             <span>{couponMessage}</span>
             {coupon ? (
               <button
