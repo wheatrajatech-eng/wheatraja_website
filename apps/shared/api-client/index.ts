@@ -15,7 +15,7 @@ export class ApiError extends Error {
 }
 
 export function createApiClient(options: ApiClientOptions = {}) {
-  const baseUrl = options.baseUrl ?? process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8001/api/v1";
+  const baseUrl = options.baseUrl ?? (typeof window !== "undefined" ? "/api/v1" : process.env.NEXT_PUBLIC_API_BASE_URL ?? (process.env.VERCEL ? "https://wheatraja-api.onrender.com/api/v1" : "http://localhost:8000/api/v1"));
   const credentials = options.credentials ?? "include";
 
   async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
