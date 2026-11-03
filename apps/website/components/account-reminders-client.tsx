@@ -3,7 +3,7 @@
 import { Bell, CheckCircle2 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 
-const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8001/api/v1";
+const apiBase = typeof window !== "undefined" ? "/api/v1" : process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api/v1";
 
 type Reminder = {
   id: number;

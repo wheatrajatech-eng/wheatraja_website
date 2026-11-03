@@ -5,7 +5,7 @@ import { ApiError, createApiClient } from "../../shared/api-client";
 import type { AdminModuleKey } from "@/lib/admin-config";
 
 const api = createApiClient();
-const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8001/api/v1";
+const apiBase = typeof window !== "undefined" ? "/api/v1" : process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api/v1";
 
 type Row = Record<string, unknown>;
 type CommerceKey = Extract<AdminModuleKey, "products" | "orders" | "inventory" | "returns" | "refunds" | "shipments" | "customers" | "payments" | "banners" | "blogs">;

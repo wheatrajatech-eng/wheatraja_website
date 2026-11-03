@@ -7,7 +7,7 @@ import { formatPrice } from "@/lib/utils";
 import { csrfHeaders } from "@/lib/csrf";
 import { addToCart } from "@/lib/cart";
 
-const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8001/api/v1";
+const apiBase = typeof window !== "undefined" ? "/api/v1" : process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api/v1";
 
 type Order = { id: string; status: string; payment_status?: string; total: number; delivery_area?: string; created_at: string; items: { slug: string; name: string; weight_kg: 1 | 5 | 10; quantity: number; subscription?: boolean }[] };
 type Wallet = { balance: number; transactions: { id: number; amount: number; transaction_type: string; reason: string; created_at: string }[] };

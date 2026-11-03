@@ -11,7 +11,7 @@ export function SignOutButton() {
     setBusy(true);
     setError("");
     try {
-      const base = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8001/api/v1";
+      const base = "/api/v1";
       const response = await fetch(`${base}/auth/logout`, { method: "POST", credentials: "include", headers: csrfHeaders() });
       if (!response.ok) throw new Error("Sign out failed. Please try again.");
       window.location.replace("/login");

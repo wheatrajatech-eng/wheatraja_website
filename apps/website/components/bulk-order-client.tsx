@@ -6,7 +6,7 @@ import { useMemo, useState } from "react";
 import { BadgeCheck, Building2, Check, Clock3, Loader2, MessageCircle, PackageCheck, Send, Sparkles, UtensilsCrossed } from "lucide-react";
 import { formatPrice } from "@/lib/utils";
 
-const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8001/api/v1";
+const apiBase = typeof window !== "undefined" ? "/api/v1" : process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api/v1";
 
 const skuOptions = [
   { id: "normal-wheat-roti", label: "Normal Wheat Roti", unitPrice: 2, note: "Everyday office lunch staple" },

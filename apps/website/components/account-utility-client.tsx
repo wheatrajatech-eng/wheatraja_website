@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { csrfHeaders } from "@/lib/csrf";
 
-const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8001/api/v1";
+const apiBase = typeof window !== "undefined" ? "/api/v1" : process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api/v1";
 
 export function AccountUtilityClient({ mode }: { mode: "profile" | "addresses" | "refer" | "subscriptions" }) {
   const [data, setData] = useState<any>(null);

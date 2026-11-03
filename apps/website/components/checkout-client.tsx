@@ -9,7 +9,7 @@ import { csrfHeaders } from "@/lib/csrf";
 import { products } from "@/lib/data";
 import { formatPrice } from "@/lib/utils";
 
-const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8001/api/v1";
+const apiBase = typeof window !== "undefined" ? "/api/v1" : process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8000/api/v1";
 
 const serviceAreas = [
   { label: "Sector 78 / 76 / 77", pincode: "201301", distance: 8 },

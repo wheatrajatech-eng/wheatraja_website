@@ -10,7 +10,7 @@ export async function proxy(request: NextRequest) {
     url.searchParams.set("next", request.nextUrl.pathname);
     return NextResponse.redirect(url);
   }
-  const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL ?? "http://localhost:8001/api/v1";
+  const apiBase = process.env.NEXT_PUBLIC_API_BASE_URL ?? (process.env.VERCEL ? "https://wheatraja-api.onrender.com/api/v1" : "http://localhost:8000/api/v1");
   try {
     const response = await fetch(`${apiBase}/auth/me`, {
       headers: { cookie: `wr_access=${cookie.value}` },
