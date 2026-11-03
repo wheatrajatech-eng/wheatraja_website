@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { FloatingActions } from "@/components/floating-actions";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -34,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }} />
         <SiteHeader />
         {children}
-        <a href="https://wa.me/919876543210" className="fixed bottom-5 right-5 z-50 rounded-full bg-leaf px-5 py-3 text-sm font-bold text-white shadow-glow">WhatsApp</a>
+        <FloatingActions />
         <SiteFooter />
       </body>
     </html>
