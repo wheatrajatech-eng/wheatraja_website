@@ -20,18 +20,25 @@ export function createApiClient(options: ApiClientOptions = {}) {
 
   async function request<T>(path: string, init: RequestInit = {}): Promise<T> {
     const csrf = typeof document === "undefined" ? "" : document.cookie.split("; ").find((row) => row.startsWith("wr_csrf="))?.split("=")[1] ?? "";
-    const response = await fetch(`${baseUrl}${path}`, {
-      ...init,
-      credentials,
-      headers: {
-        "Content-Type": "application/json",
-        ...(csrf && init.method && init.method !== "GET" ? { "X-CSRF-Token": decodeURIComponent(csrf) } : {}),
-        ...(init.headers ?? {})
-      }
-    });
-    const payload = await response.json().catch(() => null);
-    if (!response.ok) throw new ApiError(response.status, payload);
-    return payload as T;
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
+    try {
+      const response = await fetch(`${baseUrl}${path}`, {
+        ...init,
+        credentials,
+        signal: controller.signal,
+        headers: {
+          "Content-Type": "application/json",
+          ...(csrf && init.method && init.method !== "GET" ? { "X-CSRF-Token": decodeURIComponent(csrf) } : {}),
+          ...(init.headers ?? {})
+        }
+      });
+      const payload = await response.json().catch(() => null);
+      if (!response.ok) throw new ApiError(response.status, payload);
+      return payload as T;
+    } finally {
+      clearTimeout(timeout);
+    }
   }
 
   return {
