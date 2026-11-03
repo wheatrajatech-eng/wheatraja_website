@@ -102,9 +102,9 @@ function mapProduct(product: ApiProduct): Product {
 export async function getCatalogProducts() {
   try {
     const rows = await apiGet<ApiProduct[]>("/products");
-    return rows.map(mapProduct);
+    return rows.length ? rows.map(mapProduct) : fallbackProducts;
   } catch {
-    return [];
+    return fallbackProducts;
   }
 }
 
@@ -112,7 +112,7 @@ export async function getCatalogProduct(slug: string) {
   try {
     return mapProduct(await apiGet<ApiProduct>(`/products/${slug}`));
   } catch {
-    return undefined;
+    return fallbackProducts.find((product) => product.slug === slug);
   }
 }
 
