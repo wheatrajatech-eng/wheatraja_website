@@ -39,7 +39,7 @@ export function LoginOtpForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(body)
       });
-      const data = await response.json();
+      const data = await response.json().catch(() => ({ detail: "The authentication service is unavailable. Please try again in a moment." }));
       setSent(response.ok);
       setApiMessage(data, "OTP sent");
       if (!response.ok && response.status === 404) {
@@ -48,6 +48,9 @@ export function LoginOtpForm() {
       if (!response.ok && response.status === 409) {
         setMode("login");
       }
+    } catch {
+      setSent(false);
+      setMessage("Authentication service is unavailable. Please try again in a moment.");
     } finally {
       setLoading(false);
     }
@@ -63,12 +66,14 @@ export function LoginOtpForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ phone, otp })
       });
-      const data = await response.json();
+      const data = await response.json().catch(() => ({ detail: "The authentication service is unavailable. Please try again in a moment." }));
       setMessage(response.ok ? (mode === "signup" ? "Account created. Opening your dashboard..." : "Logged in. Opening your dashboard...") : data.detail || "Invalid OTP");
       if (response.ok) {
         const next = new URLSearchParams(window.location.search).get("next") || (data.role === "admin" ? "/admin" : "/account");
         window.setTimeout(() => { window.location.href = next; }, 500);
       }
+    } catch {
+      setMessage("Authentication service is unavailable. Please try again in a moment.");
     } finally {
       setLoading(false);
     }
