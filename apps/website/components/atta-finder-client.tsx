@@ -55,9 +55,9 @@ export function AttaFinderClient() {
 
   return (
     <section className="relative isolate min-h-[calc(100vh-4rem)] overflow-hidden bg-[#fffdf7] px-5 py-12 md:px-10 md:py-20">
-      <div className="pointer-events-none fixed inset-0 z-0">
-        <Image src="/assets/banners/atta-finder-family.png" alt="" fill priority sizes="100vw" className="object-cover object-center opacity-35" />
-        <div className="absolute inset-0 bg-[#fffdf7]/68" />
+      <div className="pointer-events-none fixed inset-0 z-[1]">
+        <Image src="/assets/banners/atta-finder-family.png" alt="" fill priority sizes="100vw" className="object-cover object-center opacity-75" />
+        <div className="absolute inset-0 bg-[#fffdf7]/38" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl">
@@ -76,7 +76,7 @@ export function AttaFinderClient() {
         </div>
 
         <div className="grid items-start gap-7 lg:grid-cols-[.78fr_1.22fr]">
-          <div className="rounded-[32px] border border-[#e8dcc8] bg-[#fffdf7]/92 p-6 shadow-[0_24px_80px_rgba(104,65,42,.12)] backdrop-blur-md md:p-8">
+          <div className="rounded-[32px] border border-[#e8dcc8] bg-[#fffdf7]/84 p-6 shadow-[0_24px_80px_rgba(104,65,42,.12)] backdrop-blur-md md:p-8">
             <div className="mb-7 flex items-center gap-3">
               {["01", "02", "03"].map((step, index) => <div key={step} className="flex items-center gap-3"><span className={`grid h-9 w-9 place-items-center rounded-full text-xs font-black ${index === 0 ? "bg-[#c98218] text-white" : "bg-[#f7eedc] text-[#a9600f]"}`}>{step}</span>{index < 2 ? <span className="h-px w-8 bg-[#e8dcc8]" /> : null}</div>)}
             </div>
@@ -106,7 +106,7 @@ export function AttaFinderClient() {
                 <p className="mt-4 max-w-2xl text-sm leading-7 text-white/72">Estimated monthly usage: {result.estimated_monthly_kg} KG. {result.subscription_recommended ? "A subscription will keep your fresh-milled routine effortless." : "A one-time pack is a great place to start."}</p>
               </div>
             ) : (
-              <div className="relative overflow-hidden rounded-[32px] border border-[#e8dcc8] bg-[#fffdf7]/88 p-7 shadow-[0_20px_60px_rgba(104,65,42,.09)] backdrop-blur-md md:p-8">
+              <div className="relative overflow-hidden rounded-[32px] border border-[#e8dcc8] bg-[#fffdf7]/80 p-7 shadow-[0_20px_60px_rgba(104,65,42,.09)] backdrop-blur-md md:p-8">
                 <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-[#e7b95e]/20 blur-2xl" />
                 <p className="relative text-xs font-black uppercase tracking-[.18em] text-[#a9600f]">Your result appears here</p>
                 <h2 className="relative mt-3 max-w-xl font-serif text-3xl text-[#3b2418] md:text-4xl">A calmer way to choose your daily flour.</h2>
