@@ -8,7 +8,7 @@ export function SiteFooter() {
   const pathname = usePathname();
   if (pathname.startsWith("/admin")) return null;
   return (
-    <footer className="bg-[#3b2418] px-6 py-14 text-[#fffaf0]">
+    <footer className="relative z-20 bg-[#3b2418] px-6 py-14 text-[#fffaf0]">
       <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[1.2fr_1fr_1fr_1fr_1fr]">
         <div>
           <Image src="/assets/logo/WheatRajaLogo.png" alt="WheatRaja logo" width={150} height={70} className="h-16 w-auto object-contain" />
