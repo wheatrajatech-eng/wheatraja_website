@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Award, BadgeCheck, Check, Clock, Heart, Leaf, Package, RefreshCw, Shield, Truck, Zap } from "lucide-react";
 import { ProductCard } from "@/components/product-card";
-import { getCatalogBanners, getCatalogProducts } from "@/lib/catalog";
+import { getCatalogProducts } from "@/lib/catalog";
 import { reviews, trustProofs } from "@/lib/data";
 import { formatPrice } from "@/lib/utils";
 
@@ -19,8 +19,6 @@ const features = [
 
 export default async function HomePage() {
   const products = await getCatalogProducts();
-  const banners = await getCatalogBanners();
-  const heroBanner = banners[0];
   const subscriptionProduct = products[0];
 
   return (
@@ -33,6 +31,7 @@ export default async function HomePage() {
           loop
           playsInline
           preload="metadata"
+          poster="/assets/banners/wheat-chakki-hero.png"
           aria-hidden="true"
         >
           <source src="/assets/banners/home-hero-loop.mp4" type="video/mp4" />
@@ -44,13 +43,13 @@ export default async function HomePage() {
             <span className="h-1.5 w-1.5 shrink-0 animate-pulse rounded-full bg-[#c98218]" />
             Freshly Milled After Every Order
           </div>
-          <h1 className="mb-7 font-serif text-5xl font-bold leading-[1.04] tracking-tight text-[#3b2418] sm:text-7xl md:text-8xl">{heroBanner?.title ?? <>Freshly Milled<br /><em className="not-italic text-[#c98218]">Atta.</em> Delivered<br />Fresh. Every Time.</>}</h1>
+          <h1 className="mb-7 font-serif text-5xl font-bold leading-[1.04] tracking-tight text-[#3b2418] sm:text-7xl md:text-8xl">Freshly Milled<br /><em className="not-italic text-[#c98218]">Atta.</em> Delivered<br />Fresh. Every Time.</h1>
           <p className="mb-10 max-w-xl text-lg leading-relaxed text-[#68412a]/80 md:text-xl">
-            {heroBanner?.subtitle ?? "Premium chakki fresh atta made after you order. Never stale, never shelf-first, nutritious in every roti."}
+            Premium chakki fresh atta made after you order. Never stale, never shelf-first, nutritious in every roti.
           </p>
           <div className="mb-10 flex flex-col items-start gap-4 sm:flex-row">
-            <Link href={heroBanner?.link_url ?? "/products"} className="inline-flex items-center gap-2 rounded-full bg-[#c98218] px-9 py-4 text-base font-bold text-white shadow-xl shadow-[#a9600f]/20 transition-all hover:-translate-y-0.5 hover:bg-[#a9600f]">
-              {heroBanner?.cta_text ?? "Shop Now"} <ArrowRight className="h-4 w-4" />
+            <Link href="/products" className="inline-flex items-center gap-2 rounded-full bg-[#c98218] px-9 py-4 text-base font-bold text-white shadow-xl shadow-[#a9600f]/20 transition-all hover:-translate-y-0.5 hover:bg-[#a9600f]">
+              Shop Now <ArrowRight className="h-4 w-4" />
             </Link>
             <Link href="/subscription" className="inline-flex items-center gap-2 rounded-full border border-[#68412a]/25 bg-[#fffdf7]/65 px-9 py-4 text-base font-semibold text-[#68412a] backdrop-blur-sm transition-all hover:bg-white">
               Subscribe & Save 10%
