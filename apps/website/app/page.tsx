@@ -24,18 +24,14 @@ export default async function HomePage() {
   return (
     <main className="min-h-screen bg-[#fffdf7]">
       <section className="relative flex min-h-[720px] items-center overflow-hidden bg-[#f7eedc] pt-16 md:min-h-screen">
-        <video
-          className="absolute inset-0 z-[1] h-full w-full object-cover object-center opacity-100"
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          poster="/assets/banners/wheat-chakki-hero.png"
-          aria-hidden="true"
-        >
-          <source src="/assets/banners/home-hero-loop.mp4" type="video/mp4" />
-        </video>
+        <Image
+          src="/assets/banners/wheat-chakki-hero.png"
+          alt="Fresh wheat grains ready for chakki milling"
+          fill
+          priority
+          sizes="100vw"
+          className="absolute inset-0 z-[1] object-cover object-center"
+        />
         <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/98 via-[#fffdf7]/82 to-[#fffdf7]/10" />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-5 py-20 md:px-10">
           <div className="max-w-2xl text-left">
