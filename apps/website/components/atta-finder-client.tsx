@@ -54,13 +54,13 @@ export function AttaFinderClient() {
   }
 
   return (
-    <section className="relative min-h-[calc(100vh-4rem)] overflow-hidden px-5 py-12 md:px-10 md:py-20">
-      <div className="pointer-events-none fixed inset-0 -z-10">
+    <section className="relative min-h-[calc(100vh-4rem)] overflow-hidden bg-[#fffdf7] px-5 py-12 md:px-10 md:py-20">
+      <div className="pointer-events-none absolute inset-0 z-0">
         <Image src="/assets/banners/atta-finder-family.png" alt="" fill priority sizes="100vw" className="object-cover object-center opacity-35" />
         <div className="absolute inset-0 bg-[#fffdf7]/68" />
       </div>
 
-      <div className="mx-auto max-w-7xl">
+      <div className="relative z-10 mx-auto max-w-7xl">
         <div className="mb-10 grid items-end gap-8 lg:grid-cols-[1fr_auto]">
           <div className="max-w-3xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#c98218]/30 bg-[#fffdf7]/80 px-4 py-2 text-xs font-black uppercase tracking-[.2em] text-[#a9600f] shadow-sm backdrop-blur-md">
