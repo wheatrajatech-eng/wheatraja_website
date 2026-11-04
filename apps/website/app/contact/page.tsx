@@ -14,24 +14,26 @@ const helpTopics = ["Check delivery serviceability", "Start or pause subscriptio
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-[#FBF7ED] pt-24">
-      <section className="relative overflow-hidden bg-stone-950 px-6 py-20 text-white md:py-28">
-        <div className="absolute inset-0 opacity-35">
-          <Image src="/assets/banners/cover7.png" alt="Fresh wheat flour and rotis" fill priority sizes="100vw" className="object-cover" />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/86 to-stone-950/40" />
+    <main className="relative min-h-screen overflow-hidden bg-[#f7eedc]/75 pt-24">
+      <div className="pointer-events-none fixed inset-0 -z-10">
+        <Image src="/assets/banners/family-kitchen-contact.png" alt="" fill priority sizes="100vw" className="object-cover opacity-35" />
+        <div className="absolute inset-0 bg-[#fffdf7]/55" />
+      </div>
+      <section className="relative overflow-hidden bg-[#f7eedc] px-6 py-20 text-[#3b2418] md:py-28">
+        <Image src="/assets/banners/family-kitchen-contact.png" alt="Warm Wheat Raja family kitchen" fill priority sizes="100vw" className="object-cover object-center" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/98 via-[#fffdf7]/84 to-[#fffdf7]/18" />
         <div className="relative mx-auto max-w-7xl">
-          <p className="text-sm font-black uppercase tracking-[0.22em] text-amber-300">Contact WheatRaja</p>
-          <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] md:text-7xl">We are here for orders, delivery and fresh atta support.</h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-200">Reach us for Noida delivery checks, subscription planning, wallet help, bulk society requirements or product questions.</p>
+          <p className="text-sm font-black uppercase tracking-[0.22em] text-[#a9600f]">Contact WheatRaja</p>
+          <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] text-[#3b2418] md:text-7xl">We are here for orders, delivery and fresh atta support.</h1>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-[#68412a]/75">Reach us for Noida delivery checks, subscription planning, wallet help, bulk society requirements or product questions.</p>
         </div>
       </section>
 
-      <section className="mx-auto -mt-10 grid max-w-7xl gap-4 px-6 pb-16 md:grid-cols-4">
+      <section className="relative z-10 mx-auto -mt-10 grid max-w-7xl gap-4 px-6 pb-16 md:grid-cols-4">
         {contactCards.map((card) => {
           const Icon = card.icon;
           return (
-            <Link key={card.label} href={card.href} className="group rounded-[24px] border border-stone-200 bg-white p-5 shadow-[0_18px_50px_rgba(74,52,30,.12)] transition hover:-translate-y-1">
+            <Link key={card.label} href={card.href} className="group rounded-[24px] border border-[#e8dcc8] bg-[#fffdf7]/90 p-5 shadow-[0_18px_50px_rgba(74,52,30,.12)] backdrop-blur-md transition hover:-translate-y-1">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-800">
                 <Icon size={22} />
               </div>
@@ -43,10 +45,10 @@ export default function ContactPage() {
         })}
       </section>
 
-      <section className="mx-auto grid max-w-7xl gap-8 px-6 pb-20 lg:grid-cols-[1.2fr_.8fr]">
+      <section className="relative z-10 mx-auto grid max-w-7xl gap-8 px-6 pb-20 lg:grid-cols-[1.2fr_.8fr]">
         <ContactForm />
         <aside className="space-y-5">
-          <div className="rounded-[28px] bg-stone-950 p-6 text-white shadow-[0_24px_70px_rgba(28,25,23,.22)] md:p-8">
+          <div className="rounded-[28px] bg-[#3b2418]/95 p-6 text-white shadow-[0_24px_70px_rgba(28,25,23,.22)] md:p-8">
             <p className="text-sm font-black uppercase tracking-[0.18em] text-amber-300">Quick WhatsApp order</p>
             <div className="mt-6 w-fit rounded-[22px] bg-white p-3">
               <Image src="/assets/contact/whatsapp_qr.png" alt="Scan WheatRaja WhatsApp QR code to order" width={190} height={190} className="h-44 w-44 rounded-xl object-contain md:h-48 md:w-48" />
@@ -57,7 +59,7 @@ export default function ContactPage() {
             </Link>
           </div>
 
-          <div className="rounded-[28px] border border-stone-200 bg-white p-6 shadow-[0_18px_50px_rgba(74,52,30,.1)]">
+          <div className="rounded-[28px] border border-[#e8dcc8] bg-[#fffdf7]/90 p-6 shadow-[0_18px_50px_rgba(74,52,30,.1)] backdrop-blur-md">
             <div className="flex items-center gap-3">
               <Clock className="text-amber-700" size={22} />
               <h2 className="font-serif text-3xl text-stone-950">Office hours</h2>
@@ -68,7 +70,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="rounded-[28px] border border-stone-200 bg-white p-6 shadow-[0_18px_50px_rgba(74,52,30,.1)]">
+          <div className="rounded-[28px] border border-[#e8dcc8] bg-[#fffdf7]/90 p-6 shadow-[0_18px_50px_rgba(74,52,30,.1)] backdrop-blur-md">
             <h2 className="font-serif text-3xl text-stone-950">We can help with</h2>
             <div className="mt-5 space-y-3">
               {helpTopics.map((topic) => (

@@ -58,7 +58,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={submit} className="rounded-[28px] border border-stone-200 bg-white p-6 shadow-[0_24px_70px_rgba(74,52,30,.12)] md:p-8">
+    <form onSubmit={submit} className="rounded-[28px] border border-[#e8dcc8] bg-[#fffdf7]/92 p-6 shadow-[0_24px_70px_rgba(74,52,30,.12)] backdrop-blur-md md:p-8">
       <div>
         <p className="text-sm font-bold uppercase tracking-[0.18em] text-amber-700">Send a message</p>
         <h2 className="mt-3 font-serif text-3xl text-stone-950 md:text-4xl">Tell us what you need</h2>
@@ -111,7 +111,7 @@ export function ContactForm() {
 
       <button
         disabled={loading || !isReady}
-        className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-stone-950 px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-white transition hover:bg-amber-700 disabled:cursor-not-allowed disabled:opacity-45"
+        className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#c98218] px-6 py-4 text-sm font-black uppercase tracking-[0.14em] text-white transition hover:bg-[#a9600f] disabled:cursor-not-allowed disabled:opacity-45"
       >
         {loading ? "Sending..." : "Send message"} <Send size={17} />
       </button>

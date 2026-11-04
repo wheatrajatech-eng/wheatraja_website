@@ -43,16 +43,16 @@ export function SiteHeader() {
 
   if (pathname.startsWith("/admin")) return null;
 
-  const transparent = pathname === "/" && !scrolled && !menuOpen;
-  const linkTone = transparent ? "!text-white drop-shadow-[0_2px_5px_rgba(0,0,0,0.9)]" : "text-stone-600";
-  const iconTone = transparent ? "!text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]" : "text-stone-700";
+  const transparent = false;
+  const linkTone = "text-[#68412a]";
+  const iconTone = "text-[#68412a]";
 
   return (
-    <header className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${transparent ? "border-b border-white/20 bg-stone-950/75 shadow-lg backdrop-blur-md" : "border-b border-stone-200 bg-white shadow-sm"}`}>
+    <header className={`fixed inset-x-0 top-0 z-50 border-b border-[#e8dcc8] bg-[#fffdf7]/95 shadow-[0_8px_28px_rgba(104,65,42,0.08)] backdrop-blur-md transition-all duration-300 ${scrolled ? "shadow-[0_10px_34px_rgba(104,65,42,0.14)]" : ""}`}>
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 md:px-10">
         <Link href="/" className="flex shrink-0 items-center gap-2.5">
           <Image src="/assets/logo/WheatRajaLogo.png" alt="Wheat Raja" width={112} height={46} className="h-10 w-auto object-contain" priority />
-          <span className={`hidden font-serif text-xl font-bold tracking-tight sm:inline ${transparent ? "!text-white drop-shadow-[0_2px_5px_rgba(0,0,0,0.9)]" : "text-stone-900"}`}>Wheat Raja</span>
+          <span className="hidden font-serif text-xl font-bold tracking-tight text-[#3b2418] sm:inline">Wheat Raja</span>
         </Link>
 
         <nav className={`hidden items-center gap-6 text-sm font-medium md:flex ${linkTone}`}>
@@ -74,7 +74,7 @@ export function SiteHeader() {
           <Link href="/account/wallet" aria-label="WR Wallet" className={`rounded-full p-2 transition hover:bg-stone-100 ${transparent ? "hover:bg-white/15" : ""}`}>
             <WalletCards className={`h-5 w-5 ${iconTone}`} />
           </Link>
-          <Link href="/products" className="ml-1 hidden items-center gap-1.5 rounded-full bg-amber-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-amber-700 md:inline-flex">
+          <Link href="/products" className="ml-1 hidden items-center gap-1.5 rounded-full bg-[#c98218] px-4 py-2 text-sm font-semibold text-white transition hover:bg-[#a9600f] md:inline-flex">
             Shop Now <ArrowRight className="h-3.5 w-3.5" />
           </Link>
           <button onClick={() => setMenuOpen((value) => !value)} aria-label="Menu" className={`rounded-full p-2 transition hover:bg-stone-100 md:hidden ${transparent ? "hover:bg-white/15" : ""}`}>

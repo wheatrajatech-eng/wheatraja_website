@@ -4,6 +4,7 @@ import { ProductCard } from "@/components/product-card";
 import { SubscriptionAction } from "@/components/subscription-actions";
 import { getCatalogProducts } from "@/lib/catalog";
 import { formatPrice } from "@/lib/utils";
+import { PageShell } from "@/components/page-shell";
 
 export const dynamic = "force-dynamic";
 
@@ -12,15 +13,7 @@ export default async function SubscriptionPage() {
   const featured = products[0];
 
   return (
-    <main className="min-h-screen bg-[#FAF7EF] pt-16">
-      <section className="bg-stone-900 px-5 py-14 text-white md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <p className="mb-2 text-xs font-bold uppercase tracking-widest text-amber-400">Subscribe & Save 10%</p>
-          <h1 className="mb-4 font-serif text-4xl font-bold md:text-5xl">Monthly fresh atta subscription for any product</h1>
-          <p className="max-w-2xl text-sm leading-6 text-white/55">Choose product, quantity and delivery start date. Monthly billing can auto-deduct from WR Wallet, or you can keep it manual and pay when each cycle is due.</p>
-        </div>
-      </section>
-
+    <PageShell eyebrow="Subscribe & Save 10%" title="Monthly fresh atta subscription for any product" text="Choose product, quantity and delivery start date. Monthly billing can auto-deduct from WR Wallet, or you can keep it manual and pay when each cycle is due.">
       <section className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-16 md:grid-cols-2 md:gap-16 md:px-10">
         <div>
           <p className="mb-3 text-xs font-bold uppercase tracking-widest text-amber-700">Modern grocery-style subscription</p>
@@ -85,6 +78,6 @@ export default async function SubscriptionPage() {
           {products.map((product) => <ProductCard key={product.slug} product={product} />)}
         </div>
       </section>
-    </main>
+    </PageShell>
   );
 }

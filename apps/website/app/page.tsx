@@ -24,40 +24,50 @@ export default async function HomePage() {
   const subscriptionProduct = products[0];
 
   return (
-    <main className="min-h-screen bg-[#FAF7EF]">
-      <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-stone-950">
-        <video className="absolute inset-0 h-full w-full object-cover opacity-55" autoPlay muted loop playsInline poster="/assets/banners/cover7.png">
-          <source src="/assets/banners/wheat-field.mp4" type="video/mp4" />
+    <main className="min-h-screen bg-[#fffdf7]">
+      <section className="relative flex min-h-[720px] items-center overflow-hidden bg-[#f7eedc] pt-16 md:min-h-screen">
+        <video
+          className="absolute inset-0 z-[1] h-full w-full object-cover object-center opacity-100"
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          aria-hidden="true"
+        >
+          <source src="/assets/banners/home-hero-loop.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/10 to-black/75" />
-        <div className="relative z-10 mx-auto max-w-5xl px-5 pb-16 pt-24 text-center md:px-10">
-          <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/12 px-5 py-2 text-xs font-semibold uppercase tracking-widest text-white backdrop-blur-sm">
-            <span className="h-1.5 w-1.5 shrink-0 animate-pulse rounded-full bg-amber-400" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/98 via-[#fffdf7]/82 to-[#fffdf7]/10" />
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-5 py-20 md:px-10">
+          <div className="max-w-2xl text-left">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#c98218]/30 bg-[#fffdf7]/75 px-5 py-2 text-xs font-bold uppercase tracking-widest text-[#a9600f] shadow-sm backdrop-blur-sm">
+            <span className="h-1.5 w-1.5 shrink-0 animate-pulse rounded-full bg-[#c98218]" />
             Freshly Milled After Every Order
           </div>
-          <h1 className="mb-7 font-serif text-5xl font-bold leading-[1.04] tracking-tight text-white sm:text-7xl md:text-8xl">{heroBanner?.title ?? <>Freshly Milled<br /><em className="not-italic text-amber-400">Atta.</em> Delivered<br />Fresh. Every Time.</>}</h1>
-          <p className="mx-auto mb-11 max-w-2xl text-lg font-light leading-relaxed text-white/75 md:text-xl">
+          <h1 className="mb-7 font-serif text-5xl font-bold leading-[1.04] tracking-tight text-[#3b2418] sm:text-7xl md:text-8xl">{heroBanner?.title ?? <>Freshly Milled<br /><em className="not-italic text-[#c98218]">Atta.</em> Delivered<br />Fresh. Every Time.</>}</h1>
+          <p className="mb-10 max-w-xl text-lg leading-relaxed text-[#68412a]/80 md:text-xl">
             {heroBanner?.subtitle ?? "Premium chakki fresh atta made after you order. Never stale, never shelf-first, nutritious in every roti."}
           </p>
-          <div className="mb-14 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link href={heroBanner?.link_url ?? "/products"} className="inline-flex items-center gap-2 rounded-full bg-amber-500 px-9 py-4 text-base font-bold text-stone-950 shadow-xl shadow-amber-600/25 transition-all hover:-translate-y-0.5 hover:bg-amber-400">
+          <div className="mb-10 flex flex-col items-start gap-4 sm:flex-row">
+            <Link href={heroBanner?.link_url ?? "/products"} className="inline-flex items-center gap-2 rounded-full bg-[#c98218] px-9 py-4 text-base font-bold text-white shadow-xl shadow-[#a9600f]/20 transition-all hover:-translate-y-0.5 hover:bg-[#a9600f]">
               {heroBanner?.cta_text ?? "Shop Now"} <ArrowRight className="h-4 w-4" />
             </Link>
-            <Link href="/subscription" className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/12 px-9 py-4 text-base font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20">
+            <Link href="/subscription" className="inline-flex items-center gap-2 rounded-full border border-[#68412a]/25 bg-[#fffdf7]/65 px-9 py-4 text-base font-semibold text-[#68412a] backdrop-blur-sm transition-all hover:bg-white">
               Subscribe & Save 10%
             </Link>
           </div>
-          <div className="flex flex-wrap justify-center gap-3">
+          <div className="flex flex-wrap gap-3">
             {[["FSSAI Approved", BadgeCheck], ["NABL Certified", Award], ["Freshly Milled", Zap], ["Home Delivery", Truck]].map(([label, Icon]) => (
-              <div key={String(label)} className="flex items-center gap-2 rounded-full border border-white/18 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-sm">
-                <Icon className="h-4 w-4 text-amber-400" />{String(label)}
+              <div key={String(label)} className="flex items-center gap-2 rounded-full border border-[#e8dcc8] bg-[#fffdf7]/75 px-4 py-2 text-sm font-medium text-[#68412a] backdrop-blur-sm">
+                <Icon className="h-4 w-4 text-[#c98218]" />{String(label)}
               </div>
             ))}
+          </div>
           </div>
         </div>
       </section>
 
-      <section className="bg-[#FAF7EF] py-20 md:py-28">
+      <section className="bg-[#fffdf7] py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-5 md:px-10">
           <div className="mb-14 text-center">
             <p className="mb-3 text-xs font-bold uppercase tracking-widest text-amber-700">Our Collection</p>
@@ -75,33 +85,33 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="bg-stone-900 py-20 text-white md:py-28">
+      <section className="bg-[#f7eedc] py-20 text-[#3b2418] md:py-28">
         <div className="mx-auto max-w-7xl px-5 md:px-10">
           <div className="mb-16 grid items-center gap-12 md:grid-cols-2">
             <div>
-              <p className="mb-3 text-xs font-bold uppercase tracking-widest text-amber-400">The Difference</p>
+              <p className="mb-3 text-xs font-bold uppercase tracking-widest text-[#a9600f]">The Difference</p>
               <h2 className="mb-5 font-serif text-4xl font-bold leading-tight md:text-5xl">Why Wheat Raja Stands Apart</h2>
-              <p className="text-base leading-relaxed text-white/55">Families switch because fresh atta tastes different, cooks softer, and feels more trustworthy.</p>
+              <p className="text-base leading-relaxed text-[#68412a]/70">Families switch because fresh atta tastes different, cooks softer, and feels more trustworthy.</p>
             </div>
-            <div className="relative aspect-video overflow-hidden rounded-2xl bg-stone-800">
-              <Image src="/assets/banners/cover7.png" alt="Fresh wheat and atta" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover opacity-80" />
+            <div className="relative aspect-video overflow-hidden rounded-[28px] border border-[#e8dcc8] bg-white shadow-[0_18px_50px_rgba(104,65,42,0.12)]">
+              <Image src="/assets/banners/wheat-chakki-hero.png" alt="Fresh wheat and atta" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
             {features.map(({ icon: Icon, title, desc }) => (
-              <div key={title} className="group rounded-2xl border border-white/10 bg-white/5 p-5 transition-all hover:border-amber-500/30 hover:bg-amber-500/10 md:p-6">
-                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/20 transition-colors group-hover:bg-amber-500/30">
-                  <Icon className="h-5 w-5 text-amber-400" />
+              <div key={title} className="group rounded-2xl border border-[#e8dcc8] bg-white/75 p-5 transition-all hover:border-[#c98218]/50 hover:bg-white md:p-6">
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-[#c98218]/12 transition-colors group-hover:bg-[#c98218]/20">
+                  <Icon className="h-5 w-5 text-[#a9600f]" />
                 </div>
-                <h3 className="mb-1.5 text-sm font-semibold leading-snug text-white">{title}</h3>
-                <p className="text-xs leading-relaxed text-white/45">{desc}</p>
+                <h3 className="mb-1.5 text-sm font-semibold leading-snug text-[#3b2418]">{title}</h3>
+                <p className="text-xs leading-relaxed text-[#68412a]/65">{desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="bg-[#FAF7EF] py-20 md:py-28">
+      <section className="bg-[#fffdf7] py-20 md:py-28">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-2 md:gap-16 md:px-10">
           <div>
             <p className="mb-3 text-xs font-bold uppercase tracking-widest text-amber-700">Subscribe & Save</p>
@@ -158,7 +168,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white py-20">
+      <section className="bg-[#fffdf7] py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-10">
           <div className="mb-12 text-center">
             <p className="mb-3 text-xs font-bold uppercase tracking-widest text-amber-700">Corporate ordering</p>
@@ -173,13 +183,13 @@ export default async function HomePage() {
               ["Fresh batch supply", "Prepared after order and coordinated for the right delivery slot."],
               ["Made for B2B", "Corporate kitchens, tiffin vendors and managed cafeterias."]
             ].map(([title, desc]) => (
-              <div key={title} className="rounded-2xl border border-stone-200 bg-stone-50 p-6 shadow-sm">
-                <p className="font-serif text-2xl text-stone-950">{title}</p>
-                <p className="mt-2 text-sm leading-6 text-stone-600">{desc}</p>
+              <div key={title} className="rounded-2xl border border-[#e8dcc8] bg-[#f7eedc]/65 p-6 shadow-sm">
+                <p className="font-serif text-2xl text-[#3b2418]">{title}</p>
+                <p className="mt-2 text-sm leading-6 text-[#68412a]/75">{desc}</p>
               </div>
             ))}
           </div>
-          <div className="mt-8 flex flex-col items-center justify-between gap-4 rounded-[28px] bg-stone-950 px-6 py-6 text-white md:flex-row md:px-8">
+          <div className="mt-8 flex flex-col items-center justify-between gap-4 rounded-[28px] bg-[#3b2418] px-6 py-6 text-white md:flex-row md:px-8">
             <div>
               <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">New page</p>
               <h3 className="mt-2 font-serif text-2xl md:text-3xl">Bulk chapati ordering module is now live.</h3>
@@ -191,7 +201,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="bg-amber-600 py-16 text-center md:py-20">
+      <section className="bg-[#c98218] py-16 text-center md:py-20">
         <div className="mx-auto max-w-5xl px-5 md:px-10">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-1.5 text-[10px] font-bold uppercase tracking-widest text-white">
             <Clock className="h-3 w-3" /> Limited Time Offer
@@ -217,7 +227,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="bg-white py-20">
+      <section className="bg-[#fffdf7] py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-10">
           <div className="mb-12 text-center">
             <p className="mb-3 text-xs font-bold uppercase tracking-widest text-amber-700">Trust engine</p>
@@ -239,7 +249,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#FAF7EF] py-20">
+      <section className="bg-[#f7eedc] py-20">
         <div className="mx-auto max-w-6xl px-5 md:px-10">
           <div className="mb-10 text-center">
             <p className="mb-3 text-xs font-bold uppercase tracking-widest text-amber-700">Verified families</p>
@@ -258,7 +268,7 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="bg-stone-950 px-6 py-20 text-center text-white">
+      <section className="bg-[#3b2418] px-6 py-20 text-center text-white">
         <h2 className="mx-auto max-w-3xl font-serif text-4xl md:text-6xl">Order atta that feels freshly made, not shelf-stored.</h2>
         <p className="mx-auto mt-5 max-w-xl text-white/72">Choose your wheat, check your area, and let Wheat Raja mill it fresh.</p>
         <div className="mt-8 flex justify-center">

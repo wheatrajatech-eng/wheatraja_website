@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, Check, Factory, HeartHandshake, PackageCheck, ShieldCheck, Sparkles, Truck, Wheat } from "lucide-react";
+import { PremiumHeroCarousel } from "@/components/premium-hero-carousel";
 
 const stats = [
   ["3", "Fresh atta ranges"],
@@ -27,25 +28,23 @@ const values = [
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#FBF7ED] pt-24">
-      <section className="relative overflow-hidden bg-stone-950 px-6 py-20 text-white md:py-28">
-        <div className="absolute inset-0 opacity-45">
-          <Image src="/assets/banners/cover7.png" alt="WheatRaja fresh flour, wheat and rotis" fill priority sizes="100vw" className="object-cover" />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/86 to-stone-950/35" />
+      <section className="relative overflow-hidden bg-[#f7eedc] px-6 py-20 text-[#3b2418] md:py-28">
+        <PremiumHeroCarousel images={["/assets/banners/flour-chakki-still-life.png", "/assets/banners/wheat-field-dawn.png", "/assets/banners/dough-kitchen.png"]} alt="WheatRaja fresh flour, wheat and chakki craft" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/98 via-[#fffdf7]/82 to-[#fffdf7]/18" />
         <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_.95fr] lg:items-end">
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.22em] text-amber-300">About WheatRaja</p>
-            <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] md:text-7xl">Fresh atta with the honesty of a local chakki and the ease of ecommerce.</h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-200">WheatRaja serves families who want soft rotis, clean wheat, reliable delivery and a repeat ordering system that feels effortless.</p>
+            <p className="text-sm font-black uppercase tracking-[0.22em] text-[#a9600f]">About WheatRaja</p>
+            <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] text-[#3b2418] md:text-7xl">Fresh atta with the honesty of a local chakki and the ease of ecommerce.</h1>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#68412a]/75">WheatRaja serves families who want soft rotis, clean wheat, reliable delivery and a repeat ordering system that feels effortless.</p>
             <Link href="/products" className="mt-8 inline-flex items-center gap-2 rounded-full bg-amber-400 px-6 py-4 text-sm font-black uppercase tracking-[0.12em] text-stone-950">
               Shop fresh atta <ArrowRight size={17} />
             </Link>
           </div>
           <div className="grid grid-cols-2 gap-3">
             {stats.map(([value, label]) => (
-              <div key={label} className="rounded-[24px] border border-white/12 bg-white/10 p-5 backdrop-blur-xl">
-                <p className="font-serif text-4xl text-amber-300">{value}</p>
-                <p className="mt-2 text-sm font-semibold text-stone-200">{label}</p>
+              <div key={label} className="rounded-[24px] border border-[#e8dcc8] bg-white/70 p-5 shadow-sm backdrop-blur-xl">
+                <p className="font-serif text-4xl text-[#a9600f]">{value}</p>
+                <p className="mt-2 text-sm font-semibold text-[#68412a]/80">{label}</p>
               </div>
             ))}
           </div>

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BookOpen, Newspaper, Search, Sparkles } from "lucide-react";
 import { getCatalogBlogs } from "@/lib/catalog";
+import { PremiumHeroCarousel } from "@/components/premium-hero-carousel";
 
 const categories = ["All", "Blog", "News", "Article"];
 
@@ -28,16 +29,14 @@ export default async function BlogPage({
 
   return (
     <main className="min-h-screen bg-[#FBF7ED] pt-24">
-      <section className="relative overflow-hidden bg-stone-950 px-6 py-20 text-white md:py-28">
-        <div className="absolute inset-0 opacity-35">
-          <Image src="/assets/banners/cover7.png" alt="Fresh wheat flour journal background" fill priority sizes="100vw" className="object-cover" />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/88 to-stone-950/35" />
+      <section className="relative overflow-hidden bg-[#f7eedc] px-6 py-20 text-[#3b2418] md:py-28">
+        <PremiumHeroCarousel images={["/assets/banners/wheat-field-dawn.png", "/assets/banners/flour-chakki-still-life.png", "/assets/banners/dough-kitchen.png"]} alt="Fresh wheat flour journal" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/98 via-[#fffdf7]/82 to-[#fffdf7]/18" />
         <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_.9fr] lg:items-end">
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.22em] text-amber-300">Freshness journal</p>
-            <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] md:text-7xl">Blogs, news and articles for better everyday atta.</h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-stone-200">Read practical wheat guides, fresh atta storage notes, WheatRaja updates and family nutrition articles.</p>
+            <p className="text-sm font-black uppercase tracking-[0.22em] text-[#a9600f]">Freshness journal</p>
+            <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] text-[#3b2418] md:text-7xl">Blogs, news and articles for better everyday atta.</h1>
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-[#68412a]/75">Read practical wheat guides, fresh atta storage notes, WheatRaja updates and family nutrition articles.</p>
           </div>
           <form action="/blog" className="rounded-[28px] border border-white/12 bg-white/10 p-4 backdrop-blur-xl">
             <label className="flex items-center gap-3 rounded-full bg-white px-5 py-4 text-stone-950">

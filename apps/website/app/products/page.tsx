@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Search } from "lucide-react";
 import { ProductCard } from "@/components/product-card";
 import { getCatalogProducts } from "@/lib/catalog";
+import { PageShell } from "@/components/page-shell";
 
 const categories = ["All", "Multigrain", "Sharbati", "Sehori"];
 
@@ -24,16 +25,13 @@ export default async function ProductsPage({ searchParams }: { searchParams?: Pr
     });
 
   return (
-    <main className="min-h-screen bg-[#FAF7EF] pt-16">
-      <section className="bg-stone-900 px-5 py-14 text-white md:px-10">
-        <div className="mx-auto max-w-7xl">
-          <p className="mb-2 text-xs font-bold uppercase tracking-widest text-amber-400">Shop</p>
-          <h1 className="mb-4 font-serif text-4xl font-bold md:text-5xl">Premium Atta Collection</h1>
-          <p className="text-sm text-white/55">Freshly stone-ground after your order. NABL tested. FSSAI approved.</p>
+    <PageShell eyebrow="Shop" title="Premium Atta Collection" text="Freshly stone-ground after your order. NABL tested. FSSAI approved.">
+      <div className="relative overflow-hidden">
+        <div className="pointer-events-none fixed inset-0 -z-10">
+          <img src="/assets/banners/flour-chakki-still-life.png" alt="" className="h-full w-full object-cover opacity-20" />
+          <div className="absolute inset-0 bg-[#fffdf7]/75" />
         </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-5 py-10 md:px-10">
+      <section className="relative mx-auto max-w-7xl px-5 py-10 md:px-10">
         <form className="mb-8 flex flex-col gap-3 sm:flex-row">
           <div className="relative flex-1">
             <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-stone-400" />
@@ -63,6 +61,23 @@ export default async function ProductsPage({ searchParams }: { searchParams?: Pr
           ))}
         </div>
 
+        <section className="relative mb-12 overflow-hidden rounded-[32px] border border-[#e8dcc8] bg-[#fffdf7]/88 shadow-[0_22px_70px_rgba(104,65,42,.12)] backdrop-blur-md">
+          <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/96 via-[#fffdf7]/84 to-[#f7eedc]/35" />
+          <div className="relative grid items-center gap-6 px-6 py-7 md:grid-cols-[.8fr_1.2fr] md:px-10 md:py-9">
+            <div className="relative mx-auto h-56 w-full max-w-xs md:h-64">
+              <img src="/assets/products/multigrain_atta_5kg.png" alt="Wheat Raja Super Multigrain Atta pack" className="h-full w-full object-contain drop-shadow-[0_20px_24px_rgba(59,36,24,.22)]" />
+            </div>
+            <div>
+              <p className="text-xs font-black uppercase tracking-[0.22em] text-[#a9600f]">Packaging with a purpose</p>
+              <h2 className="mt-3 max-w-xl font-serif text-3xl leading-tight text-[#3b2418] md:text-5xl">Freshness you can see before you taste.</h2>
+              <p className="mt-4 max-w-xl text-sm leading-7 text-[#68412a]/75">Clear variant labels, honest grain details and a premium pack experience for the atta that belongs in your everyday kitchen.</p>
+              <div className="mt-5 flex flex-wrap gap-2 text-xs font-bold text-[#68412a]">
+                {['Stone-ground fresh', 'Clean grain blend', 'Traceable batch detail'].map((item) => <span key={item} className="rounded-full border border-[#e8dcc8] bg-white/75 px-3 py-2">{item}</span>)}
+              </div>
+            </div>
+          </div>
+        </section>
+
         <p className="mb-6 text-sm text-stone-500">{filteredProducts.length} product{filteredProducts.length !== 1 ? "s" : ""} found</p>
 
         {filteredProducts.length > 0 ? (
@@ -88,6 +103,7 @@ export default async function ProductsPage({ searchParams }: { searchParams?: Pr
           </Link>
         </div>
       </section>
-    </main>
+      </div>
+    </PageShell>
   );
 }

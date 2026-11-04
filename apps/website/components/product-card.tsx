@@ -17,16 +17,16 @@ export function ProductCard({ product }: { product: Product }) {
   const subPrice = Math.round(price * 0.9);
 
   return (
-    <article className="group overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
-      <div className="relative aspect-square overflow-hidden bg-stone-100">
+    <article className="group overflow-hidden rounded-[22px] border border-[#e8dcc8] bg-white shadow-[0_12px_40px_rgba(104,65,42,0.07)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_52px_rgba(104,65,42,0.14)]">
+      <div className="relative aspect-square overflow-hidden bg-[#f7eedc] p-3">
         <Link href={`/products/${product.slug}`} className="block h-full w-full">
-          <Image src={product.image} alt={product.name} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+          <Image src={product.image} alt={product.name} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-contain p-3 transition-transform duration-500 group-hover:scale-[1.04]" />
         </Link>
         <button className="absolute right-3 top-3 z-10 flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-stone-400 shadow backdrop-blur-sm transition hover:scale-110 hover:text-red-500" aria-label="Save product">
           <Heart className="h-4 w-4" />
         </button>
         <div className="absolute left-3 top-3">
-          <span className="rounded-full bg-amber-600 px-2.5 py-1 text-[10px] font-bold text-white">Freshly Milled</span>
+          <span className="rounded-full bg-[#c98218] px-2.5 py-1 text-[10px] font-bold text-white">Freshly Milled</span>
         </div>
         <div className="absolute bottom-3 left-3">
           <span className="rounded-full bg-white/90 px-2 py-1 text-[10px] font-semibold text-stone-700 shadow">{weight} KG</span>
@@ -35,7 +35,7 @@ export function ProductCard({ product }: { product: Product }) {
 
       <div className="p-4">
         <Link href={`/products/${product.slug}`}>
-          <h3 className="font-serif text-base font-bold leading-snug text-stone-900 transition hover:text-amber-700">{product.name}</h3>
+          <h3 className="font-serif text-base font-bold leading-snug text-[#3b2418] transition hover:text-[#a9600f]">{product.name}</h3>
         </Link>
         <p className="mt-1 min-h-10 text-xs leading-relaxed text-stone-500">{product.subtitle}</p>
 
