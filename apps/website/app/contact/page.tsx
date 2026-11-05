@@ -31,7 +31,13 @@ export default function ContactPage() {
         {contactCards.map((card) => {
           const Icon = card.icon;
           return (
-            <Link key={card.label} href={card.href} className="group rounded-[24px] border border-[#e8dcc8] bg-[#fffdf7]/90 p-5 shadow-[0_18px_50px_rgba(74,52,30,.12)] backdrop-blur-md transition hover:-translate-y-1">
+            <Link
+              key={card.label}
+              href={card.href}
+              target={card.href.startsWith("http") ? "_blank" : undefined}
+              rel={card.href.startsWith("http") ? "noreferrer" : undefined}
+              className="group rounded-[24px] border border-[#e8dcc8] bg-[#fffdf7] p-5 shadow-[0_18px_50px_rgba(74,52,30,.12)] transition hover:-translate-y-1"
+            >
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-800">
                 <Icon size={22} />
               </div>
@@ -57,7 +63,7 @@ export default function ContactPage() {
             </Link>
           </div>
 
-          <div className="rounded-[28px] border border-[#e8dcc8] bg-[#fffdf7]/90 p-6 shadow-[0_18px_50px_rgba(74,52,30,.1)] backdrop-blur-md">
+          <div className="rounded-[28px] border border-[#e8dcc8] bg-[#fffdf7] p-6 shadow-[0_18px_50px_rgba(74,52,30,.1)]">
             <div className="flex items-center gap-3">
               <Clock className="text-amber-700" size={22} />
               <h2 className="font-serif text-3xl text-stone-950">Office hours</h2>
@@ -68,7 +74,7 @@ export default function ContactPage() {
             </div>
           </div>
 
-          <div className="rounded-[28px] border border-[#e8dcc8] bg-[#fffdf7]/90 p-6 shadow-[0_18px_50px_rgba(74,52,30,.1)] backdrop-blur-md">
+          <div className="rounded-[28px] border border-[#e8dcc8] bg-[#fffdf7] p-6 shadow-[0_18px_50px_rgba(74,52,30,.1)]">
             <h2 className="font-serif text-3xl text-stone-950">We can help with</h2>
             <div className="mt-5 space-y-3">
               {helpTopics.map((topic) => (

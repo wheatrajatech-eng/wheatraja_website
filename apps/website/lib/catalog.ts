@@ -142,9 +142,16 @@ function mapBlog(post: ApiBlog): BlogPost {
 export async function getCatalogBlogs() {
   try {
     const rows = await apiGet<ApiBlog[]>("/blogs");
-    return rows.map(mapBlog);
+    const livePosts = rows.map(mapBlog);
+    if (livePosts.length >= 6) return livePosts;
+
+    // Keep the journal useful even when the API is empty during setup or
+    // temporarily unavailable. Live posts win by slug, while the editorial
+    // starter set guarantees a complete six-post reading room.
+    const liveSlugs = new Set(livePosts.map((post) => post.slug));
+    return [...livePosts, ...fallbackBlogs.filter((post) => !liveSlugs.has(post.slug))];
   } catch {
-    return [];
+    return fallbackBlogs;
   }
 }
 
@@ -152,7 +159,7 @@ export async function getCatalogBlog(slug: string) {
   try {
     return mapBlog(await apiGet<ApiBlog>(`/blogs/${slug}`));
   } catch {
-    return undefined;
+    return fallbackBlogs.find((post) => post.slug === slug);
   }
 }
 

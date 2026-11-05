@@ -58,7 +58,7 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={submit} className="rounded-[28px] border border-[#e8dcc8] bg-[#fffdf7]/92 p-6 shadow-[0_24px_70px_rgba(74,52,30,.12)] backdrop-blur-md md:p-8">
+    <form onSubmit={submit} className="rounded-[28px] border border-[#e8dcc8] bg-[#fffdf7] p-6 shadow-[0_24px_70px_rgba(74,52,30,.12)] md:p-8">
       <div>
         <p className="text-sm font-bold uppercase tracking-[0.18em] text-amber-700">Send a message</p>
         <h2 className="mt-3 font-serif text-3xl text-stone-950 md:text-4xl">Tell us what you need</h2>
