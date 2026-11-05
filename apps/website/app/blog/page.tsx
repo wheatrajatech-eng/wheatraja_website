@@ -28,7 +28,7 @@ export default async function BlogPage({
 
   return (
     <main className="min-h-screen bg-[#FBF7ED] pt-16">
-      <section className="relative overflow-hidden bg-[#f7eedc] px-6 py-20 text-[#3b2418] md:py-28">
+      <section className="relative overflow-visible bg-[#f7eedc] px-6 py-20 text-[#3b2418] md:py-28">
         <Image src="/assets/banners/blog-page-bg.webp" alt="" fill priority sizes="100vw" className="object-cover object-center" />
         <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_.9fr] lg:items-end">
           <div>
@@ -47,7 +47,7 @@ export default async function BlogPage({
         </div>
       </section>
 
-      <section className="mx-auto -mt-10 grid max-w-7xl gap-4 px-6 pb-12 md:grid-cols-4">
+      <section className="relative z-20 mx-auto -mt-10 grid max-w-7xl gap-4 px-6 pb-12 md:grid-cols-4">
         {categories.map((category) => {
           const href = category === "All" ? "/blog" : `/blog?category=${category}${query ? `&q=${encodeURIComponent(query)}` : ""}`;
           const active = category === activeCategory;
