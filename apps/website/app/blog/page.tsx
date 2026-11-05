@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BookOpen, Newspaper, Search, Sparkles } from "lucide-react";
 import { getCatalogBlogs } from "@/lib/catalog";
-import { PremiumHeroCarousel } from "@/components/premium-hero-carousel";
 
 const categories = ["All", "Blog", "News", "Article"];
 
@@ -30,7 +29,7 @@ export default async function BlogPage({
   return (
     <main className="min-h-screen bg-[#FBF7ED] pt-24">
       <section className="relative overflow-hidden bg-[#f7eedc] px-6 py-20 text-[#3b2418] md:py-28">
-        <PremiumHeroCarousel images={["/assets/banners/wheat-field-dawn.png", "/assets/banners/flour-chakki-still-life.png", "/assets/banners/dough-kitchen.png"]} alt="Fresh wheat flour journal" />
+        <Image src="/assets/banners/blog-page-bg.png" alt="" fill priority sizes="100vw" className="object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/98 via-[#fffdf7]/82 to-[#fffdf7]/18" />
         <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_.9fr] lg:items-end">
           <div>

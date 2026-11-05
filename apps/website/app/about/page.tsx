@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, BadgeCheck, Check, Factory, HeartHandshake, PackageCheck, ShieldCheck, Sparkles, Truck, Wheat } from "lucide-react";
-import { PremiumHeroCarousel } from "@/components/premium-hero-carousel";
 
 const stats = [
   ["3", "Fresh atta ranges"],
@@ -29,7 +28,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#FBF7ED] pt-24">
       <section className="relative overflow-hidden bg-[#f7eedc] px-6 py-20 text-[#3b2418] md:py-28">
-        <PremiumHeroCarousel images={["/assets/banners/flour-chakki-still-life.png", "/assets/banners/wheat-field-dawn.png", "/assets/banners/dough-kitchen.png"]} alt="WheatRaja fresh flour, wheat and chakki craft" />
+        <Image src="/assets/banners/about-page-bg.png" alt="" fill priority sizes="100vw" className="object-cover object-center" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/98 via-[#fffdf7]/82 to-[#fffdf7]/18" />
         <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_.95fr] lg:items-end">
           <div>
