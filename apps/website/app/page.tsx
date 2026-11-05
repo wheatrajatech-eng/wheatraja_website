@@ -23,37 +23,32 @@ export default async function HomePage() {
 
   return (
     <main className="min-h-screen bg-[#fffdf7]">
-      <section className="relative flex min-h-[720px] items-center overflow-hidden bg-[#f7eedc] pt-16 md:min-h-screen">
-        <Image
-          src="/assets/banners/wheat-chakki-hero.png"
-          alt="Fresh wheat grains ready for chakki milling"
-          fill
-          priority
-          sizes="100vw"
-          className="absolute inset-0 z-[1] object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/98 via-[#fffdf7]/82 to-[#fffdf7]/10" />
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-5 py-20 md:px-10">
-          <div className="max-w-2xl text-left">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-[#c98218]/30 bg-[#fffdf7]/75 px-5 py-2 text-xs font-bold uppercase tracking-widest text-[#a9600f] shadow-sm backdrop-blur-sm">
+      <section className="relative flex min-h-[560px] items-center overflow-hidden bg-[#f7eedc] pt-16 md:min-h-[680px]">
+        <video className="absolute inset-0 z-[1] h-full w-full object-cover object-center" autoPlay muted loop playsInline preload="metadata" poster="/assets/banners/wheat-chakki-hero.png" aria-hidden="true">
+          <source src="/assets/banners/home-hero-loop.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/92 via-[#fffdf7]/62 to-[#fffdf7]/10" />
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-5 py-14 md:px-10 md:py-16">
+          <div className="max-w-xl text-left">
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#c98218]/30 bg-[#fffdf7]/85 px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-[#a9600f] shadow-sm backdrop-blur-sm">
             <span className="h-1.5 w-1.5 shrink-0 animate-pulse rounded-full bg-[#c98218]" />
             Freshly Milled After Every Order
           </div>
-          <h1 className="mb-7 font-serif text-5xl font-bold leading-[1.04] tracking-tight text-[#3b2418] sm:text-7xl md:text-8xl">Freshly Milled<br /><em className="not-italic text-[#c98218]">Atta.</em> Delivered<br />Fresh. Every Time.</h1>
-          <p className="mb-10 max-w-xl text-lg leading-relaxed text-[#68412a]/80 md:text-xl">
-            Premium chakki fresh atta made after you order. Never stale, never shelf-first, nutritious in every roti.
+          <h1 className="mb-5 max-w-lg font-serif text-4xl font-bold leading-[1.02] tracking-tight text-[#3b2418] sm:text-6xl md:text-7xl">Fresh atta.<br /><em className="not-italic text-[#c98218]">Milled to order.</em></h1>
+          <p className="mb-7 max-w-md text-base leading-7 text-[#68412a]/80 md:text-lg">
+            Stone-ground freshness, delivered to your door.
           </p>
-          <div className="mb-10 flex flex-col items-start gap-4 sm:flex-row">
-            <Link href="/products" className="inline-flex items-center gap-2 rounded-full bg-[#c98218] px-9 py-4 text-base font-bold text-white shadow-xl shadow-[#a9600f]/20 transition-all hover:-translate-y-0.5 hover:bg-[#a9600f]">
+          <div className="mb-7 flex flex-col items-start gap-3 sm:flex-row">
+            <Link href="/products" className="inline-flex items-center gap-2 rounded-full bg-[#c98218] px-7 py-3.5 text-sm font-bold text-white shadow-xl shadow-[#a9600f]/20 transition-all hover:-translate-y-0.5 hover:bg-[#a9600f]">
               Shop Now <ArrowRight className="h-4 w-4" />
             </Link>
-            <Link href="/subscription" className="inline-flex items-center gap-2 rounded-full border border-[#68412a]/25 bg-[#fffdf7]/65 px-9 py-4 text-base font-semibold text-[#68412a] backdrop-blur-sm transition-all hover:bg-white">
+            <Link href="/subscription" className="inline-flex items-center gap-2 rounded-full border border-[#68412a]/25 bg-[#fffdf7]/85 px-7 py-3.5 text-sm font-semibold text-[#68412a] backdrop-blur-sm transition-all hover:bg-white">
               Subscribe & Save 10%
             </Link>
           </div>
           <div className="flex flex-wrap gap-3">
             {[["FSSAI Approved", BadgeCheck], ["NABL Certified", Award], ["Freshly Milled", Zap], ["Home Delivery", Truck]].map(([label, Icon]) => (
-              <div key={String(label)} className="flex items-center gap-2 rounded-full border border-[#e8dcc8] bg-[#fffdf7]/75 px-4 py-2 text-sm font-medium text-[#68412a] backdrop-blur-sm">
+              <div key={String(label)} className="flex items-center gap-2 rounded-full border border-[#e8dcc8] bg-[#fffdf7]/85 px-3 py-1.5 text-xs font-medium text-[#68412a] backdrop-blur-sm">
                 <Icon className="h-4 w-4 text-[#c98218]" />{String(label)}
               </div>
             ))}
