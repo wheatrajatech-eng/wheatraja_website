@@ -16,10 +16,10 @@ export default function ContactPage() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#f7eedc]/75 pt-16">
       <div className="pointer-events-none fixed inset-0 -z-10">
-        <Image src="/assets/banners/family-kitchen-contact.png" alt="" fill priority sizes="100vw" className="object-cover" />
+        <Image src="/assets/banners/family-kitchen-contact.webp" alt="" fill priority sizes="100vw" className="object-cover" />
       </div>
       <section className="relative overflow-hidden bg-[#f7eedc] px-6 py-20 text-[#3b2418] md:py-28">
-        <Image src="/assets/banners/family-kitchen-contact.png" alt="Warm Wheat Raja family kitchen" fill priority sizes="100vw" className="object-cover object-center" />
+        <Image src="/assets/banners/family-kitchen-contact.webp" alt="Warm Wheat Raja family kitchen" fill priority sizes="100vw" className="object-cover object-center" />
         <div className="relative mx-auto max-w-7xl">
           <p className="text-sm font-black uppercase tracking-[0.22em] text-[#a9600f]">Contact WheatRaja</p>
           <h1 className="mt-5 max-w-4xl font-serif text-5xl leading-[0.95] text-[#3b2418] md:text-7xl">We are here for orders, delivery and fresh atta support.</h1>

@@ -28,7 +28,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#FBF7ED] pt-16">
       <section className="relative overflow-hidden bg-[#f7eedc] px-6 py-20 text-[#3b2418] md:py-28">
-        <Image src="/assets/banners/about-page-bg.png" alt="" fill priority sizes="100vw" className="object-cover object-center" />
+        <Image src="/assets/banners/about-page-bg.webp" alt="" fill priority sizes="100vw" className="object-cover object-center" />
         <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_.95fr] lg:items-end">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.22em] text-[#a9600f]">About WheatRaja</p>
@@ -51,7 +51,7 @@ export default function AboutPage() {
 
       <section className="mx-auto grid max-w-7xl gap-8 px-6 py-20 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
         <div className="relative aspect-[4/5] overflow-hidden rounded-[32px] bg-stone-900 shadow-[0_24px_70px_rgba(74,52,30,.16)] md:aspect-[4/3] lg:aspect-[4/5]">
-          <Image src="/assets/products/sharbati_atta_10kg.png" alt="WheatRaja Sharbati atta pack" fill sizes="(max-width: 1024px) 100vw, 45vw" className="object-cover" />
+          <Image src="/assets/products/sharbati_atta_10kg.webp" alt="WheatRaja Sharbati atta pack" fill sizes="(max-width: 1024px) 100vw, 45vw" className="object-cover" />
         </div>
         <div>
           <p className="text-sm font-black uppercase tracking-[0.2em] text-amber-700">Our story</p>
@@ -113,11 +113,11 @@ export default function AboutPage() {
           </div>
           <div className="grid gap-5 sm:grid-cols-2">
             <div className="rounded-[28px] border border-stone-200 bg-[#FBF7ED] p-5 text-center shadow-sm">
-              <Image src="/assets/trust/WR_FSSAI.png" alt="WheatRaja FSSAI approved badge" width={260} height={260} className="mx-auto h-52 w-52 rounded-full object-cover" />
+              <Image src="/assets/trust/WR_FSSAI.webp" alt="WheatRaja FSSAI approved badge" width={260} height={260} className="mx-auto h-52 w-52 rounded-full object-cover" />
               <p className="mt-4 font-bold text-stone-950">FSSAI approved</p>
             </div>
             <div className="rounded-[28px] border border-stone-200 bg-[#FBF7ED] p-5 text-center shadow-sm">
-              <Image src="/assets/trust/WR_NABL.png" alt="WheatRaja NABL certified quality badge" width={260} height={260} className="mx-auto h-52 w-52 rounded-full object-cover" />
+              <Image src="/assets/trust/WR_NABL.webp" alt="WheatRaja NABL certified quality badge" width={260} height={260} className="mx-auto h-52 w-52 rounded-full object-cover" />
               <p className="mt-4 font-bold text-stone-950">NABL certified promise</p>
             </div>
           </div>

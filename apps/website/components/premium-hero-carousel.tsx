@@ -4,10 +4,10 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export const premiumHeroImages = [
-  "/assets/banners/wheat-chakki-hero.png",
-  "/assets/banners/wheat-field-dawn.png",
-  "/assets/banners/dough-kitchen.png",
-  "/assets/banners/flour-chakki-still-life.png"
+  "/assets/banners/wheat-chakki-hero.webp",
+  "/assets/banners/wheat-field-dawn.webp",
+  "/assets/banners/dough-kitchen.webp",
+  "/assets/banners/flour-chakki-still-life.webp"
 ];
 
 export function PremiumHeroCarousel({

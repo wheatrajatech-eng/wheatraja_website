@@ -51,11 +51,11 @@ export const products: Product[] = [
     price1: 78,
     price5: 390,
     price10: 690,
-    image: "/assets/products/sharbati_atta_5kg.png",
+    image: "/assets/products/sharbati_atta_5kg.webp",
     gallery: [
-      "/assets/products/sharbati_atta_1kg.png",
-      "/assets/products/sharbati_atta_5kg.png",
-      "/assets/products/sharbati_atta_10kg.png"
+      "/assets/products/sharbati_atta_1kg.webp",
+      "/assets/products/sharbati_atta_5kg.webp",
+      "/assets/products/sharbati_atta_10kg.webp"
     ],
     ingredients: "100% selected MP Sharbati wheat, stone-ground after order.",
     nutrition: [
@@ -87,11 +87,11 @@ export const products: Product[] = [
     price1: 94,
     price5: 470,
     price10: 880,
-    image: "/assets/products/multigrain_atta_5kg.png",
+    image: "/assets/products/multigrain_atta_5kg.webp",
     gallery: [
-      "/assets/products/multigrain_atta_1kg.png",
-      "/assets/products/multigrain_atta_5kg.png",
-      "/assets/products/multigrain_atta_10kg.png"
+      "/assets/products/multigrain_atta_1kg.webp",
+      "/assets/products/multigrain_atta_5kg.webp",
+      "/assets/products/multigrain_atta_10kg.webp"
     ],
     ingredients: "Wheat, Jowar, Bajra, Ragi, Soya, Chana, Jau, Makka, Alsi, Methi.",
     nutrition: [
@@ -123,11 +123,11 @@ export const products: Product[] = [
     price1: 95,
     price5: 475,
     price10: 890,
-    image: "/assets/products/sehori_atta_5kg.png",
+    image: "/assets/products/sehori_atta_5kg.webp",
     gallery: [
-      "/assets/products/sehori_atta_1kg.png",
-      "/assets/products/sehori_atta_5kg.png",
-      "/assets/products/sehori_atta_10kg.png"
+      "/assets/products/sehori_atta_1kg.webp",
+      "/assets/products/sehori_atta_5kg.webp",
+      "/assets/products/sehori_atta_10kg.webp"
     ],
     ingredients: "Premium Sehori Sharbati wheat, stone-ground fresh for aromatic rotis.",
     nutrition: [
@@ -174,7 +174,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-06-01",
     category: "Blog",
     readTime: "4 min read",
-    hero: "/assets/products/sharbati_atta_5kg.png",
+    hero: "/assets/products/sharbati_atta_5kg.webp",
     content: [
       "Fresh atta starts with a shorter journey between grain, chakki, pack and kitchen. When flour sits for long periods, the aroma softens and the everyday roti experience can feel flatter.",
       "WheatRaja is built around a local fresh-milling promise. The order is confirmed first, then the grain is milled, packed and moved through the delivery route with a clearer freshness story.",
@@ -188,7 +188,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-06-12",
     category: "Article",
     readTime: "5 min read",
-    hero: "/assets/banners/cover7.png",
+    hero: "/assets/banners/cover7.webp",
     content: [
       "Stone grinding is valued because it keeps the flour close to the texture Indian kitchens associate with chakki atta. It is not just a nostalgic word; it affects how the dough feels in hand.",
       "A good stone-ground atta should be balanced. It should not feel lifeless or overly processed, and it should work for everyday rotis without asking the cook to change the whole routine.",
@@ -202,7 +202,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-06-18",
     category: "Blog",
     readTime: "3 min read",
-    hero: "/assets/products/sehori_atta_5kg.png",
+    hero: "/assets/products/sehori_atta_5kg.webp",
     content: [
       "Soft rotis begin before the tawa. Use fresh atta, add water slowly, and let the dough rest long enough for the flour to hydrate evenly.",
       "Avoid making the dough too tight. A slightly softer dough usually rolls better and keeps rotis tender after cooking.",
@@ -216,7 +216,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-06-22",
     category: "Article",
     readTime: "4 min read",
-    hero: "/assets/products/multigrain_atta_5kg.png",
+    hero: "/assets/products/multigrain_atta_5kg.webp",
     content: [
       "Wheat remains central to Indian homes because it is familiar, versatile and easy to pair with vegetables, dals, curd and everyday sabzis.",
       "Whole wheat atta contributes carbohydrates for energy, some protein and fibre, and a satisfying base for daily meals. The exact nutrition depends on grain quality, milling and blend.",
@@ -230,7 +230,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-06-25",
     category: "News",
     readTime: "2 min read",
-    hero: "/assets/delivery/mahagunmoderne.png",
+    hero: "/assets/delivery/mahagunmoderne.webp",
     content: [
       "WheatRaja is strengthening delivery coverage from Sector 78, Noida, with a focus on apartment societies and repeat monthly homes.",
       "The delivery model keeps the freshness promise practical: mill after order, pack cleanly, then route the order through the service zone as quickly as possible.",
@@ -244,7 +244,7 @@ export const blogPosts: BlogPost[] = [
     date: "2026-06-27",
     category: "Blog",
     readTime: "4 min read",
-    hero: "/assets/products/multigrain_atta_10kg.png",
+    hero: "/assets/products/multigrain_atta_10kg.webp",
     content: [
       "Multigrain atta is popular because it adds variety without changing the everyday food format. Families still make rotis, but the flour blend carries more grains and texture.",
       "WheatRaja Super Multigrain includes wheat, jowar, bajra, ragi, soya, chana, jau, makka, alsi and methi. The goal is balance: taste, fibre and nutrition together.",

@@ -28,7 +28,7 @@ export default async function ProductsPage({ searchParams }: { searchParams?: Pr
     <PageShell eyebrow="Shop" title="Premium Atta Collection" text="Freshly stone-ground after your order. NABL tested. FSSAI approved.">
       <div className="relative overflow-hidden">
         <div className="pointer-events-none fixed inset-0 -z-10">
-          <img src="/assets/banners/flour-chakki-still-life.png" alt="" className="h-full w-full object-cover" />
+          <img src="/assets/banners/flour-chakki-still-life.webp" alt="" className="h-full w-full object-cover" />
         </div>
       <section className="relative mx-auto max-w-7xl px-5 py-10 md:px-10">
         <form className="mb-8 flex flex-col gap-3 sm:flex-row">
@@ -64,7 +64,7 @@ export default async function ProductsPage({ searchParams }: { searchParams?: Pr
           <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/96 via-[#fffdf7]/84 to-[#f7eedc]/35" />
           <div className="relative grid items-center gap-6 px-6 py-7 md:grid-cols-[.8fr_1.2fr] md:px-10 md:py-9">
             <div className="relative mx-auto h-56 w-full max-w-xs md:h-64">
-              <img src="/assets/products/multigrain_atta_5kg.png" alt="Wheat Raja Super Multigrain Atta pack" className="h-full w-full object-contain drop-shadow-[0_20px_24px_rgba(59,36,24,.22)]" />
+              <img src="/assets/products/multigrain_atta_5kg.webp" alt="Wheat Raja Super Multigrain Atta pack" className="h-full w-full object-contain drop-shadow-[0_20px_24px_rgba(59,36,24,.22)]" />
             </div>
             <div>
               <p className="text-xs font-black uppercase tracking-[0.22em] text-[#a9600f]">Packaging with a purpose</p>

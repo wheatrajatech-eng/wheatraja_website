@@ -63,7 +63,7 @@ function variantPrice(product: ApiProduct, weight: number, fallback: number) {
 function mapProduct(product: ApiProduct): Product {
   const fallback = fallbackProducts.find((item) => item.slug === product.slug);
   const images = product.images?.map((image) => image.url).filter(Boolean);
-  const defaultImage = images?.[0] ?? "/assets/products/sharbati_atta_5kg.png";
+  const defaultImage = images?.[0] ?? "/assets/products/sharbati_atta_5kg.webp";
   return {
     ...(fallback ?? {
       headline: product.name,
@@ -124,7 +124,7 @@ function mapBlog(post: ApiBlog): BlogPost {
     date: post.published_at?.slice(0, 10) ?? post.created_at?.slice(0, 10) ?? new Date().toISOString().slice(0, 10),
     category: post.category ?? "Blog",
     readTime: post.read_time ?? "4 min read",
-    hero: post.cover_image_url ?? "/assets/banners/cover7.png",
+    hero: post.cover_image_url ?? "/assets/banners/cover7.webp",
     content: post.body.split(/\n{2,}/).filter(Boolean),
     body: post.body,
     author: post.author_name ?? "WheatRaja Team",

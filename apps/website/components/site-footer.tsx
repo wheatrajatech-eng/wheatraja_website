@@ -14,8 +14,8 @@ export function SiteFooter() {
           <Image src="/assets/logo/WheatRajaLogo.png" alt="WheatRaja logo" width={150} height={70} className="h-16 w-auto object-contain" />
           <p className="mt-3 max-w-sm text-sm leading-6 text-[#fffaf0]/70">Fresh chakki atta milled after your order in Noida. Stone-ground, pure and packed for soft rotis.</p>
           <div className="mt-5 flex gap-3">
-            <Image src="/assets/trust/WR_FSSAI.png" alt="FSSAI approved WheatRaja badge" width={70} height={70} className="h-16 w-16 rounded-full object-cover" />
-            <Image src="/assets/trust/WR_NABL.png" alt="NABL certified WheatRaja badge" width={70} height={70} className="h-16 w-16 rounded-full object-cover" />
+            <Image src="/assets/trust/WR_FSSAI.webp" alt="FSSAI approved WheatRaja badge" width={70} height={70} className="h-16 w-16 rounded-full object-cover" />
+            <Image src="/assets/trust/WR_NABL.webp" alt="NABL certified WheatRaja badge" width={70} height={70} className="h-16 w-16 rounded-full object-cover" />
           </div>
         </div>
         <div>

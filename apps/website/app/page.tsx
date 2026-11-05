@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Award, BadgeCheck, Check, Clock, Heart, Leaf, Package, RefreshCw, Shield, Truck, Zap } from "lucide-react";
 import { ProductCard } from "@/components/product-card";
+import { HomeHeroVideo } from "@/components/home-hero-video";
 import { getCatalogProducts } from "@/lib/catalog";
 import { reviews, trustProofs } from "@/lib/data";
 import { formatPrice } from "@/lib/utils";
@@ -24,9 +25,7 @@ export default async function HomePage() {
   return (
     <main className="min-h-screen bg-[#fffdf7]">
       <section className="relative flex min-h-[560px] items-center overflow-hidden bg-[#f7eedc] pt-16 md:min-h-[680px] scroll-mt-16">
-        <video className="absolute inset-0 z-[1] h-full w-full object-cover object-center" autoPlay muted loop playsInline preload="metadata" poster="/assets/banners/wheat-chakki-hero.png" aria-hidden="true">
-          <source src="/assets/banners/home-hero-loop.mp4" type="video/mp4" />
-        </video>
+        <HomeHeroVideo />
         <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/92 via-[#fffdf7]/62 to-[#fffdf7]/10" />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-5 py-14 md:px-10 md:py-16">
           <div className="max-w-xl text-left">
@@ -84,7 +83,7 @@ export default async function HomePage() {
               <p className="text-base leading-relaxed text-[#68412a]/70">Families switch because fresh atta tastes different, cooks softer, and feels more trustworthy.</p>
             </div>
             <div className="relative aspect-video overflow-hidden rounded-[28px] border border-[#e8dcc8] bg-white shadow-[0_18px_50px_rgba(104,65,42,0.12)]">
-              <Image src="/assets/banners/wheat-chakki-hero.png" alt="Fresh wheat and atta" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+              <Image src="/assets/banners/wheat-chakki-hero.webp" alt="Fresh wheat and atta" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
             </div>
           </div>
           <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
@@ -227,7 +226,7 @@ export default async function HomePage() {
             {trustProofs.map((proof, index) => (
               <div key={proof.title} className="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm">
                 {index < 2 ? (
-                  <Image src={index === 0 ? "/assets/trust/WR_FSSAI.png" : "/assets/trust/WR_NABL.png"} alt={proof.title} width={64} height={64} className="h-16 w-16 rounded-full object-cover" />
+                  <Image src={index === 0 ? "/assets/trust/WR_FSSAI.webp" : "/assets/trust/WR_NABL.webp"} alt={proof.title} width={64} height={64} className="h-16 w-16 rounded-full object-cover" />
                 ) : (
                   <BadgeCheck className="text-green-700" size={26} />
                 )}

@@ -12,7 +12,7 @@ export default function DeliveryPage() {
         <DeliveryChecker />
         <div className="overflow-hidden rounded-[8px] bg-white shadow-card">
           <div className="relative h-64">
-            <Image src="/assets/delivery/mahagunmoderne.png" alt="Noida premium apartment delivery area for WheatRaja" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
+            <Image src="/assets/delivery/mahagunmoderne.webp" alt="Noida premium apartment delivery area for WheatRaja" fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
           </div>
           <div className="p-7">
             {deliveryRules.map((rule) => <p key={rule.range} className="flex justify-between border-b border-mitti/10 py-3"><span>{rule.range}</span><strong>{rule.charge}</strong></p>)}

@@ -1,17 +1,17 @@
 import Image from "next/image";
 
 const pageBackgrounds: Record<string, string> = {
-  Shop: "/assets/banners/products-page-bg.png",
-  "Subscribe & Save 10%": "/assets/banners/subscription-page-bg.png",
-  "Corporate fooding": "/assets/banners/bulk-order-page-bg.png",
-  "Delivery checker": "/assets/banners/delivery-page-bg.png",
-  Checkout: "/assets/banners/delivery-page-bg.png",
-  "Order tracking": "/assets/banners/delivery-page-bg.png",
-  Policy: "/assets/banners/about-page-bg.png"
+  Shop: "/assets/banners/products-page-bg.webp",
+  "Subscribe & Save 10%": "/assets/banners/subscription-page-bg.webp",
+  "Corporate fooding": "/assets/banners/bulk-order-page-bg.webp",
+  "Delivery checker": "/assets/banners/delivery-page-bg.webp",
+  Checkout: "/assets/banners/delivery-page-bg.webp",
+  "Order tracking": "/assets/banners/delivery-page-bg.webp",
+  Policy: "/assets/banners/about-page-bg.webp"
 };
 
 export function PageShell({ eyebrow, title, text, backgroundImage, children }: { eyebrow?: string; title: string; text?: string; backgroundImage?: string; children?: React.ReactNode }) {
-  const background = backgroundImage ?? pageBackgrounds[eyebrow ?? ""] ?? "/assets/banners/about-page-bg.png";
+  const background = backgroundImage ?? pageBackgrounds[eyebrow ?? ""] ?? "/assets/banners/about-page-bg.webp";
 
   return (
     <main className="relative isolate min-h-screen overflow-hidden bg-[#fffdf7] pt-16">

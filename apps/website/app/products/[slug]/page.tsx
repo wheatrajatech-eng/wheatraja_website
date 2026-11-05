@@ -84,8 +84,8 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
         <div className="rounded-2xl bg-stone-900 p-6 text-white shadow-sm">
           <h2 className="font-serif text-3xl">Trust Proof</h2>
           <div className="mt-5 flex gap-3">
-            <Image src="/assets/trust/WR_FSSAI.png" alt="WheatRaja FSSAI approved badge" width={74} height={74} className="h-[74px] w-[74px] rounded-full object-cover" />
-            <Image src="/assets/trust/WR_NABL.png" alt="WheatRaja NABL certified badge" width={74} height={74} className="h-[74px] w-[74px] rounded-full object-cover" />
+            <Image src="/assets/trust/WR_FSSAI.webp" alt="WheatRaja FSSAI approved badge" width={74} height={74} className="h-[74px] w-[74px] rounded-full object-cover" />
+            <Image src="/assets/trust/WR_NABL.webp" alt="WheatRaja NABL certified badge" width={74} height={74} className="h-[74px] w-[74px] rounded-full object-cover" />
           </div>
           <div className="mt-5 flex flex-wrap gap-2">
             {product.proof.map((item) => <Badge key={item}>{item}</Badge>)}
