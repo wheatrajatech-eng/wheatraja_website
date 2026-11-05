@@ -56,8 +56,7 @@ export function AttaFinderClient() {
   return (
     <section className="relative isolate min-h-[calc(100vh-4rem)] overflow-hidden bg-[#fffdf7] px-5 py-12 md:px-10 md:py-20">
       <div className="pointer-events-none fixed inset-0 z-[1]">
-        <Image src="/assets/banners/atta-finder-family.png" alt="" fill priority sizes="100vw" className="object-cover object-center opacity-75" />
-        <div className="absolute inset-0 bg-[#fffdf7]/38" />
+        <Image src="/assets/banners/atta-finder-family.png" alt="" fill priority sizes="100vw" className="object-cover object-center" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-7xl">
