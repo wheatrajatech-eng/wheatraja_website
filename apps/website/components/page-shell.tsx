@@ -17,11 +17,9 @@ export function PageShell({ eyebrow, title, text, backgroundImage, children }: {
     <main className="relative isolate min-h-screen overflow-hidden bg-[#fffdf7] pt-16">
       <div className="pointer-events-none fixed inset-0 z-0">
         <Image src={background} alt="" fill priority sizes="100vw" className="object-cover object-center" />
-        <div className="absolute inset-0 bg-[#fffdf7]/72" />
       </div>
       <div className="relative z-10">
         <section className="relative min-h-[360px] overflow-hidden bg-transparent px-5 py-20 text-[#3b2418] md:min-h-[420px] md:px-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/86 via-[#fffdf7]/58 to-transparent" />
           <div className="relative mx-auto grid max-w-7xl gap-6 md:grid-cols-[1fr_auto] md:items-end">
             <div className="max-w-3xl">
               {eyebrow ? <p className="mb-3 text-xs font-bold uppercase tracking-widest text-[#a9600f]">{eyebrow}</p> : null}

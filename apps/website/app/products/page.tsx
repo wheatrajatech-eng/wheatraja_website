@@ -28,8 +28,7 @@ export default async function ProductsPage({ searchParams }: { searchParams?: Pr
     <PageShell eyebrow="Shop" title="Premium Atta Collection" text="Freshly stone-ground after your order. NABL tested. FSSAI approved.">
       <div className="relative overflow-hidden">
         <div className="pointer-events-none fixed inset-0 -z-10">
-          <img src="/assets/banners/flour-chakki-still-life.png" alt="" className="h-full w-full object-cover opacity-20" />
-          <div className="absolute inset-0 bg-[#fffdf7]/75" />
+          <img src="/assets/banners/flour-chakki-still-life.png" alt="" className="h-full w-full object-cover" />
         </div>
       <section className="relative mx-auto max-w-7xl px-5 py-10 md:px-10">
         <form className="mb-8 flex flex-col gap-3 sm:flex-row">
