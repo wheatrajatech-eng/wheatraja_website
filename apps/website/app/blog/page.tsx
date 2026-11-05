@@ -27,7 +27,7 @@ export default async function BlogPage({
   const tags = Array.from(new Set(blogPosts.flatMap((post) => post.tags ?? []))).slice(0, 12);
 
   return (
-    <main className="min-h-screen bg-[#FBF7ED] pt-24">
+    <main className="min-h-screen bg-[#FBF7ED] pt-16">
       <section className="relative overflow-hidden bg-[#f7eedc] px-6 py-20 text-[#3b2418] md:py-28">
         <Image src="/assets/banners/blog-page-bg.png" alt="" fill priority sizes="100vw" className="object-cover object-center" />
         <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.1fr_.9fr] lg:items-end">

@@ -23,7 +23,7 @@ export default async function HomePage() {
 
   return (
     <main className="min-h-screen bg-[#fffdf7]">
-      <section className="relative flex min-h-[560px] items-center overflow-hidden bg-[#f7eedc] pt-16 md:min-h-[680px]">
+      <section className="relative flex min-h-[560px] items-center overflow-hidden bg-[#f7eedc] pt-16 md:min-h-[680px] scroll-mt-16">
         <video className="absolute inset-0 z-[1] h-full w-full object-cover object-center" autoPlay muted loop playsInline preload="metadata" poster="/assets/banners/wheat-chakki-hero.png" aria-hidden="true">
           <source src="/assets/banners/home-hero-loop.mp4" type="video/mp4" />
         </video>

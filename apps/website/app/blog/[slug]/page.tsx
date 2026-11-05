@@ -28,7 +28,7 @@ export default async function BlogDetailPage({ params }: { params: Promise<{ slu
   const recommended = (linkedProducts.length ? linkedProducts : fallbackProducts).slice(0, 3);
 
   return (
-    <main className="min-h-screen bg-[#FBF7ED] pt-24">
+    <main className="min-h-screen bg-[#FBF7ED] pt-16">
       <section className="relative overflow-hidden bg-stone-950 px-6 py-16 text-white md:py-24">
         <div className="absolute inset-0 opacity-30">
           <Image src={post.hero} alt={post.title} fill priority sizes="100vw" className="object-cover" />

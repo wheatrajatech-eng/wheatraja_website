@@ -14,7 +14,7 @@ const helpTopics = ["Check delivery serviceability", "Start or pause subscriptio
 
 export default function ContactPage() {
   return (
-    <main className="relative min-h-screen overflow-hidden bg-[#f7eedc]/75 pt-24">
+    <main className="relative min-h-screen overflow-hidden bg-[#f7eedc]/75 pt-16">
       <div className="pointer-events-none fixed inset-0 -z-10">
         <Image src="/assets/banners/family-kitchen-contact.png" alt="" fill priority sizes="100vw" className="object-cover" />
       </div>
