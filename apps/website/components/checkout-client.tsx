@@ -135,12 +135,23 @@ export function CheckoutClient() {
     try {
       const controller = new AbortController();
       const timeout = window.setTimeout(() => controller.abort(), 12000);
-      const response = await fetch(`${apiBase}/auth/otp/request`, {
+      let response = await fetch(`${apiBase}/auth/otp/request`, {
         method: "POST",
         headers: { "Content-Type": "application/json", ...csrfHeaders() },
         body: JSON.stringify({ phone: phone.trim() }),
         signal: controller.signal
       });
+      // Checkout must also work for a first-time customer. The login endpoint
+      // intentionally returns 404 for unknown phones, so fall back to the
+      // signup OTP flow and create the customer after successful verification.
+      if (response.status === 404) {
+        response = await fetch(`${apiBase}/auth/signup/request`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", ...csrfHeaders() },
+          body: JSON.stringify({ phone: phone.trim(), name: "WheatRaja Customer", email: null }),
+          signal: controller.signal
+        });
+      }
       window.clearTimeout(timeout);
       const data = await response.json().catch(() => ({}));
       if (!response.ok) throw new Error(data.detail || "Could not send OTP");
