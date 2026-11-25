@@ -261,8 +261,8 @@ export function CheckoutClient() {
   }
 
   async function placeOrder() {
-    if (!phone || !otp || !address || items.length === 0 || !delivery?.deliverable) {
-      setStatus("Complete OTP, address, cart and serviceable delivery before payment.");
+    if (!phone || !otp || !address.trim() || items.length === 0 || !delivery?.deliverable) {
+      setStatus(address.trim().length < 10 ? "Enter a complete delivery address (at least 10 characters)." : "Complete OTP, address, cart and serviceable delivery before payment.");
       return;
     }
     setLoading(true);
@@ -285,7 +285,12 @@ export function CheckoutClient() {
         })
       });
       const order = await orderResponse.json();
-      if (!orderResponse.ok) throw new Error(order.detail || "Could not create order");
+      if (!orderResponse.ok) {
+        const detail = Array.isArray(order.detail)
+          ? order.detail.map((issue: { loc?: unknown[]; msg?: string }) => `${String(issue.loc?.at(-1) ?? "field")}: ${issue.msg ?? "invalid value"}`).join("; ")
+          : order.detail;
+        throw new Error(detail || "Could not create order");
+      }
       if ((order.payable_amount ?? order.payable ?? 0) <= 0 || order.payment_status === "paid") {
         setOrderId(order.id);
         setStatus(`Wallet payment completed for backend order ${order.id}.`);
