@@ -20,6 +20,21 @@ router = APIRouter(prefix="/payments", tags=["payments"])
 razorpay_provider = RazorpayProvider()
 
 
+def _receipt_from_payment_notes(notes: object) -> str | None:
+    """Return the order receipt from Razorpay's dict or list notes shapes."""
+    if isinstance(notes, dict):
+        value = notes.get("receipt")
+        return str(value) if value else None
+    if isinstance(notes, list):
+        for item in notes:
+            if not isinstance(item, dict):
+                continue
+            key = item.get("key") or item.get("name")
+            if key == "receipt" and item.get("value"):
+                return str(item["value"])
+    return None
+
+
 class RazorpayOrderIn(BaseModel):
     order_id: str
 
@@ -248,7 +263,7 @@ async def webhook(request: Request, x_razorpay_signature: str | None = Header(de
     db.add(PaymentWebhook(event_id=event_id, payload_json=dumps_provider_payload(payload)))
     event_name = payload.get("event")
     if event_name == "payment.captured":
-        receipt = entity.get("notes", {}).get("receipt")
+        receipt = _receipt_from_payment_notes(entity.get("notes"))
         order = db.query(Order).filter_by(order_number=receipt).first() if receipt else None
         if not order and entity.get("order_id"):
             payment = db.query(Payment).filter_by(provider_order_id=entity.get("order_id")).first()

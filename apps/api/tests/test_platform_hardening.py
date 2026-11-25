@@ -9,6 +9,7 @@ sys.path.insert(0, str(ROOT))
 from app.core.config import settings
 from app.services.notifications import ConsoleNotificationProvider
 from app.services.razorpay_provider import RazorpayProvider
+from app.api.payments import _receipt_from_payment_notes
 
 
 def test_razorpay_checkout_signature_validation(monkeypatch):
@@ -25,6 +26,19 @@ def test_razorpay_checkout_signature_validation(monkeypatch):
 def test_razorpay_webhook_event_id_prefers_entity_and_created_at():
     payload = {"event": "payment.captured", "payload": {"payment": {"entity": {"id": "pay_123", "created_at": 12345}}}}
     assert RazorpayProvider().webhook_event_id(payload) == "payment.captured:pay_123:12345"
+
+
+@pytest.mark.parametrize(
+    ("notes", "expected"),
+    [
+        ({"receipt": "order_123"}, "order_123"),
+        ([{"key": "receipt", "value": "order_123"}], "order_123"),
+        ([{"name": "receipt", "value": "order_123"}], "order_123"),
+        ([], None),
+    ],
+)
+def test_razorpay_receipt_supports_notes_shapes(notes, expected):
+    assert _receipt_from_payment_notes(notes) == expected
 
 
 def test_console_notification_provider_fails_closed_in_production(monkeypatch):
