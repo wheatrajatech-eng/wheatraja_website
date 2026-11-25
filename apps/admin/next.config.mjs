@@ -5,7 +5,7 @@ const nextConfig = {
   },
   transpilePackages: ["@wheatraja/shared"],
   async rewrites() {
-    const apiOrigin = process.env.ADMIN_API_ORIGIN ?? (process.env.NODE_ENV === "development" ? "http://localhost:8000" : "https://wheatraja-api.onrender.com");
+    const apiOrigin = process.env.ADMIN_API_ORIGIN ?? (process.env.NODE_ENV === "development" ? "http://localhost:8000" : "http://32.236.116.8");
     return [
       {
         source: "/api/v1/:path*",
