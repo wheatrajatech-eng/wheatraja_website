@@ -1,9 +1,7 @@
-import Link from "next/link";
 import { Check, RefreshCw } from "lucide-react";
 import { ProductCard } from "@/components/product-card";
 import { SubscriptionAction } from "@/components/subscription-actions";
 import { getCatalogProducts } from "@/lib/catalog";
-import { formatPrice } from "@/lib/utils";
 import { PageShell } from "@/components/page-shell";
 
 export const dynamic = "force-dynamic";
@@ -37,34 +35,7 @@ export default async function SubscriptionPage() {
 
         <div className="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm md:p-8">
           <h3 className="mb-6 font-serif text-xl font-bold text-stone-900">Configure Your Plan</h3>
-          <div className="mb-5">
-            <p className="mb-2 text-xs font-bold uppercase tracking-wider text-stone-400">Select Product</p>
-            <div className="space-y-2">
-              {products.map((product) => (
-                <Link key={product.slug} href={`/products/${product.slug}`} className={`flex w-full items-center justify-between rounded-xl border px-4 py-3 text-left text-sm transition-all ${featured?.slug === product.slug ? "border-amber-500 bg-amber-50 text-amber-900" : "border-stone-200 text-stone-700 hover:border-amber-300"}`}>
-                  <span className="font-medium">{product.name} - 5 KG</span>
-                  <span className="font-bold">{formatPrice(Math.round(product.price5 * 0.9))}</span>
-                </Link>
-              ))}
-            </div>
-          </div>
-          <div className="mb-7">
-            <p className="mb-2 text-xs font-bold uppercase tracking-wider text-stone-400">Delivery Plan</p>
-            <div className="grid grid-cols-2 gap-2">
-              {["15 Days", "30 Days"].map((label, index) => (
-                <div key={label} className={`rounded-xl border py-2.5 text-center text-xs font-semibold ${index === 0 ? "border-amber-500 bg-amber-600 text-white" : "border-stone-200 text-stone-600"}`}>{label}</div>
-              ))}
-            </div>
-          </div>
-          <div className="mb-5 rounded-xl border border-amber-100 bg-amber-50 p-4 text-sm">
-            <div className="mb-1.5 flex justify-between"><span className="text-stone-500">Product</span><span className="font-medium text-stone-900">{featured?.name ?? "Fresh atta"}</span></div>
-            <div className="mb-1.5 flex justify-between"><span className="text-stone-500">Plan</span><span className="font-medium text-stone-900">15 or 30 days</span></div>
-            <div className="mt-3 flex justify-between border-t border-amber-200 pt-3">
-              <span className="font-bold text-stone-800">You Pay</span>
-              <div><span className="text-lg font-bold text-amber-700">{formatPrice(Math.round((featured?.price5 ?? 390) * 0.9))}</span><span className="ml-1 text-xs text-stone-400">/ delivery</span></div>
-            </div>
-          </div>
-          {featured ? <SubscriptionAction slug={featured.slug} /> : null}
+          {featured ? <SubscriptionAction slug={featured.slug} products={products.map(({ slug, name, price1, price5, price10 }) => ({ slug, name, price1, price5, price10 }))} /> : null}
           <p className="mt-3 text-center text-xs text-stone-500">Cancel or pause anytime. No hidden charges.</p>
         </div>
       </section>

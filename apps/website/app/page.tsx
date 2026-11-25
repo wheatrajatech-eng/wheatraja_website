@@ -24,31 +24,31 @@ export default async function HomePage() {
 
   return (
     <main className="min-h-screen bg-[#fffdf7]">
-      <section className="relative flex min-h-[560px] items-center overflow-hidden bg-[#f7eedc] pt-16 md:min-h-[680px] scroll-mt-16">
-        <HomeHeroVideo />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#fffdf7]/92 via-[#fffdf7]/62 to-[#fffdf7]/10" />
+      <section className="relative flex min-h-[calc(100svh-4rem)] items-center overflow-hidden bg-[#f7eedc] pt-16 scroll-mt-16">
+        <Image src="/assets/banners/home-hero-cover7.webp" alt="WheatRaja fresh atta, wheat grains and quality promise" fill priority sizes="100vw" className="object-cover object-center" />
+        <div className="absolute inset-0 bg-black/25" />
         <div className="relative z-10 mx-auto w-full max-w-7xl px-5 py-14 md:px-10 md:py-16">
           <div className="max-w-xl text-left">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[#c98218]/30 bg-[#fffdf7]/85 px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-[#a9600f] shadow-sm backdrop-blur-sm">
-            <span className="h-1.5 w-1.5 shrink-0 animate-pulse rounded-full bg-[#c98218]" />
+          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/60 bg-black/45 px-4 py-2 text-[11px] font-bold uppercase tracking-widest text-white shadow-sm backdrop-blur-sm">
+            <span className="h-1.5 w-1.5 shrink-0 animate-pulse rounded-full bg-white" />
             Freshly Milled After Every Order
           </div>
-          <h1 className="mb-5 max-w-lg font-serif text-4xl font-bold leading-[1.02] tracking-tight text-[#3b2418] sm:text-6xl md:text-7xl">Fresh atta.<br /><em className="not-italic text-[#c98218]">Milled to order.</em></h1>
-          <p className="mb-7 max-w-md text-base leading-7 text-[#68412a]/80 md:text-lg">
+          <h1 className="mb-5 max-w-lg font-serif text-4xl font-bold leading-[1.02] tracking-tight text-white sm:text-6xl md:text-7xl">Fresh atta.<br /><em className="not-italic text-white">Milled to order.</em></h1>
+          <p className="mb-7 max-w-md text-base leading-7 text-white md:text-lg">
             Stone-ground freshness, delivered to your door.
           </p>
           <div className="mb-7 flex flex-col items-start gap-3 sm:flex-row">
-            <Link href="/products" className="inline-flex items-center gap-2 rounded-full bg-[#c98218] px-7 py-3.5 text-sm font-bold text-white shadow-xl shadow-[#a9600f]/20 transition-all hover:-translate-y-0.5 hover:bg-[#a9600f]">
+            <Link href="/products" className="inline-flex items-center gap-2 rounded-full bg-black px-7 py-3.5 text-sm font-bold text-white shadow-xl transition-all hover:-translate-y-0.5 hover:bg-black/80">
               Shop Now <ArrowRight className="h-4 w-4" />
             </Link>
-            <Link href="/subscription" className="inline-flex items-center gap-2 rounded-full border border-[#68412a]/25 bg-[#fffdf7]/85 px-7 py-3.5 text-sm font-semibold text-[#68412a] backdrop-blur-sm transition-all hover:bg-white">
+            <Link href="/subscription" className="inline-flex items-center gap-2 rounded-full border border-white/70 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm transition-all hover:bg-white/20">
               Subscribe & Save 10%
             </Link>
           </div>
           <div className="flex flex-wrap gap-3">
             {[["FSSAI Approved", BadgeCheck], ["NABL Certified", Award], ["Freshly Milled", Zap], ["Home Delivery", Truck]].map(([label, Icon]) => (
-              <div key={String(label)} className="flex items-center gap-2 rounded-full border border-[#e8dcc8] bg-[#fffdf7]/85 px-3 py-1.5 text-xs font-medium text-[#68412a] backdrop-blur-sm">
-                <Icon className="h-4 w-4 text-[#c98218]" />{String(label)}
+              <div key={String(label)} className="flex items-center gap-2 rounded-full border border-white/60 bg-black/45 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-sm">
+                <Icon className="h-4 w-4 text-white" />{String(label)}
               </div>
             ))}
           </div>
@@ -100,12 +100,16 @@ export default async function HomePage() {
         </div>
       </section>
 
-      <section className="bg-[#fffdf7] py-20 md:py-28">
+      <section className="relative isolate overflow-hidden">
+        <HomeHeroVideo className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover object-center opacity-100" />
+        <div className="pointer-events-none absolute inset-0 z-0 bg-black/35" />
+        <div className="relative z-10">
+        <section className="py-20 md:py-28">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 md:grid-cols-2 md:gap-16 md:px-10">
           <div>
-            <p className="mb-3 text-xs font-bold uppercase tracking-widest text-amber-700">Subscribe & Save</p>
-            <h2 className="mb-5 font-serif text-4xl font-bold leading-tight text-stone-900 md:text-5xl">Never Run Out Of Fresh Atta</h2>
-            <p className="mb-9 leading-relaxed text-stone-500">Set it, forget it, savour it. Your freshly milled atta arrives on schedule every time.</p>
+            <p className="mb-3 text-xs font-bold uppercase tracking-widest text-white">Subscribe & Save</p>
+            <h2 className="mb-5 font-serif text-4xl font-bold leading-tight text-white md:text-5xl">Never Run Out Of Fresh Atta</h2>
+            <p className="mb-9 leading-relaxed text-white">Set it, forget it, savour it. Your freshly milled atta arrives on schedule every time.</p>
             <div className="space-y-4">
               {[
                 ["10% Discount", "On every subscription delivery"],
@@ -114,19 +118,19 @@ export default async function HomePage() {
                 ["Flexible Schedule", "Pause, skip or cancel anytime"]
               ].map(([title, desc]) => (
                 <div key={title} className="flex items-start gap-3.5">
-                  <Check className="mt-0.5 h-5 w-5 text-amber-600" />
-                  <div><span className="text-sm font-semibold text-stone-900">{title}</span><span className="text-sm text-stone-500"> - {desc}</span></div>
+                  <Check className="mt-0.5 h-5 w-5 text-white" />
+                  <div><span className="text-sm font-semibold text-white">{title}</span><span className="text-sm text-white"> - {desc}</span></div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm md:p-8">
-            <h3 className="mb-6 font-serif text-xl font-bold text-stone-900">Configure Your Plan</h3>
+          <div className="rounded-2xl border border-white bg-white p-6 shadow-sm md:p-8">
+            <h3 className="mb-6 font-serif text-xl font-bold text-black">Configure Your Plan</h3>
             <div className="mb-5">
-              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-stone-400">Select Product</p>
+              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-black">Select Product</p>
               <div className="space-y-2">
                 {products.map((product) => (
-                  <Link key={product.slug} href={`/subscription?product=${product.slug}`} className={`flex w-full items-center justify-between rounded-xl border px-4 py-3 text-left text-sm transition-all ${subscriptionProduct?.slug === product.slug ? "border-amber-500 bg-amber-50 text-amber-900" : "border-stone-200 text-stone-700 hover:border-amber-300"}`}>
+                  <Link key={product.slug} href={`/subscription?product=${product.slug}`} className={`flex w-full items-center justify-between rounded-xl border px-4 py-3 text-left text-sm transition-all ${subscriptionProduct?.slug === product.slug ? "border-black bg-black text-white" : "border-black/20 text-black hover:border-black"}`}>
                     <span className="font-medium">{product.name} - 5 KG</span>
                     <span className="font-bold">{formatPrice(Math.round(product.price5 * 0.9))}</span>
                   </Link>
@@ -134,35 +138,35 @@ export default async function HomePage() {
               </div>
             </div>
             <div className="mb-7">
-              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-stone-400">Delivery Plan</p>
+              <p className="mb-2 text-xs font-bold uppercase tracking-wider text-black">Delivery Plan</p>
               <div className="grid grid-cols-2 gap-2">
                 {["15 Days", "30 Days"].map((label, index) => (
-                  <Link key={label} href="/subscription" className={`rounded-xl border py-2.5 text-center text-xs font-semibold transition-all ${index === 0 ? "border-amber-500 bg-amber-600 text-white" : "border-stone-200 text-stone-600 hover:border-amber-300"}`}>{label}</Link>
+                  <Link key={label} href="/subscription" className={`rounded-xl border py-2.5 text-center text-xs font-semibold transition-all ${index === 0 ? "border-black bg-black text-white" : "border-black/20 text-black hover:border-black"}`}>{label}</Link>
                 ))}
               </div>
             </div>
-            <div className="mb-5 rounded-xl border border-amber-100 bg-amber-50 p-4 text-sm">
-              <div className="mb-1.5 flex justify-between"><span className="text-stone-500">Product</span><span className="font-medium text-stone-900">{subscriptionProduct?.name ?? "Fresh atta"}</span></div>
-              <div className="mb-1.5 flex justify-between"><span className="text-stone-500">Frequency</span><span className="font-medium text-stone-900">Every 15 or 30 days</span></div>
-              <div className="mt-3 flex justify-between border-t border-amber-200 pt-3">
-                <span className="font-bold text-stone-800">You Pay</span>
-                <div><span className="text-lg font-bold text-amber-700">{formatPrice(Math.round((subscriptionProduct?.price5 ?? 390) * 0.9))}</span><span className="ml-1 text-xs text-stone-400">/ delivery</span></div>
+            <div className="mb-5 rounded-xl border border-black/20 bg-white p-4 text-sm">
+              <div className="mb-1.5 flex justify-between"><span className="text-black">Product</span><span className="font-medium text-black">{subscriptionProduct?.name ?? "Fresh atta"}</span></div>
+              <div className="mb-1.5 flex justify-between"><span className="text-black">Frequency</span><span className="font-medium text-black">Every 15 or 30 days</span></div>
+              <div className="mt-3 flex justify-between border-t border-black/20 pt-3">
+                <span className="font-bold text-black">You Pay</span>
+                <div><span className="text-lg font-bold text-black">{formatPrice(Math.round((subscriptionProduct?.price5 ?? 390) * 0.9))}</span><span className="ml-1 text-xs text-black">/ delivery</span></div>
               </div>
             </div>
-            <Link href="/subscription" className="flex w-full items-center justify-center gap-2 rounded-xl bg-amber-600 py-3.5 text-sm font-bold text-white transition-colors hover:bg-amber-700">
+            <Link href="/subscription" className="flex w-full items-center justify-center gap-2 rounded-xl bg-black py-3.5 text-sm font-bold text-white transition-colors hover:bg-black/80">
               <RefreshCw className="h-4 w-4" /> Subscribe Now
             </Link>
-            <p className="mt-3 text-center text-xs text-stone-500">Cancel or pause anytime. No hidden charges.</p>
+            <p className="mt-3 text-center text-xs text-black">Cancel or pause anytime. No hidden charges.</p>
           </div>
         </div>
-      </section>
+        </section>
 
-      <section className="bg-[#fffdf7] py-20">
+        <section className="py-20">
         <div className="mx-auto max-w-7xl px-5 md:px-10">
           <div className="mb-12 text-center">
-            <p className="mb-3 text-xs font-bold uppercase tracking-widest text-amber-700">Corporate ordering</p>
-            <h2 className="font-serif text-4xl font-bold text-stone-900 md:text-5xl">Bulk chapati supply for offices and vendors</h2>
-            <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-stone-500">
+            <p className="mb-3 text-xs font-bold uppercase tracking-widest text-white">Corporate ordering</p>
+            <h2 className="font-serif text-4xl font-bold text-white md:text-5xl">Bulk chapati supply for offices and vendors</h2>
+            <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-white">
               Need roti supply for office lunch, a cafeteria, or a vendor-led food program? Explore our new bulk module built around freshness, volume and simple follow-up.
             </p>
           </div>
@@ -172,21 +176,23 @@ export default async function HomePage() {
               ["Fresh batch supply", "Prepared after order and coordinated for the right delivery slot."],
               ["Made for B2B", "Corporate kitchens, tiffin vendors and managed cafeterias."]
             ].map(([title, desc]) => (
-              <div key={title} className="rounded-2xl border border-[#e8dcc8] bg-[#f7eedc]/65 p-6 shadow-sm">
-                <p className="font-serif text-2xl text-[#3b2418]">{title}</p>
-                <p className="mt-2 text-sm leading-6 text-[#68412a]/75">{desc}</p>
+              <div key={title} className="rounded-2xl border border-white bg-white p-6 shadow-sm">
+                <p className="font-serif text-2xl text-black">{title}</p>
+                <p className="mt-2 text-sm leading-6 text-black">{desc}</p>
               </div>
             ))}
           </div>
           <div className="mt-8 flex flex-col items-center justify-between gap-4 rounded-[28px] bg-[#3b2418] px-6 py-6 text-white md:flex-row md:px-8">
             <div>
-              <p className="text-xs font-black uppercase tracking-[0.18em] text-amber-300">New page</p>
+              <p className="text-xs font-black uppercase tracking-[0.18em] text-white">New page</p>
               <h3 className="mt-2 font-serif text-2xl md:text-3xl">Bulk chapati ordering module is now live.</h3>
             </div>
-            <Link href="/bulk-order" className="inline-flex items-center gap-2 rounded-full bg-amber-500 px-6 py-3 font-bold text-stone-950 transition hover:bg-amber-400">
+            <Link href="/bulk-order" className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-bold text-black transition hover:bg-white/90">
               Explore bulk order <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
+        </div>
+      </section>
         </div>
       </section>
 

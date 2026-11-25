@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-export function HomeHeroVideo() {
+export function HomeHeroVideo({ className }: { className?: string }) {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export function HomeHeroVideo() {
   return (
     <video
       ref={videoRef}
-      className="absolute inset-0 z-[1] h-full w-full object-cover object-center"
+      className={className ?? "absolute inset-y-0 right-0 z-[1] h-full w-[92%] object-cover object-center"}
       autoPlay
       muted
       loop

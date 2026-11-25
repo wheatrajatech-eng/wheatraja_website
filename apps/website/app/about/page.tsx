@@ -28,7 +28,7 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#FBF7ED] pt-16">
       <section className="relative overflow-hidden bg-[#f7eedc] px-6 py-20 text-[#3b2418] md:py-28">
-        <Image src="/assets/banners/about-page-bg.webp" alt="" fill priority sizes="100vw" className="object-cover object-center" />
+        <Image src="/assets/banners/about-page-bg.webp" alt="" fill priority sizes="100vw" className="object-cover object-center opacity-70" />
         <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_.95fr] lg:items-end">
           <div>
             <p className="text-sm font-black uppercase tracking-[0.22em] text-[#a9600f]">About WheatRaja</p>

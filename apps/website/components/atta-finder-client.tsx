@@ -55,7 +55,7 @@ export function AttaFinderClient() {
 
   return (
     <section className="relative isolate min-h-[calc(100vh-4rem)] overflow-hidden bg-[#fffdf7] px-5 py-12 md:px-10 md:py-20">
-      <div className="pointer-events-none fixed inset-0 z-[1]">
+      <div className="pointer-events-none fixed inset-0 z-[1] opacity-70">
         <Image src="/assets/banners/atta-finder-family.webp" alt="" fill priority sizes="100vw" className="object-cover object-center" />
       </div>
 
@@ -114,7 +114,7 @@ export function AttaFinderClient() {
             )}
             <div className="grid gap-4 md:grid-cols-3">
               {(result?.products ?? []).map((product) => {
-                const image = product.images?.[0]?.url ?? "/assets/products/sharbati_atta_5kg.webp";
+                const image = product.images?.[0]?.url ?? "/assets/products/sharbati_atta_5kg.png";
                 const weight = result?.recommended_weight_kg ?? 5;
                 return (
                   <article key={product.slug} className="overflow-hidden rounded-[26px] border border-[#e8dcc8] bg-[#fffdf7] shadow-[0_18px_52px_rgba(104,65,42,.10)]">

@@ -15,7 +15,7 @@ export function PageShell({ eyebrow, title, text, backgroundImage, children }: {
 
   return (
     <main className="relative isolate min-h-screen overflow-hidden bg-[#fffdf7] pt-16">
-      <div className="pointer-events-none fixed inset-0 z-0">
+      <div className="pointer-events-none fixed inset-0 z-0 opacity-70">
         <Image src={background} alt="" fill priority sizes="100vw" className="object-cover object-center" />
       </div>
       <div className="relative z-10">
